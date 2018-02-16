@@ -1,5 +1,5 @@
 ---
 layout: redirect
 
-newUrl: /es
+newUrl: /ca
 ---
