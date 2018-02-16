@@ -1,0 +1,5 @@
+---
+layout: redirect
+
+newUrl: /es
+---

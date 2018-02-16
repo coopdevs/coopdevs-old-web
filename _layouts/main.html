@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+<div>
+  <img src='/assets/img/bg/birds.jpg' class='head_image' />
+  <div class='topbar'>
+    <div></div>
+    <div class='languages'>
+      <a href='/ca' class='language'>Català</a>
+      <a href='/es' class='language'>Español</a>
+    </div>
+  </div>
+  <div class='content'>
+    <div class='hero'>
+      <div class='hero__logo'>
+        <img src='/assets/img/logo.svg')} />
+      </div>
+      <p>{{ page.description_1 | markdownify }}</p>
+      <p>{{ page.description_2 | markdownify }}</p>
+    </div>
+
+    <div class='projects'>
+      <h3>{{ page.projects_title }}</h3>
+
+      <div class='project'>
+        <img class='logo' src='/assets/img/projects/katuma.png' width='140' height='140' />
+        <div class='description'>
+          {{ page.katuma_description | markdownify }}
+          <div class='social_links'>
+            <div class='twitter'>
+              <img src='/assets/img/social/twitter.jpg' />
+              <a href='https://twitter.com/katuma_org'>@katuma_org</a>
+            </div>
+            <div class='github'>
+              <img src='/assets/img/social/github.png' />
+              <a href='https://github.com/coopdevs/openfoodnetwork'>coopdevs/openfoodnetwork</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='project'>
+        <img class='logo' src='/assets/img/projects/timeoverflow.jpg' width='140' height='140' />
+        <div class='description'>
+          {{ page.timeoverflow_description | markdownify }}
+          <div class='social_links'>
+            <div class='twitter'>
+              <img src='/assets/img/social/twitter.jpg' />
+              <a href='https://twitter.com/timeoverflow'>@timeoverflow</a>
+            </div>
+            <div class='github'>
+              <img src='/assets/img/social/github.png' />
+              <a href='https://github.com/coopdevs/timeoverflow'>coopdevs/timeoverflow</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3>{{ page.friends_title }}</h3>
+      
+      <div class='friends'>
+        <div class="friend">
+          <a href="https://openfoodnetwork.org/" target='_blank'>
+            <img src='/assets/img/friends/ofn.png' alt='Open Food Network' title='Open Food Network' width='220' />
+          </a>
+        </div>
+        <div class="friend">
+          <a href="http://emprenedoria.barcelonactiva.cat/emprenedoria/cat/programes/la-comunificadora.jsp" target='_blank'>
+            <img src='/assets/img/friends/la_comunificadora2.png' alt='La Comunificadora' title='La Comunificadora' width='220' />
+          </a>
+        </div>
+        <div class="friend">
+          <a href="https://somconnexio.coop/" target='_blank'>
+            <img src='/assets/img/friends/som_connexio.png' alt='Som Connexió' title='Som Connexió' width='220' />
+          </a>
+        </div>
+        <div class="friend">
+          <a href="http://www.uoc.edu/portal/ca/in3/index.html" target='_blank'>
+            <img src='/assets/img/friends/in3.gif' alt='Internet Interdisciplinary Institute (In3)' title='Internet Interdisciplinary Institute (In3)' width='220' />
+          </a>
+        </div>
+        <div class="friend">
+          <a href="http://adbdt.org/" target='_blank'>
+            <img src='/assets/img/friends/adbdt.jpg' alt='Asociación para el Desarrollo de los Bancos de Tiempo' title='Asociación para el Desarrollo de los Bancos de Tiempo' width='220' />
+          </a>
+        </div>
+        <div class="friend">
+          <a href="https://sommobilitat.coop/" target='_blank'>
+            <img src='/assets/img/friends/som_mobilitat.png' alt='Som Mobilitat' title='Som Mobilitat' width='220' />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

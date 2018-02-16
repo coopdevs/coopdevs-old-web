@@ -1,0 +1,21 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  width: 100%;
+
+  .languages {
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  a {
+    margin-right: 20px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,12 @@
+.friends {
+  margin: 20px 0 36px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  
+  .friend {
+    margin: 16px 20px;
+  }
+}
+

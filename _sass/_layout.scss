@@ -1,0 +1,21 @@
+.content {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.head_image {
+  position: absolute;
+  width: 100%;
+  opacity: 0.1;
+  z-index: -100;
+  filter: blur(2px);
+}
+
+h1, h2, h3, h4 {
+  font-family: Work Sans;
+}
+
+a {
+  color: #39BBD5;
+}
+
