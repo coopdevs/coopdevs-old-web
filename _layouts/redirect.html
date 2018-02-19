@@ -5,7 +5,7 @@
 
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url={{site.lcb}}{{page.newUrl}}{{site.rcb}}">
-    <link rel="canonical" href="{{ site.lcb }}{{page.newUrl}}{{site.rcb}}" />
+    <meta http-equiv="refresh" content="0; url={{ site.lcb }}{{ page.newUrl | prepend:site.baseurl }}{{ site.rcb }}">
+    <link rel="canonical" href="{{ site.lcb }}{{ page.newUrl | prepend:site.baseurl }}{{ site.rcb }}" />
   </head>
 </html>
