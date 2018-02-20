@@ -20,6 +20,23 @@
       font-size: 18px;
       color: #333;
       padding: 0 16px 0 0;
+      margin-bottom: 10px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    .project {
+      display: block;
+
+      .description {
+        margin-top: 10px;
+      }
     }
   }
 }

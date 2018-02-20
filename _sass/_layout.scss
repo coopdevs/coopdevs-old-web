@@ -19,3 +19,8 @@ a {
   color: #39BBD5;
 }
 
+@media (max-width: 800px) {
+  .content {
+    max-width: 80%;
+  }
+}
