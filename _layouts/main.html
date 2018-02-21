@@ -24,7 +24,9 @@ layout: default
       <h3>{{ page.projects_title }}</h3>
 
       <div class='project'>
-        <img class='logo' src='{{ "/assets/img/projects/katuma.png" | prepend:site.baseurl }}' width='140' height='140' />
+        <div class='logo'>
+          <img src='{{ "/assets/img/projects/katuma.png" | prepend:site.baseurl }}' width='140' height='140' />
+        </div>
         <div class='description'>
           {{ page.katuma_description | markdownify }}
           <div class='social_links'>
@@ -41,7 +43,9 @@ layout: default
       </div>
 
       <div class='project'>
-        <img class='logo' src='{{ "/assets/img/projects/timeoverflow.jpg" | prepend:site.baseurl }}' width='140' height='140' />
+        <div class='logo'>
+          <img src='{{ "/assets/img/projects/timeoverflow.jpg" | prepend:site.baseurl }}' width='140' height='140' />
+        </div>
         <div class='description'>
           {{ page.timeoverflow_description | markdownify }}
           <div class='social_links'>
