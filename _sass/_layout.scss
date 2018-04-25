@@ -19,8 +19,13 @@ a {
   color: #39BBD5;
 }
 
-@media (max-width: 800px) {
-  .content {
-    max-width: 80%;
+#main-blog {
+  text-align: justify;
+}
+
+@media screen and (min-width: 800px) {
+  #main-blog {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
