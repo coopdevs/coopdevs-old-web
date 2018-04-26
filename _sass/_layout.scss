@@ -19,9 +19,15 @@ a {
   color: #39BBD5;
 }
 
-#main-blog {
+#main-blog p {
   text-align: justify;
 }
+#main-blog h3 {
+  font-size: 1.5em;
+  text-transform: inherit;
+  font-weight: bold;
+}
+
 
 @media screen and (min-width: 800px) {
   #main-blog {

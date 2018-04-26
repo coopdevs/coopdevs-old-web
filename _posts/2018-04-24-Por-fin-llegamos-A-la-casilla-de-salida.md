@@ -15,6 +15,8 @@ Fundar la asociación Coopdevs fue el primer paso en este camino, no se trataba 
 
 Nos alegra comprobar que no solo nosotros vemos esta necesidad. La [comunidad](http://community.coopdevs.org/) alrededor de Coopdevs es cada vez más activa, lo notamos en las [redes sociales](https://twitter.com/search?f=tweets&vertical=default&q=coopdevs), en las invitaciones a participar en eventos o en la cantidad de proyectos en los que se nos invita a participar. La [ESS](https://es.wikipedia.org/wiki/Econom%C3%ADa_social) está en expansión y necesita de tecnología. 
 
+### Pero si es sotware libre ¿no cuesta dinero no?
+
 Muy pocas personas son conscientes del coste que representa desarrollar, mantener y mejorar una plataforma digital. No solo se trata de hacer un código que funcione y ponerlo en un servidor, las plataformas digitales requieren una atención constante, si hay una comunidad usando una plataforma esta debe evolucionar junto a las necesidades de sus usuarias si no quiere dejar de ser útil, hay que comunicar qué se está haciendo, dar soporte y planificar hacia dónde se dirige la plataforma, debe ser un organismo vivo. Todo ello nos lleva a la gobernanza, que no puede recaer solamente en los técnicos sino que debe ser asumida por la comunidad que usa la plataforma. En este sentido nos esperanza el modelo [cooperativista de plataforma](https://platform.coop/about/es), del que ya tendremos tiempo de reflexionar. 
 
 Lo fácil sería sumarse al carro de las subvenciones. Es fantástico que la financiación pública se vuelque en proyectos cooperativos y de claro impacto social, pero hay que ir con cuidado con el efecto burbuja. Si somos rigurosos respecto a la necesidad de encontrar la sostenibilidad de nuestros proyectos las subvenciones no deberían estar en el centro, aunque pueden ser un buen complemento. Nos ha parecido buena idea participar en el [matchfunding de goteo](https://www.goteo.org/call/conjuntament) con [Katuma](https://www.goteo.org/project/katuma), o desarrollar la [app móvil para TimeOverflow](http://community.coopdevs.org/t/diseno-app-timeoverflow/396) con la ayuda del programa [“impulsem el que fas”](https://empreses.barcelonactiva.cat/ca/web/es/impulsem-el-que-fas-2017) de Barcelona Activa, son balones de oxígeno que sin duda ayudan, pero si queremos ser sostenibles a largo plazo nuestros proyectos deben formar parte de un plan de mayor envergadura y no dependender de las subvenciones públicas. 
@@ -22,6 +24,8 @@ Lo fácil sería sumarse al carro de las subvenciones. Es fantástico que la fin
 <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tkv0fdDETh0"></iframe>
 </div>
+
+### Ahora es el momento de intercooperar
 
 Katuma y TimeOverflow son proyectos que hemos emprendido desde cero. Hemos desarrollado las plataformas confiando en que encontraremos la manera de sostenerlas. Podríamos embarcarnos en un tercer proyecto con las mismas condiciones, pero pensamos que aumentaría el riesgo de que coopdevs se hiciese insostenible. Así que tomamos la decisión de cooperar con proyectos de la ESS que ya son sostenibles financieramente y que quieren mejorar o crear sus plataformas. Este es nuestro siguiente paso y estamos muy contentos de haber empezado a colaborar con la cooperativa de telecomunicaciones [SomConnexió](https://somconnexio.coop/).
 
