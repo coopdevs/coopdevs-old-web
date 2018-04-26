@@ -19,8 +19,19 @@ a {
   color: #39BBD5;
 }
 
-@media (max-width: 800px) {
-  .content {
-    max-width: 80%;
+#main-blog p {
+  text-align: justify;
+}
+#main-blog h3 {
+  font-size: 1.5em;
+  text-transform: inherit;
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 800px) {
+  #main-blog {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
