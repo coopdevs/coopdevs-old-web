@@ -15,7 +15,7 @@ Fundar la asociación Coopdevs fue el primer paso en este camino, no se trataba 
 
 Nos alegra comprobar que no solo nosotros vemos esta necesidad. La [comunidad](http://community.coopdevs.org/) alrededor de Coopdevs es cada vez más activa, lo notamos en las [redes sociales](https://twitter.com/search?f=tweets&vertical=default&q=coopdevs), en las invitaciones a participar en eventos o en la cantidad de proyectos en los que se nos invita a participar. La [ESS](https://es.wikipedia.org/wiki/Econom%C3%ADa_social) está en expansión y necesita de tecnología. 
 
-### Pero si es sotware libre ¿no cuesta dinero no?
+### Pero si es software libre ¿no cuesta dinero no?
 
 Muy pocas personas son conscientes del coste que representa desarrollar, mantener y mejorar una plataforma digital. No solo se trata de hacer un código que funcione y ponerlo en un servidor, las plataformas digitales requieren una atención constante, si hay una comunidad usando una plataforma esta debe evolucionar junto a las necesidades de sus usuarias si no quiere dejar de ser útil, hay que comunicar qué se está haciendo, dar soporte y planificar hacia dónde se dirige la plataforma, debe ser un organismo vivo. Todo ello nos lleva a la gobernanza, que no puede recaer solamente en los técnicos sino que debe ser asumida por la comunidad que usa la plataforma. En este sentido nos esperanza el modelo [cooperativista de plataforma](https://platform.coop/about/es), del que ya tendremos tiempo de reflexionar. 
 
