@@ -6,7 +6,7 @@ layout: post
 Parece que haya pasado una eternidad desde que en 2016 fundamos la asociación Coopdevs. Ocurrió como resultado del encuentro entre [TimeOverflow](https://www.timeoverflow.org/) y [Katuma](http://katuma.org/), ambos proyectos empezaron su andadura por separado en 2012, resolvían la clara necesidad técnica de los bancos de tiempo y grupos de consumo, proyectos locales habitualmente autogestionados. Cuando los dos equipos nos encontramos nos dimos cuenta de que compartíamos un reto común: encontrar la sostenibilidad para estos proyectos de alto impacto social. Decidimos asumir este desafío conjuntamente. 
 
 ![Fundación de la asociación Coopdevs en Rocaguinarda](/assets/post_images/2018/rocaguinarda_2016.jpg){:width="100%"}
-*Fundación de la asociación Coopdevs en Rocaguinarda*
+*Fundación de la asociación Coopdevs en [Rocaguinarda](http://www.rocaguinarda.org/)*
 
 Fundar la asociación Coopdevs fue el primer paso en este camino, no se trataba solo de mantener y mejorar estas dos plataformas, nuestro objetivo era, y sigue siendo, ofrecer tecnología puntera para la economía social. Desarrollar plataformas digitales intuitivas, con diseños atractivos, de código abierto, cuidado y bien documentado, generando alrededor de cada proyecto comunidades que participen en todos los procesos. Cuando bebemos más de una cerveza soñamos con que Coopdevs se convierta en el Silicon Valley de la economía social.
 

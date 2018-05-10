@@ -1,18 +1,18 @@
-<div>
-	<img src='{{ "/assets/img/bg/birds.jpg" | prepend:site.baseurl }}' class='head_image' />
-	<div class='topbar'>
-		<div></div>
-		<div class='nav'>
-			<a href='{{ "/ca" | prepend:site.baseurl }}' class='language'>Català</a>
-			<a href='{{ "/es" | prepend:site.baseurl }}' class='language'>Español</a>
-			<a href='/blog.html'>Blog</a>
-		</div>
-	</div>
-	<div class='content'>
-		<div class='hero'>
-			<div class='hero__logo'>
-				<a href="/"><img src='{{ "/assets/img/logo.svg" | prepend:site.baseurl }}')} /></a>
-			</div>
-			<p>{{ page.description_1 | markdownify }}</p>
-			<p>{{ page.description_2 | markdownify }}</p>
-		</div>
+<img src='{{ "/assets/img/bg/birds.jpg" | prepend:site.baseurl }}' class='head_image' />
+<nav class='nav navbar navbar-expand'>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href='{{ "/ca" | prepend:site.baseurl }}' class='language nav-link'>Català</a></li>
+        <li class="nav-item"><a href='{{ "/es" | prepend:site.baseurl }}' class='language nav-link'>Español</a></li>
+        <li class="nav-item"><a href='/blog.html' class='nav-link'>Blog</a></li>
+    </ul>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class='mx-auto col-12 col-sm-10 col-md-8'>
+            <div class='hero'>
+                <div class='hero__logo'>
+                    <a href="/"><img src='{{ "/assets/img/logo.svg" | prepend:site.baseurl }}')} /></a>
+                </div>
+                <p>{{ page.description_1 | markdownify }}</p>
+                <p>{{ page.description_2 | markdownify }}</p>
+            </div>
