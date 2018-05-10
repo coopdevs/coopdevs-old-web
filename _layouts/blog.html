@@ -4,8 +4,7 @@ layout: default
 
 {%- assign _posts = site.posts | sort: 'date' | reverse -%}
 <!-- Main -->
-<div class="row">
-    <div id="main-blog" class="mx-auto col-12 col-sm-12 col-md-10">
+<div id="main-blog">
     {%- if page.content != "" -%}
         {%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
     {%- endif -%}
@@ -23,5 +22,4 @@ layout: default
             {%- assign _content = _excerpt | append: _link -%}
             {%- include section.html title=_title subtitle=_subtitle content=_content -%}
     {%- endfor -%}
-    </div>
 </div>

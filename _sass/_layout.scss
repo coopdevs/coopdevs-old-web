@@ -14,8 +14,30 @@ a {
   color: #39BBD5;
 }
 
-#main-blog h3 {
-  font-size: 1.5em;
-  text-transform: inherit;
-  font-weight: bold;
+#main-blog {
+  h3 {
+    font-size: 1.5em;
+    text-transform: inherit;
+    font-weight: bold;
+    margin-top:2rem;
+  }
+
+  p {
+    font-size: 18px;
+    color: #333;
+    line-height:1.8em;
+  }
+
+  img {
+    max-width: 90%;
+    display:block;
+    margin: 0 auto;
+    margin-top:2rem;
+  }
+
+  img + em {
+    margin: 1rem 0;
+    display: inline-block;
+    margin-left:5%;    
+  }
 }
