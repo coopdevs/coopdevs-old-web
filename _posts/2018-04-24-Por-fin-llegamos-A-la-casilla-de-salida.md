@@ -21,9 +21,11 @@ Muy pocas personas son conscientes del coste que representa desarrollar, mantene
 
 Lo fácil sería sumarse al carro de las subvenciones. Es fantástico que la financiación pública se vuelque en proyectos cooperativos y de claro impacto social, pero hay que ir con cuidado con el efecto burbuja. Si somos rigurosos respecto a la necesidad de encontrar la sostenibilidad de nuestros proyectos las subvenciones no deberían estar en el centro, aunque pueden ser un buen complemento. Nos ha parecido buena idea participar en el [matchfunding de goteo](https://www.goteo.org/call/conjuntament) con [Katuma](https://www.goteo.org/project/katuma), o desarrollar la [app móvil para TimeOverflow](http://community.coopdevs.org/t/diseno-app-timeoverflow/396) con la ayuda del programa [“impulsem el que fas”](https://empreses.barcelonactiva.cat/ca/web/es/impulsem-el-que-fas-2017) de Barcelona Activa, son balones de oxígeno que sin duda ayudan, pero si queremos ser sostenibles a largo plazo nuestros proyectos deben formar parte de un plan de mayor envergadura y no dependender de las subvenciones públicas. 
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tkv0fdDETh0"></iframe>
-</div>
+<p>
+  <div class="embed-responsive embed-responsive-16by9 video">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tkv0fdDETh0"></iframe>
+  </div>
+</p>
 
 ### Ahora es el momento de intercooperar
 
