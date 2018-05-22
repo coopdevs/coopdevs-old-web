@@ -14,8 +14,23 @@ a {
   color: #39BBD5;
 }
 
-#main-blog h3 {
-  font-size: 1.5em;
-  text-transform: inherit;
-  font-weight: bold;
+p {
+  margin: 0 0 1.7rem 0;
+}
+
+#main-blog {
+  img, .video {
+    max-width: 90%;
+    display:block;
+    margin: 2rem auto 0 auto;
+  }
+
+  img + em {
+    margin: 1rem 0 0 5%;
+    display: inline-block;
+  }
+}
+
+.post {
+  padding: 0 0 3rem;
 }
