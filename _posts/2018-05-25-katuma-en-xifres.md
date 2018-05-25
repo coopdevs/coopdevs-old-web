@@ -10,7 +10,7 @@ Algunes dades rellevants que s'han vist aquests darrers quatre mesos i escaig s�
 
 ## Presència de grups i productors
 
-Tot i que el nombre d'organitzacions amb presència a la plataforma ha crescut quasi de forma lineal des del passat octubre fins a les 84 organitzacions només 25 productors i 18 grups han estat presents en alguna comanda.
+Tot i que el nombre d'organitzacions amb presència a la plataforma ha crescut quasi de forma lineal des del passat octubre fins a les 84 organitzacions, només 25 productors i 18 grups han estat presents en alguna comanda.
 
 <p>
   <iframe
@@ -22,7 +22,7 @@ Tot i que el nombre d'organitzacions amb presència a la plataforma ha crescut q
   ></iframe>
 </p>
 
-La majoria de les que no són actives han obert els seus comptes per poder visualitzar la seva entitat al mapa de la plataforma, mentre d'altres senzillament han fet algunes proves per veure com funciona.
+La majoria de les organitzacions que no són actives han obert els seus comptes per poder visualitzar la seva entitat al mapa de la plataforma, mentre d'altres senzillament han fet algunes proves per veure com funciona.
 
 És interessant constatar però que hi ha un nombre major de productores que de grups, al contrari de la percepció que tenim els que participem del moviment de grups i cooperatives de consum. Aquest fet coincideix amb la recerca duta a terme per en Ricard Espelt al seu treball [«Consum autogestionat en l’era de la Societat Xarxa. El paper de les TIC en el consum cooperatiu de productes agroalimentaris»](http://www.cooperatives.barcelona/).
 
