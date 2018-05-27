@@ -22,24 +22,24 @@
 {%- endif -%}
 
 {%- if include.auto-header == 'none' -%}
-    {%- assign _heading = "" -%}
-    {%- else -%}
-    {%- capture _heading -%}
+  {%- assign _heading = "" -%}
+{%- else -%}
+  {%- capture _heading -%}
     <header>
-        <h2>
-            {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
-            {{- _title -}}
-            {%- else -%}
-            {{- include.auto-header -}}
-            {%- endif -%}
-        </h2>
-        {%- if include.subtitle -%}<p>{{- include.subtitle -}}</p>{%- endif -%}
+      <h2>
+        {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
+          {{- _title -}}
+        {%- else -%}
+          {{- include.auto-header -}}
+        {%- endif -%}
+      </h2>
+      {%- if include.subtitle -%}<p>{{- include.subtitle -}}</p>{%- endif -%}
     </header>
-    {%- endcapture -%}
+  {%- endcapture -%}
 {%- endif -%}
 
 <section id="{{- _slug -}}" class="{{- _class -}}">
-    {{- _photo -}}
-    {{- _heading -}}
-    {{- include.content -}}
+  {{- _photo -}}
+  {{- _heading -}}
+  {{- include.content -}}
 </section>
