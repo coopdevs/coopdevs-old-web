@@ -3,17 +3,10 @@
 # only Main files contain this front matter, not partials.
 ---
 
+@import "base";
 @import "layout";
 @import "topbar";
 @import "hero";
 @import "projects";
 @import "social-links";
 @import "friends";
-
-body {
-  font-family: Lato;
-  font-weight: 300;
-  font-size: 18px;
-  color: #333;
-  line-height:1.8em;
-}
