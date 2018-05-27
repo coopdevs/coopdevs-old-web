@@ -26,7 +26,7 @@ layout: default
     {%- endcapture -%}
 
     {%- capture _link -%}
-      <a href="{{- _post.url | absolute_url -}}">Seguir leyendo</a>
+      <a class="small" href="{{- _post.url | absolute_url -}}">Seguir leyendo →</a>
     {%- endcapture -%}
 
     {%- assign _content = _excerpt | append: _link -%}

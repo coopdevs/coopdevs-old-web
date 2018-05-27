@@ -1,6 +1,6 @@
 body {
   font-family: $font-family;
-  font-weight: 300;
+  font-weight: $font-weight;
   font-size: $font-size;
   color: $text-color;
   line-height: 1.8em;
@@ -8,6 +8,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: $font-family-title;
+
+  a {
+    color: $text-color;
+  }
 }
 
 a {
@@ -16,4 +20,11 @@ a {
 
 p {
   margin: 0 0 1.7rem 0;
+}
+
+
+// Utilities
+.small {
+  font-size: 1rem;
+  font-weight: $font-weight;
 }
