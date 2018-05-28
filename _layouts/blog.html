@@ -17,7 +17,7 @@ layout: default
     {%- endcapture -%}
 
     {%- capture _subtitle -%}
-      {% if _post.author -%}{{- _post.author }} | {% endif %}
+      {% if _post.author -%}{{- _post.author }} – {% endif %}
       {{- _post.date | date_to_long_string -}}
     {%- endcapture -%}
 
