@@ -3,17 +3,17 @@
 # only Main files contain this front matter, not partials.
 ---
 
+$font-size: 18px;
+$font-family: Lato;
+$font-family-title: Work Sans;
+
+$text-color: #333;
+$primary-color: #39BBD5;
+
+@import "base";
 @import "layout";
 @import "topbar";
 @import "hero";
 @import "projects";
 @import "social-links";
 @import "friends";
-
-body {
-  font-family: Lato;
-  font-weight: 300;
-  font-size: 18px;
-  color: #333;
-  line-height:1.8em;
-}
