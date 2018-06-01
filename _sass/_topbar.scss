@@ -2,11 +2,23 @@
   margin-right: 10px;
   font-weight: 500;
 
-  a {
-    text-decoration: none;
+  .nav-item {
+    font-size: 1rem;
+
+    a, a:hover {
+      text-decoration: none;
+    }
+
+    a {
+      color: $text-color;
+    }
+
+    a:hover {
+      color: $primary-color;
+    }
   }
 
-  a:hover {
-    text-decoration: underline;
+  .languages {
+    margin-left: 1rem;
   }
 }

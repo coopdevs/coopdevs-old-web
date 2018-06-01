@@ -11,5 +11,5 @@ katuma_description: "[Katuma](http://www.katuma.org) és una plataforma cooperat
 
 timeoverflow_description: "[Time Overflow](http://timeoverflow.org) és una plataforma de gestió de Bancs de Temps, un sistema d'oferta de serveis a canvi de temps. La plataforma facilita les tasques de gestió i intercanvi de serveis entre els membres d'un banc."
 
-friends_title: "Col·laborem amb:"
+friends_title: "Col·laboradors"
 ---
