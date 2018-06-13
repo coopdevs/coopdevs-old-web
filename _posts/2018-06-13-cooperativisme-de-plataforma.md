@@ -44,4 +44,4 @@ Tinguem en compte que:
 
 La complexitat és important, el repte és important, però l’objectiu s’ho mereix!!   
 
-Lectura recomanda: [Cooperativismo de plataforma - Trebor Scholz](http://nexe.coop/wp-content/uploads/2016/12/dimmons.net_wp-content_uploads_2016_05_maq_Trebor-Scholz_COOP_PreF.pdf)
+Lectura recomanada: [Cooperativismo de plataforma - Trebor Scholz](http://nexe.coop/wp-content/uploads/2016/12/dimmons.net_wp-content_uploads_2016_05_maq_Trebor-Scholz_COOP_PreF.pdf)
