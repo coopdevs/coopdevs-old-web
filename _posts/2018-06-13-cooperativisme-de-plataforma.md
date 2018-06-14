@@ -9,7 +9,7 @@ La propietat privada és un dels fonaments principals de la nostra societat. La 
 
 En l’era digital, cada vegada són més les grans companyies que es fan perillosament poderoses amb una plataforma online: Amazon, Facebook, Google, Netflix, Airbnb, Uber,.. Donen servei a centenars de milions de persones a tot el món i són controlades per comptades persones. En molts casos el públic objectiu d’aquestes plataformes són al mateix temps les consumidores i les treballadores de la plataforma, per exemple en el cas d’Airbnb o Uber les persones que ofereixen vivenda o cotxe realitzen el rol de treballador i cobren pels seus serveis a través de la plataforma. Estem davant de plataformes que generen una gran activitat econòmica amb uns costos reduïts i, a més, ho fan a escala transnacional, sovint fora del control de la majoria dels països on operen.
 
-En definitiva, aquests nous imperis en forma de plataformes digitals, tenen un gran impacte en la vida de les persones. La gran qüestió és si és possible trobar models on les persones que fan ús de les plataformes puguin també participar en la seva governança i compartir la seva propietat. A casa nostra empreses cooperatives com [SomEnergia](https://www.somenergia.coop/) o [SomConnexió](https://somconnexio.coop/) estan demostrant que és possible en l’àmbit elèctric o de les telecomunicacions, les persones sòcies d’aquestes cooperatives paguen pels serveis rebuts alhora que en són copropietàries de les mateixes empreses que els ofereixen els serveis.
+En definitiva, aquests nous imperis en forma de plataformes digitals, tenen un gran impacte en la vida de les persones. La gran qüestió és si és possible trobar models on les persones que fan ús de les plataformes puguin també participar en la seva governança i compartir la seva propietat. A casa nostra empreses cooperatives com [Som Energia](https://www.somenergia.coop/) o [Som Connexió](https://somconnexio.coop/) estan demostrant que és possible en l’àmbit elèctric o de les telecomunicacions, les persones sòcies d’aquestes cooperatives paguen pels serveis rebuts alhora que en són copropietàries de les mateixes empreses que els ofereixen els serveis.
 
 El cooperativisme de plataforma aplica aquest model cooperativista a les plataformes digitals. Però no és tant senzill com sembla, hi ha alguns reptes a superar per fer-ho possible:
 
@@ -17,7 +17,7 @@ El cooperativisme de plataforma aplica aquest model cooperativista a les platafo
 * **Finançament:** Les plataformes digitals requereixen força inversió inicial pel desenvolupament tecnològic, això habitualment es fa amb capital risc. Inversors privats compren part de la companyia amb la intenció de poder vendre-la per molt més. El cooperativisme tradicional no disposa d’instruments financers pensats per l’inversió inicial que requereix desenvolupar una plataforma digital. 
 * **Escala:** Cada plataforma cooperativa ha de ser suficientment gran com per que sigui viable la seva existència, però suficientment petita com per què les sòcies puguin prendre decisions conjuntament.
 
-Per sort, existeix un factor que pot facilitar superar ambdós reptes: compartir tecnologia desenvolupada a través de projectes [open source](https://ca.wikipedia.org/wiki/Codi_obert) . 
+Per sort, existeix un factor que pot facilitar superar ambdós reptes: __Compartir tecnologia desenvolupada a través de projectes [open source](https://ca.wikipedia.org/wiki/Codi_obert).__ 
 
 ## Ecosistema Coopdevs
 
@@ -45,3 +45,6 @@ Tinguem en compte que:
 La complexitat és important, el repte és important, però l’objectiu s’ho mereix!!   
 
 Lectura recomanada: [Cooperativismo de plataforma - Trebor Scholz](http://nexe.coop/wp-content/uploads/2016/12/dimmons.net_wp-content_uploads_2016_05_maq_Trebor-Scholz_COOP_PreF.pdf)
+
+[![Esquema ecosistema Coopdevs](/assets/post_images/2018/cooperativismo_plataforma.png){:width="100%"}](http://nexe.coop/wp-content/uploads/2016/12/dimmons.net_wp-content_uploads_2016_05_maq_Trebor-Scholz_COOP_PreF.pdf)
+
