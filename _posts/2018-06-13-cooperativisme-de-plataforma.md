@@ -17,7 +17,7 @@ El cooperativisme de plataforma aplica aquest model cooperativista a les platafo
 * **Finançament:** Les plataformes digitals requereixen força inversió inicial pel desenvolupament tecnològic, això habitualment es fa amb capital risc. Inversors privats compren part de la companyia amb la intenció de poder vendre-la per molt més. El cooperativisme tradicional no disposa d’instruments financers pensats per l’inversió inicial que requereix desenvolupar una plataforma digital. 
 * **Escala:** Cada plataforma cooperativa ha de ser suficientment gran com per que sigui viable la seva existència, però suficientment petita com per què les sòcies puguin prendre decisions conjuntament.
 
-Per sort, existeix un factor que pot facilitar superar ambdós reptes: __Compartir tecnologia desenvolupada a través de projectes [open source](https://ca.wikipedia.org/wiki/Codi_obert).__ 
+Per sort, existeix un factor que pot facilitar superar ambdós reptes: **Compartir tecnologia desenvolupada a través de projectes [open source](https://ca.wikipedia.org/wiki/Codi_obert).** 
 
 ## Ecosistema Coopdevs
 
