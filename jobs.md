@@ -44,3 +44,6 @@ Aspectes que valorem molt positivament:
 * Coneixements de frontend web: JavaScript, CSS i HTML
 * Familiaritat amb la línia de comandes
 * Interès en Data-Driven: basar les decisions en dades empíriques en base a sistemes de business intelligence, analítiques i monitoratge.
+
+<br/>
+### Uneix-te i impulsem l'economia social i solidària plegats!
