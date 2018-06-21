@@ -5,7 +5,7 @@ title: Desenvolupador/a backend
 
 ## Sobre Coopdevs
 
-Coodevs és una entitat que pretén aportar software lliure a l'economia social i solidària. Sorgida des de professionals del sector tecnològic de Barcelona amb inquietuds socials, proporciona amplis coneixements tècnics i metodologies de treball en aquest àmbit econòmic. Entre molts altres projectes, impulsem Katuma, formem part de l'equip de desenvolupament d'Open Food Network, desenvolupem TimeOverflow i tenim a projectes cooperatius
+Coopdevs és una entitat que aporta software lliure a l'economia social i solidària. Sorgida des de professionals del sector tecnològic de Barcelona amb inquietuds socials, proporciona amplis coneixements tècnics i metodologies de treball en aquest àmbit econòmic. Entre molts altres projectes, impulsem [Katuma](http://katuma.org/), formem part de l'equip de desenvolupament d'[Open Food Network](https://openfoodnetwork.org/) i desenvolupem [TimeOverflow](https://www.timeoverflow.org/).
 
 ## Sobre la feina
 
@@ -26,7 +26,7 @@ Busquem doncs, algú que compleixi els següents criteris:
 * Haver desenvolupat aplicacions web amb frameworks open source en Python
     o Ruby tals com Django, Flask, Ruby on Rails, Sinatra, etc.
 * Experiència i ús habitual de tests unitaris i d'integració
-* Coneixement de git suficient per gestionar tots els aspectes d'un repositori
+* Coneixement de Git suficient per gestionar tots els aspectes d'un repositori
 * Haver practicat code review en projectes anteriors
 * Nivell mitjà d'anglès escrit i llegit
 * Saber treballar en equip 
