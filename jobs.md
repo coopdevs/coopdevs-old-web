@@ -1,8 +1,7 @@
 ---
 layout: simple 
+title: Desenvolupador/a backend
 ---
-
-# Desenvolupador backend
 
 ## Sobre Coopdevs
 
