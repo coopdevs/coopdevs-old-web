@@ -23,8 +23,7 @@ A més, donada la rotació de responsabilitats i diversitat dels projectes que t
 Busquem doncs, alguna persona que compleixi els següents criteris:
 
 * Experiència i bases sòlides en disseny i programació orientada a objectes
-* Haver desenvolupat aplicacions web amb frameworks open source en Python
-    o Ruby tals com Django, Flask, Ruby on Rails, Sinatra, etc.
+* Haver desenvolupat aplicacions web amb frameworks open source en Python o Ruby tals com Django, Flask, Ruby on Rails, Sinatra, etc.
 * Experiència i ús habitual de tests unitaris i d'integració
 * Coneixement de Git suficient per gestionar tots els aspectes d'un repositori
 * Haver practicat code review en projectes anteriors
@@ -32,7 +31,7 @@ Busquem doncs, alguna persona que compleixi els següents criteris:
 * Saber treballar en equip 
 * Capacitat de comunicació
 
-Algunes de les tecnologies que s'usen són: Postgresql, Python, Rails, Ansible i Odoo.
+Algunes de les tecnologies que s'usen són: Postgresql, Python, Rails, Ansible, Odoo i Git.
 
 Aspectes que valorem molt positivament:
 
