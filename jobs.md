@@ -45,4 +45,6 @@ Aspectes que valorem molt positivament:
 * Interès en Data-Driven: basar les decisions en dades empíriques en base a sistemes de business intelligence, analítiques i monitoratge.
 
 <br/>
+Aplica per aquesta oferta enviant-nos un mail a **info@coopdevs.org**
+
 ### Uneix-te i impulsem l'economia social i solidària plegats!
