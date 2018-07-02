@@ -11,16 +11,16 @@ Coopdevs és una entitat que aporta software lliure a l'economia social i solid�
 
 Ara busquem gent amb esperit cooperatiu que tingui ganes de compartir aquest repte aportant la seva experiència de desenvolupament de software en un moment important per fer créixer el projecte.
 
-El candidat s'unirà principalment a l'equip que treballa en la línia de negoci d'ERP per a cooperatives que es desenvolupa en Python. Aquesta unitat s'encarrega d'acompanyar i ajudar a cooperatives i altres entitats a la sistematització dels seus processos interns i la seva optimització amb software ERP. Les tasques són:
+La candidata s'unirà principalment a l'equip que treballa en la línia de negoci d'ERP per a cooperatives que es desenvolupa en Python. Aquesta unitat s'encarrega d'acompanyar i ajudar a cooperatives i altres entitats a la sistematització dels seus processos interns i la seva optimització amb software ERP. Les tasques són:
 
 * Implementacions d'ERP a empreses
 * Integracions entre ERP i serveis externs
 * Acompanyament a altres membres junior de l'equip
 * Desenvolupament de backend web
 
-A més, donada la rotació de tasques i diversitat dels projectes que tenim fa que la tasca no es limiti en aquest àmbit i també es puguin dedicar hores als projectes de Katuma, TimeOverflow o projectes específics per altres clients, sempre en l'àmbit web.
+A més, donada la rotació de responsabilitats i diversitat dels projectes que tenim fa que la tasca no es limiti a aquest àmbit i també es puguin dedicar hores als projectes de Katuma, TimeOverflow o projectes específics per altres clients, sempre en l'àmbit web.
 
-Busquem doncs, algú que compleixi els següents criteris:
+Busquem doncs, alguna persona que compleixi els següents criteris:
 
 * Experiència i bases sòlides en disseny i programació orientada a objectes
 * Haver desenvolupat aplicacions web amb frameworks open source en Python
