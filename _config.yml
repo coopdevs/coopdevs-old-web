@@ -2,3 +2,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://coopdevs.org" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 
+collections:
+  jobs:
+    output: true
+    permalink: /jobs/:path/
