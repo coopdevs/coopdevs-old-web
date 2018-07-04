@@ -1,0 +1,18 @@
+---
+layout: simple
+title: Ofertes de feina
+---
+
+{%- assign _jobs = site.jobs -%}
+
+<!-- Main -->
+<div id="main-blog">
+
+  <!-- Jobs List -->
+  {%- for _job in _jobs -%}
+    <h3>
+      <a href="{{- _job.url | absolute_url -}}">{{- _job.title -}}</a>
+    </h3>
+    {%- include section.html title=_title subtitle=_job.location auto-header='' -%}
+  {%- endfor -%}
+</div>
