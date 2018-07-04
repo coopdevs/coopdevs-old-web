@@ -1,6 +1,7 @@
 ---
 layout: simple 
 title: Desenvolupador/a backend Python
+location: Barcelona
 ---
 
 ## Sobre Coopdevs
