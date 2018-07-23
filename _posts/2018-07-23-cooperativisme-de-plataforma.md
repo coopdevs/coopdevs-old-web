@@ -44,7 +44,8 @@ Tinguem en compte que:
 
 La complexitat és gran, el repte és important, però l’objectiu s’ho mereix!!   
 
-Lectura recomanada: [Cooperativismo de plataforma - Trebor Scholz](http://nexe.coop/wp-content/uploads/2016/12/dimmons.net_wp-content_uploads_2016_05_maq_Trebor-Scholz_COOP_PreF.pdf)
+## Lectures recomanades: 
 
-[![Esquema ecosistema Coopdevs](/assets/post_images/2018/cooperativismo_plataforma.png){:width="100%"}](http://nexe.coop/wp-content/uploads/2016/12/dimmons.net_wp-content_uploads_2016_05_maq_Trebor-Scholz_COOP_PreF.pdf)
 
+* [Artícle a la Directa: Combatre el capitalisme digital](https://directa.cat/combatre-el-capitalisme-digital/)
+* [Cooperativismo de plataforma - Trebor Scholz](http://nexe.coop/wp-content/uploads/2016/12/dimmons.net_wp-content_uploads_2016_05_maq_Trebor-Scholz_COOP_PreF.pdf)
