@@ -19,7 +19,7 @@ La majoria de les organitzacions que no són actives han obert els seus comptes 
 És interessant constatar però que hi ha un nombre major de productores que de grups, al contrari de la percepció que tenim els que participem del moviment de grups i cooperatives de consum. Aquest fet coincideix amb la recerca duta a terme per en Ricard Espelt al seu treball [«Consum autogestionat en l’era de la Societat Xarxa. El paper de les TIC en el consum cooperatiu de productes agroalimentaris»](http://www.cooperatives.barcelona/).
 
 ![Absolute numbers](/assets/post_images/2018/absolute_numbers.png){:width="100%"}
-*Dades maig 2018*
+*<small>Dades maig 2018</small>*
 
 
 ## Ús diari
