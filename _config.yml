@@ -6,3 +6,32 @@ collections:
   jobs:
     output: true
     permalink: /jobs/:path/
+
+friends:
+  - name: 'Open Food Network'
+    url: 'https://openfoodnetwork.org/'
+    logo_url: '/assets/img/friends/ofn.png'
+  - name: 'Som Connexió'
+    url: 'http://somconnexio.coop'
+    logo_url: '/assets/img/friends/som_connexio.png'
+  - name: 'Asociación para el Desarrollo de los Bancos de Tiempo'
+    url: 'http://adbdt.org/'
+    logo_url: '/assets/img/friends/adbdt.jpg'
+  - name: 'Xarxa Economia Solidària'
+    url: 'http://xes.cat/'
+    logo_url: '/assets/img/friends/XES.jpg'
+  - name: 'Balanç Social'
+    url: 'https://ensenyaelcor.org'
+    logo_url: '/assets/img/friends/balancsocial.jpg'
+  - name: 'Pam a Pam'
+    url: 'https://pamapam.org'
+    logo_url: '/assets/img/friends/pamapam.png'
+  - name: 'La Comunificadora'
+    url: 'http://emprenedoria.barcelonactiva.cat/emprenedoria/cat/programes/la-comunificadora.jsp'
+    logo_url: '/assets/img/friends/la_comunificadora2.png'
+  - name: 'Federació Entitats Espai 30'
+    url: 'http://www.espai30lasagrera.cat/'
+    logo_url: '/assets/img/friends/FEE30.jpg'
+  - name: 'Aracoop'
+    url: 'http://aracoop.coop/'
+    logo_url: '/assets/img/friends/aracoop.png'
