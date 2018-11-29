@@ -50,46 +50,14 @@ layout: default
   <h2>{{ page.friends_title }}</h2>
 
   <div class='friends'>
-    <div class="friend">
-      <a href="https://openfoodnetwork.org/" target='_blank'>
-        <img src='{{ "/assets/img/friends/ofn.png" | prepend:site.baseurl }}' alt='Open Food Network' title='Open Food Network' width='220' />
-      </a>
-    </div>
-    <div class="friend">
-      <a href="http://somconnexio.coop" target='_blank'>
-        <img src='{{ "/assets/img/friends/som_connexio.png" | prepend:site.baseurl }}' alt='Som Connexió' title='Som Connexió' width='220' />
-      </a>
-    </div>
-    <div class="friend">
-      <a href="http://adbdt.org/" target='_blank'>
-        <img src='{{ "/assets/img/friends/adbdt.jpg" | prepend:site.baseurl }}' alt='Asociación para el Desarrollo de los Bancos de Tiempo' title='Asociación para el Desarrollo de los Bancos de Tiempo' width='220' />
-      </a>
-    </div>
-    <div class="friend">
-      <a href="http://xes.cat/" target='_blank'>
-        <img src='{{ "/assets/img/friends/XES.jpg" | prepend:site.baseurl }}' alt='Xarxa Economia Solidària' title='Xarxa Economia Solidària' width='220' />
-      </a>
-    </div>
-    <div class="friend">
-      <a href="https://ensenyaelcor.org" target='_blank'>
-        <img src='{{ "/assets/img/friends/balancsocial.jpg" | prepend:site.baseurl }}' alt='Balanç Social' title='Balanç Social' width='220' />
-      </a>
-    </div>
-    <div class="friend">
-      <a href="https://pamapam.org" target='_blank'>
-        <img src='{{ "/assets/img/friends/pamapam.png" | prepend:site.baseurl }}' alt='Pam a Pam' title='Pam a Pam' width='220' />
-      </a>
-    </div>
-    <div class="friend">
-      <a href="http://emprenedoria.barcelonactiva.cat/emprenedoria/cat/programes/la-comunificadora.jsp" target='_blank'>
-        <img src='{{ "/assets/img/friends/la_comunificadora2.png" | prepend:site.baseurl }}' alt='La Comunificadora' title='La Comunificadora' width='220' />
-      </a>
-    </div>
-    <div class="friend">
-      <a href="http://www.espai30lasagrera.cat/" target='_blank'>
-        <img src='{{ "/assets/img/friends/FEE30.jpg" | prepend:site.baseurl }}' alt='Federació Entitats Espai 30' title='Federació Entitats Espai 30' width='220' />
-      </a>
-    </div>
+
+    {% for friend in site.friends %}
+      <div class="friend">
+        <a href={{ friend.url }} target='_blank'>
+          <img src={{ friend.logo_url | prepend:site.baseurl }} alt={{ friend.name }} title={{ friend.name }} width='220' />
+        </a>
+      </div>
+    {% endfor %}
 
   </div>
 </div>
