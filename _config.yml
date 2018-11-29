@@ -32,3 +32,6 @@ friends:
   - name: 'Federació Entitats Espai 30'
     url: 'http://www.espai30lasagrera.cat/'
     logo_url: '/assets/img/friends/FEE30.jpg'
+  - name: 'Aracoop'
+    url: 'http://aracoop.coop/'
+    logo_url: '/assets/img/friends/aracoop.png'
