@@ -6,7 +6,7 @@ plugins:
   - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin configuration
-languages: ["ca_ES", "es"]
+languages: ["ca", "es"]
 exclude_from_localizations: ["javascript", "images", "css"]
 
 collections:
