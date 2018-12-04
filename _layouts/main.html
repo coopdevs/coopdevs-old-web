@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-<p>{{ page.description_1 | markdownify }}</p>
-<p>{{ page.description_2 | markdownify }}</p>
+
+<p>{% t page.description_1 %}</p>
+<p>{% t page.description_2 %}</p>
 
 <div class='projects'>
-  <h2>{{ page.projects_title }}</h2>
+  <h2>{% t page.projects_title %}</h2>
 
   <div class='project'>
     <div class='logo'>
       <img src='{{ "/assets/img/projects/katuma.png" | prepend:site.baseurl }}' width='140' height='140' />
     </div>
     <div class='description'>
-      {{ page.katuma_description | markdownify }}
+      {% t page.katuma_description %}
       <div class='social_links'>
         <div class='twitter'>
           <img src='{{ "/assets/img/social/twitter.jpg" | prepend:site.baseurl }}' />
@@ -31,7 +32,7 @@ layout: default
       <img src='{{ "/assets/img/projects/timeoverflow.jpg" | prepend:site.baseurl }}' width='140' height='140' />
     </div>
     <div class='description'>
-      {{ page.timeoverflow_description | markdownify }}
+      {% t page.timeoverflow_description %}
       <div class='social_links'>
         <div class='twitter'>
           <img src='{{ "/assets/img/social/twitter.jpg" | prepend:site.baseurl }}' />
@@ -47,7 +48,7 @@ layout: default
 </div>
 
 <div>
-  <h2>{{ page.friends_title }}</h2>
+  <h2>{% t page.friends_title %}</h2>
 
   <div class='friends'>
 
