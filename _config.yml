@@ -7,6 +7,12 @@ collections:
     output: true
     permalink: /jobs/:path/
 
+languages:
+  - name: Català
+    url: /ca
+  - name: Español
+    url: /es
+
 friends:
   - name: 'Open Food Network'
     url: 'https://openfoodnetwork.org/'

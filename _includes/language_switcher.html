@@ -1,0 +1,7 @@
+<li class="languages nav-item">
+
+  {% for language in site.languages %}
+    <li class="nav-item"><a href='{{ language.url | prepend:site.baseurl }}' class='language nav-link'>{{ language.name }}</a></li>
+  {% endfor %}
+
+</li>
