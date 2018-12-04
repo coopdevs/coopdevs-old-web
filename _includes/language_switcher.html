@@ -5,7 +5,7 @@
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     {% for language in site.translations[site.lang]["global"]["langs"] %}
-      <a class="dropdown-item" href={{ site.baseurl_root }}/{{ language[0] }}>{{ language[1] }}</a>
+      <a class="dropdown-item" href={{ site.baseurl_root }}/{{ language[0]}}{{ page.url }} }}>{{ language[1] }}</a>
     {% endfor %}
   </div>
 </div>
