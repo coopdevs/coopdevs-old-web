@@ -2,10 +2,7 @@
   <ul class="navbar-nav ml-auto">
     <li class="nav-item"><a href='/blog.html' class='nav-link'>Blog</a></li>
 
-    <li class="languages nav-item">
-      <li class="nav-item"><a href='{{ "/ca" | prepend:site.baseurl }}' class='language nav-link'>Català</a></li>
-      <li class="nav-item"><a href='{{ "/es" | prepend:site.baseurl }}' class='language nav-link'>Español</a></li>
-    </li>
+    {%- include language_switcher.html -%}
   </ul>
 </nav>
 <div class="container-fluid">

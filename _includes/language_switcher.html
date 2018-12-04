@@ -1,7 +1,11 @@
-<li class="languages nav-item">
+<div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ site.translations[site.lang]["global"]["tagline"] }}
+  </a>
 
-  {% for language in site.languages %}
-    <li class="nav-item"><a href='{{ language.url | prepend:site.baseurl }}' class='language nav-link'>{{ language.name }}</a></li>
-  {% endfor %}
-
-</li>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    {% for language in site.translations[site.lang]["global"]["langs"] %}
+      <a class="dropdown-item" href={{ site.baseurl_root }}/{{ language[0] }}>{{ language[1] }}</a>
+    {% endfor %}
+  </div>
+</div>

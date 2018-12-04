@@ -4,8 +4,11 @@
   {% include head.html %}
   <body>
     {%- include header.html scrolly_nav=_posts -%}
+
     {{ content }}
+
     {% include footer.html %}
+    {% include bootstrap_scripts.html %}
     {% include google_analytics.html %}
   </body>
 </html>
