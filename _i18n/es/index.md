@@ -1,6 +1,4 @@
 ---
-layout: main 
-
 description_1: "Coopdevs es una asociación de personas que tiene como objectivo **impulsar soluciones tecnológicas para fomentar y promover la economía social**. Todos los proyectos en los que participamos son de código abierto y licencia libre."
 
 description_2: "Si queréis colaborar con nosotros nos podéis encontrar en [community.coopdevs.org](http://community.coopdevs.org) y en [github.com/coopdevs](https://github.com/coopdevs). También nos podéis escribir a <u>info@coopdevs.org</u> o hacernos una visita al [Espai 30](http://www.espai30lasagrera.cat/) de la Sagrera."
