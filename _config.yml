@@ -9,6 +9,10 @@ plugins:
 languages: ["ca", "es"]
 exclude_from_localizations: ["javascript", "images", "css"]
 
+# Not used by jekyll-multiple-languages-plugin configuration but it makes it
+# a bit more evident what's the default language picked by this plugin
+default_locale: 'ca'
+
 collections:
   jobs:
     output: true
