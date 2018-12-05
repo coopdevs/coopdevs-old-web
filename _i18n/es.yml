@@ -11,3 +11,5 @@ pages:
     katuma_description: "<a href='http://www.katuma.org'>Katuma</a> es una plataforma cooperativa que facilita la creación y gestión de grupos de consumo. Se trata de una alternativa más justa y sostenible que la ofrecida por grandes distribuidoras e intermediarios comerciales."
     timeoverflow_description: "<a href='http://timeoverflow.org'>Time Overflow</a> es una plataforma de gestión de Bancos de Tiempo, un sistema de oferta de servicios a cambio de tiempo. La plataforma facilita las tareas de gestión e intercambio de servicios entre miembros de un banco."
     friends_title: "Colaboramos con"
+  blog:
+    more: "Seguir leyendo →"
