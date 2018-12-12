@@ -8,6 +8,8 @@ location: Barcelona
 
 Coopdevs és una entitat que aporta software lliure a l'economia social i solidària. Sorgida des de professionals del sector tecnològic de Barcelona amb inquietuds socials, proporciona amplis coneixements tècnics i metodologies de treball en aquest àmbit econòmic. Entre molts altres projectes, impulsem [Katuma](http://katuma.org/), formem part de l'equip de desenvolupament d'[Open Food Network](https://openfoodnetwork.org/) i desenvolupem [TimeOverflow](https://www.timeoverflow.org/).
 
+A banda, també oferim els nostres serveis a organitzacions de l'economia social i solidària com Som Connexió, Balanç Social i el Pam a Pam, entre d'altres. Creiem fermament que apostant per tecnologies obertes i millorant processos i metodologies de treball al seu voltant podem aconseguir que aquest sector tingui major impacte.
+
 ## Sobre la feina
 
 Ara busquem gent amb esperit cooperatiu que tingui ganes de compartir aquest repte aportant la seva experiència de desenvolupament de software en un moment important per fer créixer el projecte.
