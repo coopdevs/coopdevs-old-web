@@ -15,7 +15,9 @@ footer {
 }
 
 #main-blog {
-  padding-top: 3rem;
+  padding: 3rem 20px 0;
+  max-width: 700px;
+  margin: 0 auto;
 
   img, .video {
     max-width: 90%;
