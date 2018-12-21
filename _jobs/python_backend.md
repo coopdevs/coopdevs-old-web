@@ -1,5 +1,7 @@
 ---
-layout: simple 
+layout: default
+with_brand: true
+with_page_header: true
 title: Desenvolupador/a backend Python
 location: Barcelona
 ---
