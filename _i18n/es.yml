@@ -1,0 +1,15 @@
+global:
+  tagline: Español
+  langs:
+    es: Español
+    ca: Catalán
+pages:
+  index:
+    description_1: "Coopdevs es una asociación de personas que tiene como objectivo <strong>impulsar soluciones tecnológicas para fomentar y promover la economía social</strong>. Todos los proyectos en los que participamos son de código abierto y licencia libre."
+    description_2: "Si queréis colaborar con nosotros nos podéis encontrar en <a href='http://community.coopdevs.org'>community.coopdevs.org</a> y en <a href='https://github.com/coopdevs'>github.com/coopdevs</a>. También nos podéis escribir a <u>info@coopdevs.org</u> o hacernos una visita al <a href='http://www.espai30lasagrera.cat/'>Espai 30</a> de la Sagrera."
+    projects_title: "Proyectos"
+    katuma_description: "<a href='http://www.katuma.org'>Katuma</a> es una plataforma cooperativa que facilita la creación y gestión de grupos de consumo. Se trata de una alternativa más justa y sostenible que la ofrecida por grandes distribuidoras e intermediarios comerciales."
+    timeoverflow_description: "<a href='http://timeoverflow.org'>Time Overflow</a> es una plataforma de gestión de Bancos de Tiempo, un sistema de oferta de servicios a cambio de tiempo. La plataforma facilita las tareas de gestión e intercambio de servicios entre miembros de un banco."
+    friends_title: "Colaboramos con"
+  blog:
+    more: "Seguir leyendo →"

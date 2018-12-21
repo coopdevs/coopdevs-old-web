@@ -1,5 +1,0 @@
----
-layout: redirect
-
-newUrl: /ca
----
