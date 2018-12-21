@@ -3,14 +3,29 @@
 <html lang="{{ page.lang | default: site.lang | default: "es" }}">
   {% include head.html %}
   <body>
-    {%- include header.html scrolly_nav=_posts -%}
+    <nav class='nav navbar navbar-expand flex-row-reverse'>
+      {% include language_switcher.html %}
 
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href='/blog.html' class='nav-link'>Blog</a></li>
+      </ul>
+
+      {% if page.with_brand %}
+        {% include navbar_brand.html %}
+      {% endif %}
+    </nav>
 
     <div class="container-fluid">
       <div class="row">
         <div class='mx-auto col-12 col-sm-10 col-md-8 content'>
 
-          {% include hero_logo.html %}
+          {% unless page.with_brand %}
+            {% include hero_logo.html %}
+          {% endunless %}
+
+          {% if page.with_page_header %}
+             {% include page_header.html title=page.title %}
+          {% endif %}
 
           {{ content }}
 
