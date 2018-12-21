@@ -1,25 +1,25 @@
-<nav class='nav navbar navbar-expand'>
-  <ul class="navbar-nav ml-auto">
+<nav class='nav navbar navbar-expand flex-row-reverse'>
+  <ul class="navbar-nav languages">
+
+    {% for language in site.translations[site.lang]["global"]["langs"] %}
+      {% assign locale = language[0] %}
+      {% assign name = language[1] %}
+
+      {% capture page_translation_url %}
+        {% if locale == site.default_locale %}
+          {{ site.baseurl_root }}{{ page.url }} }}
+        {% else %}
+          {{ site.baseurl_root }}/{{ locale }}{{ page.url }} }}
+        {% endif %}
+      {% endcapture %}
+
+      <li class="nav-item"><a href={{ page_translation_url }} class='language nav-link'>{{ name }}</a></li>
+    {% endfor %}
+
+  </ul>
+
+  <ul class="navbar-nav">
     <li class="nav-item"><a href='/blog.html' class='nav-link'>Blog</a></li>
-
-    <li class="languages nav-item">
-
-      {% for language in site.translations[site.lang]["global"]["langs"] %}
-        {% assign locale = language[0] %}
-        {% assign name = language[1] %}
-
-        {% capture page_translation_url %}
-          {% if locale == site.default_locale %}
-            {{ site.baseurl_root }}{{ page.url }} }}
-          {% else %}
-            {{ site.baseurl_root }}/{{ locale }}{{ page.url }} }}
-          {% endif %}
-        {% endcapture %}
-
-        <li class="nav-item"><a href={{ page_translation_url }} class='language nav-link'>{{ name }}</a></li>
-      {% endfor %}
-
-    </li>
   </ul>
 </nav>
 <div class="container-fluid">
