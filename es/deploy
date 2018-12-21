@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# This script uses _site/ to deploy a Jekyll build to Github pages.
+# It assumes "master" is the Github pages source you have configured in your settings.
+
+# Get the git SHA of the branch whose files we're about to build and deploy.
+# This is useful when we want to know what was deployed at a particular time.
+described_rev=$(git rev-parse HEAD | git name-rev --stdin)
+
+# Remove any previous build
+rm -rf _site
+
+# Clone the master branch into _site/, so this dir becomes another git
+# repo used only for deployments
+git clone -b master `git config remote.origin.url` _site
+
+# Build the site, which compiles all source files into the final static files
+# Github will serve. Jekyll puts these into _site/ by default.
+bundle exec jekyll build
+cd _site
+
+# Push the build to Github to make it live
+git add .
+git commit -m "Pages built at $described_rev"
+git push
