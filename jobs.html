@@ -5,4 +5,9 @@ with_page_header: true
 title: pages.jobs.title
 ---
 
-{% translate_file jobs.html %}
+<div id="main-blog">
+  <h3>
+    <a href="{{ 'jobs/python_backend' | absolute_url }}">{% t pages.jobs.senior_backend_python.title %}</a>
+  </h3>
+  {%- include section.html title=_title subtitle='Barcelona' auto-header='' -%}
+</div>
