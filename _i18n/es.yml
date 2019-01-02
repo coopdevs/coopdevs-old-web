@@ -15,3 +15,5 @@ pages:
     more: "Seguir leyendo →"
   jobs:
     title: "Ofertas de trabajo"
+    senior_backend_python:
+      title: Desarrollador/a backend Python
