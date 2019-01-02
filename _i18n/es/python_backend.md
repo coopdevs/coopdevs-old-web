@@ -1,15 +1,15 @@
 ## Acerca de Coopdevs
 
-Coopdevs es una entidad que aporta software libre a la economía social i solidaria. Surgida desde profesionales del sector tecnológico de Barcelona con inquietudes sociales, proporciona amplios conocimientos técnicos i metodologías de trabajo en este ámbito económico. Entre muchos otros proyectos, impulsamos [Katuma](http://katuma.org/), formamos parte del equipo de desarrollo de [Open Food Network](https://openfoodnetwork.org/) y desarrollamos [TimeOverflow](https://www.timeoverflow.org/).
+Coopdevs es una entidad que aporta software libre a la economía social y solidaria. Surgida desde profesionales del sector tecnológico de Barcelona con inquietudes sociales, proporciona amplios conocimientos técnicos y metodologías de trabajo en este ámbito económico. Entre muchos otros proyectos, impulsamos [Katuma](http://katuma.org/), formamos parte del equipo de desarrollo de [Open Food Network](https://openfoodnetwork.org/) y desarrollamos [TimeOverflow](https://www.timeoverflow.org/).
 
 ## Acerca del trabajo
 
 Ahora buscamos gente con espíritu cooperativo que tenga ganas de compartir este reto aportando su experiencia de desarrollo de software en un momento importante para hacer crecer el proyecto.
 
-La candidata se unirá principalmente al equipo que trabaja en la linea de negocio de ERP para cooperativas que se desarrolla en Python. Esta unidad se encarga de acompañar y ayudar a cooperativas y otras entidades a la sistematización de sus procesos internos y su optimización con software ERP. Las tareas són:
+La candidata se unirá principalmente al equipo que trabaja en la línea de negocio de ERP para cooperativas que se desarrolla en Python. Esta unidad se encarga de acompañar y ayudar a cooperativas y otras entidades a la sistematización de sus procesos internos y su optimización con software ERP. Las tareas son:
 
 * Implementaciones de ERP en empresas
-* Integraciones entre ERP i servicios externos
+* Integraciones entre ERP y servicios externos
 * Acompañamiento a otros miembros junior del equipo
 * Desarrollo de backend web
 
@@ -32,13 +32,13 @@ Aspectos que valoramos muy positivamente:
 
 * Haber contribuido en proyectos open source
 * Interés en mejorar el ecosistema de la economía social y solidaria y la participación en proyectos de este ámbito
-* Experiencia con algun ERP escrito en Python
+* Experiencia con algún ERP escrito en Python
 * Conocimientos de optimización de bases de datos relacionales
 * Conocimientos de frontend web: JavaScript, CSS y HTML
 * Familiaridad con la línea de comandos
 * Interés en Data-Drive: basar las decisiones en datos empíricos a partir de sistemas de business intelligence, analíticas y monitorización
 
 <br/>
-Aplica para esta oferta enviandonos un mail a <a href="mailto: info@coopdevs.org">info@coopdevs.org</a>
+Aplica para esta oferta enviándonos un mail a <a href="mailto: info@coopdevs.org">info@coopdevs.org</a>
 
-### Únete y impulsemos la economía social y solidaria juntos!
+### Únete e impulsemos la economía social y solidaria juntos!
