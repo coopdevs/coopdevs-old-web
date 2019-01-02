@@ -18,6 +18,8 @@ We write job offers as we do with blog posts. Simply add the offer as a Markdown
 
 ## Development
 
+After checking out the repo and having the ruby version specified in `.ruby-version` installed, run `bundle install` to install dependencies.
+
 We use two branches: `master` holds only static files and serves the site through Github pages, while `develop` is the default branch. This one should be the target of all pull requests.
 
 ## Deployment
