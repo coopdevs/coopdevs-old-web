@@ -13,3 +13,5 @@ pages:
     friends_title: "Colaboramos con"
   blog:
     more: "Seguir leyendo →"
+  jobs:
+    title: "Ofertas de trabajo"

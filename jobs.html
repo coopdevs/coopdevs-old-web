@@ -2,19 +2,7 @@
 layout: default
 with_brand: true
 with_page_header: true
-title: Ofertes de feina
+title: pages.jobs.title
 ---
 
-{%- assign _jobs = site.jobs -%}
-
-<!-- Main -->
-<div id="main-blog">
-
-  <!-- Jobs List -->
-  {%- for _job in _jobs -%}
-    <h3>
-      <a href="{{- _job.url | absolute_url -}}">{{- _job.title -}}</a>
-    </h3>
-    {%- include section.html title=_title subtitle=_job.location auto-header='' -%}
-  {%- endfor -%}
-</div>
+{% translate_file jobs.html %}
