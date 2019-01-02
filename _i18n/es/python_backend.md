@@ -1,45 +1,44 @@
-## ES Sobre Coopdevs
+## Acerca de Coopdevs
 
-ES Coopdevs és una entidad que aporta software libre a l'economia social i solidària. Sorgida des de professionals del sector tecnològic de Barcelona amb inquietuds socials, proporciona amplis coneixements tècnics i metodologies de treball en aquest àmbit econòmic. Entre molts altres projectes, impulsem [Katuma](http://katuma.org/), formem part de l'equip de desenvolupament d'[Open Food Network](https://openfoodnetwork.org/) i desenvolupem [TimeOverflow](https://www.timeoverflow.org/).
+Coopdevs es una entidad que aporta software libre a la economía social i solidaria. Surgida desde profesionales del sector tecnológico de Barcelona con inquietudes sociales, proporciona amplios conocimientos técnicos i metodologías de trabajo en este ámbito económico. Entre muchos otros proyectos, impulsamos [Katuma](http://katuma.org/), formamos parte del equipo de desarrollo de [Open Food Network](https://openfoodnetwork.org/) y desarrollamos [TimeOverflow](https://www.timeoverflow.org/).
 
-## Sobre la feina
+## Acerca del trabajo
 
-Ara busquem gent amb esperit cooperatiu que tingui ganes de compartir aquest repte aportant la seva experiència de desenvolupament de software en un moment important per fer créixer el projecte.
+Ahora buscamos gente con espíritu cooperativo que tenga ganas de compartir este reto aportando su experiencia de desarrollo de software en un momento importante para hacer crecer el proyecto.
 
-La candidata s'unirà principalment a l'equip que treballa en la línia de negoci d'ERP per a cooperatives que es desenvolupa en Python. Aquesta unitat s'encarrega d'acompanyar i ajudar a cooperatives i altres entitats a la sistematització dels seus processos interns i la seva optimització amb software ERP. Les tasques són:
+La candidata se unirá principalmente al equipo que trabaja en la linea de negocio de ERP para cooperativas que se desarrolla en Python. Esta unidad se encarga de acompañar y ayudar a cooperativas y otras entidades a la sistematización de sus procesos internos y su optimización con software ERP. Las tareas són:
 
-* Implementacions d'ERP a empreses
-* Integracions entre ERP i serveis externs
-* Acompanyament a altres membres junior de l'equip
-* Desenvolupament de backend web
+* Implementaciones de ERP en empresas
+* Integraciones entre ERP i servicios externos
+* Acompañamiento a otros miembros junior del equipo
+* Desarrollo de backend web
 
-A més, donada la rotació de responsabilitats i diversitat dels projectes que tenim fa que la tasca no es limiti a aquest àmbit i també es puguin dedicar hores als projectes de Katuma, TimeOverflow o projectes específics per altres clients, sempre en l'àmbit web.
+Además, dada la rotación de responsabilidades y diversidad de proyectos que tenemos conlleva que el trabajo no se limite a este ámbito y que también se dediquen horas a otros proyectos como Katuma, TimeOverflow o proyectos específicos para otros clientes, siempre en el ámbito web.
 
-Busquem doncs, alguna persona que compleixi els següents criteris:
+Por tanto, buscamos alguna persona que cumpla con los siguientes criterios:
 
-* Experiència i bases sòlides en disseny i programació orientada a objectes
-* Haver desenvolupat aplicacions web amb frameworks open source en Python o Ruby tals com Django, Flask, Ruby on Rails, Sinatra, etc.
-* Experiència i ús habitual de tests unitaris i d'integració
-* Coneixement de Git suficient per gestionar tots els aspectes d'un repositori
-* Haver practicat code review en projectes anteriors
-* Nivell mitjà d'anglès escrit i llegit
-* Saber treballar en equip 
-* Capacitat de comunicació
+* Experiencia y bases sólidas en diseño y programación orientada a objetos
+* Haber desarrollado aplicaciones web con frameworks open source en Python o Ruby tales como Django, Flask, Ruby on Rails, Sinatra, etc.
+* Experiencia y uso habitual de tests unitarios y de integración
+* Conocimiento de Git suficiente para gestionar todos los aspectos de un repositorio
+* Haber practicado code review en proyectos anteriores
+* Nivel medio de inglés escrito y leído
+* Saber trabajar en equipo
+* Capacidad de comunicación
 
-Algunes de les tecnologies que s'usen són: Postgresql, Python, Rails, Ansible, Odoo i Git.
+Algunas de las tecnologías que se usan son: Postgresql, Python, Rails, Ansible, Odoo y Git.
 
-Aspectes que valorem molt positivament:
+Aspectos que valoramos muy positivamente:
 
-* Haver contribuït en projectes open source
-* Interès en millorar l'ecosistema de l'economia social i solidària i la
-    participació en algun projecte d'aquest àmbit
-* Experiència amb algun ERP escrit en Python
-* Coneixements d'optimització de bases de dades relacionals
-* Coneixements de frontend web: JavaScript, CSS i HTML
-* Familiaritat amb la línia de comandes
-* Interès en Data-Driven: basar les decisions en dades empíriques basant-se en sistemes de business intelligence, analítiques i monitoratge.
+* Haber contribuido en proyectos open source
+* Interés en mejorar el ecosistema de la economía social y solidaria y la participación en proyectos de este ámbito
+* Experiencia con algun ERP escrito en Python
+* Conocimientos de optimización de bases de datos relacionales
+* Conocimientos de frontend web: JavaScript, CSS y HTML
+* Familiaridad con la línea de comandos
+* Interés en Data-Drive: basar las decisiones en datos empíricos a partir de sistemas de business intelligence, analíticas y monitorización
 
 <br/>
-Aplica per aquesta oferta enviant-nos un mail a <a href="mailto: info@coopdevs.org">info@coopdevs.org</a>
+Aplica para esta oferta enviandonos un mail a <a href="mailto: info@coopdevs.org">info@coopdevs.org</a>
 
-### Uneix-te i impulsem l'economia social i solidària plegats!
+### Únete y impulsemos la economía social y solidaria juntos!
