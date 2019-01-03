@@ -3,6 +3,9 @@ global:
   langs:
     es: Español
     ca: Catalán
+menu:
+  blog: Blog
+  jobs: Trabajo
 pages:
   index:
     description_1: "Coopdevs es una asociación de personas que tiene como objectivo <strong>impulsar soluciones tecnológicas para fomentar y promover la economía social</strong>. Todos los proyectos en los que participamos son de código abierto y licencia libre."
@@ -13,3 +16,7 @@ pages:
     friends_title: "Colaboramos con"
   blog:
     more: "Seguir leyendo →"
+  jobs:
+    title: "Ofertas de trabajo"
+    senior_backend_python:
+      title: Desarrollador/a backend Python

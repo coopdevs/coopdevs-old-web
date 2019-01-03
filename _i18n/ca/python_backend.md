@@ -1,9 +1,3 @@
----
-layout: simple 
-title: Desenvolupador/a backend Python
-location: Barcelona
----
-
 ## Sobre Coopdevs
 
 Coopdevs és una entitat que aporta software lliure a l'economia social i solidària. Sorgida des de professionals del sector tecnològic de Barcelona amb inquietuds socials, proporciona amplis coneixements tècnics i metodologies de treball en aquest àmbit econòmic. Entre molts altres projectes, impulsem [Katuma](http://katuma.org/), formem part de l'equip de desenvolupament d'[Open Food Network](https://openfoodnetwork.org/) i desenvolupem [TimeOverflow](https://www.timeoverflow.org/).
@@ -43,7 +37,7 @@ Aspectes que valorem molt positivament:
 * Coneixements d'optimització de bases de dades relacionals
 * Coneixements de frontend web: JavaScript, CSS i HTML
 * Familiaritat amb la línia de comandes
-* Interès en Data-Driven: basar les decisions en dades empíriques basant-se en sistemes de business intelligence, analítiques i monitoratge.
+* Interès en Data-Driven: basar les decisions en dades empíriques a partir de sistemes de business intelligence, analítiques i monitoratge.
 
 <br/>
 Aplica per aquesta oferta enviant-nos un mail a <a href="mailto: info@coopdevs.org">info@coopdevs.org</a>
