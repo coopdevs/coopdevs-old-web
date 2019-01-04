@@ -23,8 +23,8 @@ p {
 .small {
   font-size: 1rem; }
 
-footer {
-  margin-top: 4rem; }
+body {
+  padding-bottom: 4rem; }
 
 .head_image {
   position: absolute;
@@ -34,11 +34,11 @@ footer {
   filter: blur(2px); }
 
 .content {
-  margin-bottom: 3.75rem; }
+  margin-bottom: 3.75rem;
+  max-width: 700px; }
 
 #main-blog {
   padding: 3rem 20px 0;
-  max-width: 700px;
   margin: 0 auto; }
   #main-blog img, #main-blog .video {
     max-width: 90%;

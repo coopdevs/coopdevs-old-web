@@ -15,3 +15,13 @@ When adding images, please watch their size and weight. Compress them using some
 ## Adding a job offer
 
 We write job offers as we do with blog posts. Simply add the offer as a Markdown in [_jobs](https://github.com/coopdevs/coopdevs.github.io/tree/master/_jobs).
+
+## Development
+
+After checking out the repo and having the ruby version specified in `.ruby-version` installed, run `bundle install` to install dependencies.
+
+We use two branches: `master` holds only static files and serves the site through Github pages, while `develop` is the default branch. This one should be the target of all pull requests.
+
+## Deployment
+
+Once your pull request is approved, merge it to `develop`. Then, from your local environment, change the branch to `develop`, pull the changes and run `./deploy`. This will build and deploy `develop`'s contents to `master` making them live straight away.
