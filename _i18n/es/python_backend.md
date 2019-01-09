@@ -38,6 +38,10 @@ Aspectos que valoramos muy positivamente:
 * Familiaridad con la línea de comandos
 * Interés en Data-Drive: basar las decisiones en datos empíricos a partir de sistemas de business intelligence, analíticas y monitorización
 
+## Salario
+
+25.000 € - 30.000 € según candidato.
+
 <br/>
 Aplica para esta oferta enviándonos un mail a <a href="mailto: info@coopdevs.org">info@coopdevs.org</a>
 
