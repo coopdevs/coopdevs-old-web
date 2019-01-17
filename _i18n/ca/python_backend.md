@@ -39,6 +39,10 @@ Aspectes que valorem molt positivament:
 * Familiaritat amb la línia de comandes
 * Interès en Data-Driven: basar les decisions en dades empíriques a partir de sistemes de business intelligence, analítiques i monitoratge.
 
+## Salari
+
+25.000 € - 30.000 € segons candidat.
+
 <br/>
 Aplica per aquesta oferta enviant-nos un mail a <a href="mailto: info@coopdevs.org">info@coopdevs.org</a>
 
