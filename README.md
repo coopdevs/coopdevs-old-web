@@ -14,7 +14,9 @@ When adding images, please watch their size and weight. Compress them using some
 
 ## Adding a job offer
 
-We write job offers as we do with blog posts. Simply add the offer as a Markdown in [_jobs](https://github.com/coopdevs/coopdevs.github.io/tree/master/_jobs).
+We write job offers as we do with blog posts. As we don't have any positions open at the moment we have the "jobs" section disabled. To enable it back you need to revert the changes applied in [2b9fd9bcea0952694f8a7bad5286cf432076ded3](https://github.com/coopdevs/coopdevs.github.io/pull/45/commits/2b9fd9bcea0952694f8a7bad5286cf432076ded3).
+
+Then, simply add the offer as a Markdown in [_jobs](https://github.com/coopdevs/coopdevs.github.io/tree/master/_jobs).
 
 ## Development
 
