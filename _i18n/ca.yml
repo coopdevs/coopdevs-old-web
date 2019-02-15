@@ -5,7 +5,6 @@ global:
     ca: Català
 menu:
   blog: Blog
-  jobs: Feina
 pages:
   index:
     description_1: "Coopdevs és una associació de persones que té com a objectiu <strong>impulsar solucions tecnològiques per fomentar i promoure l’economia social</strong>. Tots els projectes en què participem són de codi obert i llicència lliure."
@@ -16,7 +15,3 @@ pages:
     friends_title: "Col·laborem amb"
   blog:
     more: "Seguir llegint →"
-  jobs:
-    title: "Ofertes de feina"
-    senior_backend_python:
-      title: Desenvolupador/a backend Python
