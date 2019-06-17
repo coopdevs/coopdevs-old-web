@@ -20,8 +20,6 @@ bundle exec jekyll build
 cd _site
 
 # Push the build to Github to make it live
-git config --local user.email "enricostn@gmail.com"
-git config --local user.name "Enrico Stano"
 git add .
 git commit -m "Pages built at $described_rev"
 git push
