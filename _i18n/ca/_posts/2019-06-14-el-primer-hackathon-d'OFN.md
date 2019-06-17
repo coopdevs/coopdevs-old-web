@@ -10,15 +10,15 @@ Ens vam ajuntar gent de les instàncies europees: la [Rachel][rachel] d'Open Foo
 
 ## Àmplia presència femenina
 
-Va ser una grata sorpresa doncs que l'audiència, tot i que menor a la que esperàvem, estigués majoritariament formada per dones. La companya Lynne va fer una molt bona feina no només organitzant l'esdeveniment sinó fent córrer la veu pels cercles de dones i tecnologia a Londres. Aquest va ser un dels punts més destacats de la posterior [retrospectiva][retro] que vam fer amb la resta de l'equip.
+Va ser una grata sorpresa que l'audiència, tot i que menor a la que esperàvem, estigués majoritariament formada per dones. La companya Lynne va fer una molt bona feina no només organitzant l'esdeveniment sinó fent córrer la veu pels cercles de dones i tecnologia a Londres. Aquest va ser un dels punts més destacats de la posterior [retrospectiva][retro] que vam fer amb la resta de l'equip.
 
 ![](/assets/post_images/2019/devhack.jpeg)
 
-Va ser molt enriquidor poder ajudar a gent diversa a entendre millor com montar els seus entorns de desenvolupament, explicar-los el projecte i animar-los a seguir endavant en el món de la programació i l'agroecologia. És en aquests esdeveniments on el contacte humà recompensa amb escreix tot l'esforç diari.
+Va ser molt enriquidor poder ajudar a gent diversa a entendre millor com muntar els seus entorns de desenvolupament, explicar-los el projecte i animar-los a seguir endavant en el món de la programació i l'agroecologia. És en aquests esdeveniments on el contacte humà recompensa amb escreix tot l'esforç diari.
 
 ## Més enllà de l'esdeveniment
 
-La gran sorpresa ha estat veure que alguns dels assistents es van engrescar i han seguit fent contribucions setmanes després! és molt gratificant veure que la gent encara hi pensa i que a més t'agraeixen i valoren la feina que fas. Això no té preu i et dóna forces per seguir endavant.
+La gran sorpresa ha estat veure que alguns dels assistents es van engrescar i han seguit fent contribucions setmanes després! És molt gratificant veure que la gent encara hi pensa i que a més t'agraeixen i valoren la feina que fas. Això no té preu i et dóna forces per seguir endavant.
 
 És el cas de la Jia Xuan, una de les assistens, qui a banda de convèncer a un parell de companys de classe per participar a hackathons, s'ha pres el temps per compartir l'experiència al seu [blog][blog] i agrair-nos la dedicació a Open Food Network.
 
@@ -26,7 +26,7 @@ La gran sorpresa ha estat veure que alguns dels assistents es van engrescar i ha
 
 > "Volunteer engagement is such a big part of it that I saw a few projects overlooked, and OFN definitely did it super well. Great documentations and responsive support - please pass on my thanks to whoever wants to hear this"
 
-Això companyes és una comunitat open source. Persones que comparteixen un objectiu comú i el fan possible empoderant a la resta i cuidant les relacions personals. El software es pot reesccriure, les comunitats no.
+Això, companyes, és una comunitat open source. Persones que comparteixen un objectiu comú i el fan possible empoderant a la resta i cuidant les relacions personals. El software es pot reesccriure, les comunitats no.
 
 Esperem doncs en un futur, sigui a Londres, París o Barcelona, seguir explicant l'agroecologia a nous públics i convidar-los a plegats crear sobirania alimentària des de la sobirania tecnològica.
 
