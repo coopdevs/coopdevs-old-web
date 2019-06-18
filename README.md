@@ -8,7 +8,7 @@ In your local environment, run `jekyll serve` in order to serve the generated si
 
 ## Adding a blog post
 
-Write your blog post as a Markdown file in [_posts](https://github.com/coopdevs/coopdevs.github.io/tree/master/_posts).
+Write your blog post as a Markdown file in `_i18n/ca/_posts` and `_i18n/es/_posts`. Although we might not translate the content to both languages, we duplicate it to avoid 404 pages when switching languages.
 
 When adding images, please watch their size and weight. Compress them using something like [TinyPNG](https://tinypng.com/) and scale them to 2048px wide at most.
 
