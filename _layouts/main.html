@@ -1,64 +1,65 @@
 ---
 layout: default
 ---
-
-<p>{% t page.description_1 %}</p>
-<p>{% t page.description_2 %}</p>
-
-<div class='projects'>
-  <h2>{% t page.projects_title %}</h2>
-
-  <div class='project'>
-    <div class='logo'>
-      <img src='{{ "/assets/img/projects/katuma.png" | prepend:site.baseurl }}' width='140' height='140' />
+<div class="description block">
+  <p>{% t page.description_1 %}</p>
+  <p>{% t page.description_2 %}</p>
+  <p>{% t page.description_3 %}</p>
+  <div class="social_links my-4">
+    <div class='twitter'>
+      <img src='{{ "/assets/img/social/twitter.jpg" | prepend:site.baseurl }}' />
+      <a href='https://twitter.com/coopdevs'>twitter.com/coopdevs</a>
     </div>
-    <div class='description'>
-      {% t page.katuma_description %}
-      <div class='social_links'>
-        <div class='twitter'>
-          <img src='{{ "/assets/img/social/twitter.jpg" | prepend:site.baseurl }}' />
-          <a href='https://twitter.com/katuma_org'>@katuma_org</a>
-        </div>
-        <div class='github'>
-          <img src='{{ "/assets/img/social/github.png" | prepend:site.baseurl }}' />
-          <a href='https://github.com/coopdevs/openfoodnetwork'>coopdevs/openfoodnetwork</a>
-        </div>
-      </div>
+    <div class='github'>
+      <img src='{{ "/assets/img/social/github.png" | prepend:site.baseurl }}' />
+      <a href='https://github.com/coopdevs'>github.com/coopdevs</a>
+    </div>
+    <div class='gitlab'>
+      <img src='{{ "/assets/img/social/gitlab.jpg" | prepend:site.baseurl }}' />
+      <a href='https://gitlab.com/coopdevs'>gitlab.com/coopdevs</a>
+    </div>
+  </div>
+  <img class="rounded mx-auto d-block img-fluid w-75" src="/assets/img/people/associacio.jpg" />
+</div>
+
+<div class='linies block'>
+  <h2>{% t page.action_lines %}</h2>
+  <h3>{% t page.open_source %}</h3>
+  <p>{% t page.opensource_description %}</p>
+  <div class="row">
+    <div class="col-sm">
+    <a href="https://twitter.com/coopdevs/status/1101852850236375041">
+      <img class="img-fluid" src="/assets/img/people/tweet_sobtec.png" />
+    </a>
+    </div>
+    <div class="col-sm">
+    <a href="https://twitter.com/coopdevs/status/1092026562260729856">
+      <img class="img-fluid" src="/assets/img/people/tweet_fosdem.png" />
+    </a>
     </div>
   </div>
 
-  <div class='project'>
-    <div class='logo'>
-      <img src='{{ "/assets/img/projects/timeoverflow.jpg" | prepend:site.baseurl }}' width='140' height='140' />
-    </div>
-    <div class='description'>
-      {% t page.timeoverflow_description %}
-      <div class='social_links'>
-        <div class='twitter'>
-          <img src='{{ "/assets/img/social/twitter.jpg" | prepend:site.baseurl }}' />
-          <a href='https://twitter.com/timeoverflow'>@timeoverflow</a>
-        </div>
-        <div class='github'>
-          <img src='{{ "/assets/img/social/github.png" | prepend:site.baseurl }}' />
-          <a href='https://github.com/coopdevs/timeoverflow'>coopdevs/timeoverflow</a>
-        </div>
-      </div>
-    </div>
+  <h3>{% t page.development %}</h3>
+  <p>{% t page.development_description %}</p>
+  <div class="mx-auto">
+    <img class="rounded img-fluid w-75 mx-auto d-block my-4" src="/assets/img/people/programacio.jpg" />
+  </div>
+  <h3>{% t page.processes %}</h3>
+  <p>{% t page.processes_description %}</p>
+  <div class="mx-auto">
+    <img class="rounded img-fluid w-75 mx-auto d-block my-4" src="/assets/img/people/reunio.jpg" />
   </div>
 </div>
 
-<div>
+<div class="logos block">
   <h2>{% t page.friends_title %}</h2>
-
-  <div class='friends'>
-
+  <div class="friends">
     {% for friend in site.friends %}
-      <div class="friend">
-        <a href={{ friend.url }} target='_blank'>
-          <img src={{ friend.logo_url | prepend:site.baseurl }} alt={{ friend.name }} title={{ friend.name }} width='220' />
-        </a>
-      </div>
+    <div class="friend">
+      <a href={{ friend.url }} target='_blank'>
+      <img src={{ friend.logo_url | prepend:site.baseurl }} alt={{ friend.name }} title={{ friend.name }} width='220' />
+      </a>
+    </div>
     {% endfor %}
-
   </div>
 </div>
