@@ -7,11 +7,16 @@ menu:
   blog: Blog
 pages:
   index:
-    description_1: "Coopdevs es una asociación de personas que tiene como objectivo <strong>impulsar soluciones tecnológicas para fomentar y promover la economía social</strong>. Todos los proyectos en los que participamos son de código abierto y licencia libre."
-    description_2: "Si queréis colaborar con nosotros nos podéis encontrar en el foro <a href='http://community.coopdevs.org'>community.coopdevs.org</a> y en las plataformas <a href='https://github.com/coopdevs'>github.com</a> y <a href='https://gitlab.com/coopdevs'>gitlab.com</a>. También nos podéis escribir a <a href='mailto:info@coopdevs.org?subject=%C2%A1Hola%20Coopdevs%21&body=Estaba%20mirando%20vuestra%20web%20y%E2%80%A6'>info@coopdevs.org</a>, <a href='https://twitter.com/coopdevs'>twitter</a> o hacernos una visita en el <a href='https://passatgenogues.wixsite.com/cwnogues'>Coworking Nogués</a> de Gràcia."
-    projects_title: "Proyectos"
-    katuma_description: "<a href='http://www.katuma.org'>Katuma</a> es una plataforma cooperativa que facilita la creación y gestión de grupos de consumo. Se trata de una alternativa más justa y sostenible que la ofrecida por grandes distribuidoras e intermediarios comerciales."
-    timeoverflow_description: "<a href='http://timeoverflow.org'>Time Overflow</a> es una plataforma de gestión de Bancos de Tiempo, un sistema de oferta de servicios a cambio de tiempo. La plataforma facilita las tareas de gestión e intercambio de servicios entre miembros de un banco."
+    description_1: "Coopdevs es una asociación de personas que tiene como objetivo <strong>impulsar soluciones tecnológicas para fomentar y promover la economía social</strong>. Todos los proyectos en los que participamos son de código abierto y licencia libre."
+    description_2: "Si quieres colaborar con nosotros nos puedes encontrar en el foro <a href='http://community.coopdevs.org'>community.coopdevs.org</a> y en las plataformas <a href='https://github.com/coopdevs'>github.com</a> i <a href='https://gitlab.com/coopdevs'>gitlab.com</a>."
+    description_3: "Si necesitas nuestros servicios escríbenos a <a href='mailto:info@coopdevs.org?subject=Hola%20Coopdevs%21&body=Estava%20mirant%20la%20vostra%20web%20i%E2%80%A6'>info@coopdevs.org</a> y pasa a visitarnos en <a href='https://passatgenogues.wixsite.com/cwnogues'>Coworking Nogués</a> de Gràcia."
+    action_lines: "Líneas de actuación"
+    open_source: "Dinamización de comunidades Open Source"
+    opensource_description: "Somos “open by default“ Desarrollar software libre con una comunidad activa alrededor es nuestra pasión, tenemos experiencia en la creación y dinamitació de comunidades Open Source. <a href='https://community.coopdevs.org/c/floss-communities'>Saber más</a>"
+    development: "Desarrollo de software para la ESS"
+    development_description: "Desarrollamos software libre para proyectos de la Economía Social y Solidaria. Necesitas ayuda? <a href='mailto:info@coopdevs.org?subject=Hola%20Coopdevs%21&body=Estava%20mirant%20la%20vostra%20web%20i%E2%80%A6'>Contacta con nosotros</a>"
+    processes: "Optimización de procesos empresariales"
+    processes_description: "Analizamos y optimizamos procesos empresariales para cooperativas, fomentamos la intercooperación en los procesos que implican las TIC. <a href='https://community.coopdevs.org/c/it-processes-for-coops'>Saber más/a>"
     friends_title: "Colaboramos con"
   blog:
     more: "Seguir leyendo →"
