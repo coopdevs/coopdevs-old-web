@@ -3,33 +3,108 @@
 <html lang="{{ page.lang | default: site.lang | default: "es" }}">
   {% include head.html %}
   <body>
-    <nav class='nav navbar navbar-expand flex-row-reverse'>
-      {% include language_switcher.html %}
+    <div class="container mx-auto m-10">
+      <div class="flex flex-row justify-between">
+        <a href="/">
+          <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
+        </a>
 
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href={{ "/blog.html" | prepend: site.baseurl }} class='nav-link'>{% t menu.blog %}</a></li>
-      </ul>
+        <nav class="flex">
+          <ul class="flex">
+            <li class="ml-16"><a href={{ site.baseurl }}>{% t menu.home %}</a></li>
+            <li class="ml-16"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
+          </ul>
 
-      {% if page.with_brand %}
-        {% include navbar_brand.html %}
-      {% endif %}
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class='mx-auto col-12 col-sm-10 col-md-8 content'>
-
-          {% unless page.with_brand %}
-            {% include hero_logo.html %}
-          {% endunless %}
-
-          {% if page.with_page_header %}
-            {% include page_header.html title=page.title %}
-          {% endif %}
-
-          {{ content }}
-
+          {% include language_switcher.html %}
         </div>
+
+        {% if page.with_brand %}
+          {% include navbar_brand.html %}
+        {% endif %}
+      </div>
+
+      <div class="mb-48 mt-64">
+        <div class="max-w-3xl mx-auto mb-16">
+          <h1 class="font-sans text-5xl font-extrabold max-w-lg mb-16">Software lliure per a l'economia social</h1>
+          <p class="font-sans text-2xl mb-16">Coopdevs és una associació de persones que té com a objectiu <strong>impulsar solucions tecnològiques per fomentar i promoure l’economia social.</strong> Tots els projectes en què participem són de codi obert i llicència lliure.</p>
+        </div>
+        <img class="max-w-64 mx-auto rounded-lg" src="{{ "/assets/img/hero.png" | prepend:site.baseurl }}" />
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-sans text-4xl mb-32 font-extrabold">Linies d’actuació</h2>
+
+        <div class="mb-32 flex">
+          <img class="rounded" src="{{ "/assets/img/placeholder.png" | prepend:site.baseurl }}" />
+          <div class="ml-12">
+            <h3 class="font-sans text-2xl font-bold mb-5">Dinamització de comunitats Open Source</h3>
+            <p>Som “open by default” Desenvolupar software lliure amb una comunitat activa al voltant és la nostra passió, tenim experiència en la creació i dinamitació de comunitats Open Source.</p>
+            <div class="mt-2">
+              <a class="text-blue-500" href="">Saber-ne més →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-32 flex">
+          <div class="mr-12">
+            <h3 class="font-sans text-2xl font-bold mb-5">Desenvolupament de software per a l'ESS</h3>
+            <p>Desenvolupem software lliure per a projectes de l'Economia Social i Solidària. Necessites ajuda?</p>
+            <div class="mt-2">
+              <a class="text-blue-500 mt-2" href="">Contacta amb nosaltres →</a>
+            </div>
+          </div>
+          <img class="rounded" src="{{ "/assets/img/placeholder.png" | prepend:site.baseurl }}" />
+        </div>
+
+        <div class="mb-32 flex">
+          <img class="rounded" src="{{ "/assets/img/placeholder.png" | prepend:site.baseurl }}" />
+          <div class="ml-12">
+            <h3 class="font-sans text-2xl font-bold mb-5">Optimització de processos empresarials</h3>
+            <p>Analitzem i optimitzem processos empresarials per a cooperatives, fomentem la intercooperació en els processos que impliquen les TIC.</p>
+            <div class="mt-2">
+              <a class="text-blue-500 mt-2" href="">Saber-ne més →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-4xl mx-auto mb-32">
+        <h2 class="font-sans text-4xl mb-32 font-extrabold">Col·laborem amb</h2>
+        <img src="{{ "/assets/img/collaborators.png" | prepend:site.baseurl }}" />
+      </div>
+    </div>
+
+    <div style="background-color: #F2F3F3;">
+      <div class="max-w-4xl mx-auto pt-32 pb-16 flex flex-row justify-between">
+        <div class="">
+          <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
+        </div>
+        <div class="flex flex-row">
+          <div class="w-56 ml-8">
+            <h4 class="font-bold">Oficina</h4>
+            <p>Coworking Nogués</p>
+            <p>Passatge de Nogués 10</p>
+            <p>08025 Barcelona - Catalunya</p>
+          </div>
+          <div class="w-56 ml-8">
+            <h4 class="font-bold">Contacta'ns</h4>
+            <p>community.coopdevs.org</p>
+            <p>info@coopdevs.org</p>
+            <p>08025 Barcelona - Catalunya</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-4xl mx-auto pt-32 pb-16 flex flex-row-reverse">
+        <a href="https://github.com/coopdevs">
+          <img class="ml-4" src='{{ "/assets/img/social/github-brands.png" | prepend:site.baseurl }}' />
+        </a>
+        <a href="https://gitlab.com/coopdevs">
+          <img class="ml-4" src='{{ "/assets/img/social/gitlab-brands.png" | prepend:site.baseurl }}' />
+        </a>
+        <a href="https://twitter.com/coopdevs">
+          <img class="ml-4" src='{{ "/assets/img/social/twitter-brands.png" | prepend:site.baseurl }}' />
+        </a>
       </div>
     </div>
 

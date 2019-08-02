@@ -4,6 +4,7 @@ global:
     es: Espanyol
     ca: Català
 menu:
+  home: Inici
   blog: Blog
 pages:
   index:

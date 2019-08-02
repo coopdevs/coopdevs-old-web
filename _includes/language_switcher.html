@@ -1,4 +1,4 @@
-<ul class="navbar-nav languages">
+<ul class="flex ml-20">
 
    {% for language in site.translations[site.lang]["global"]["langs"] %}
       {% assign locale = language[0] %}
@@ -12,7 +12,7 @@
          {% endif %}
       {% endcapture %}
 
-      <li class="nav-item"><a href={{ page_translation_url }} class='language nav-link'>{{ name }}</a></li>
+      <li><a href={{ page_translation_url }}>{{ name }}</a></li>
    {% endfor %}
 
 </ul>

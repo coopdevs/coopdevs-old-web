@@ -4,6 +4,7 @@ global:
     es: Español
     ca: Catalán
 menu:
+  home: Inicio
   blog: Blog
 pages:
   index:
