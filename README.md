@@ -24,6 +24,24 @@ After checking out the repo and having the ruby version specified in `.ruby-vers
 
 We use two branches: `master` holds only static files and serves the site through Github pages, while `develop` is the default branch. This one should be the target of all pull requests.
 
+### Dev mode
+
+To run the site in development you need to start the Jekyll server by running
+
+```
+bundle exec jekyll serve
+```
+
+Note this server will watch the site files and reload accordingly.
+
+### Live reload
+
+To speed up development you can make use of live reloading: watch your browser reload your changes as you save them. This way it's much faster to implement a design as you don't even take your fingers out of the keyboard :tada:. Run it with the following command alongside your jekyll server
+
+```
+bundle exec guard
+```
+
 ## Deployment
 
 Once your pull request is approved, merge it to `develop`. Then, from your local environment, change the branch to `develop`, pull the changes and run `./deploy`. This will build and deploy `develop`'s contents to `master` making them live straight away.
