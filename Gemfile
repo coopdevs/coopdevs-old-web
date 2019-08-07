@@ -8,6 +8,8 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
+gem 'guard'
+gem 'guard-livereload'
 gem "jekyll", "~> 3.7.2"
 gem "jekyll-multiple-languages-plugin", "~> 1.6"
 
