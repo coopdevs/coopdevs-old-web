@@ -5,6 +5,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-multiple-languages-plugin
+  - jekyll-postcss
 
 # jekyll-multiple-languages-plugin configuration
 languages: ["ca", "es"]
@@ -42,3 +43,15 @@ friends:
   - name: 'Aracoop'
     url: 'http://aracoop.coop/'
     logo_url: '/assets/img/friends/aracoop.png'
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - yarn.lock
+  - README.md
+  - postcss.config.js
+  - .gitignore
