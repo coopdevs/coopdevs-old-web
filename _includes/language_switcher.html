@@ -1,4 +1,4 @@
-<ul class="flex ml-20">
+<ul class="flex ml-8 text-gray-300">
 
    {% for language in site.translations[site.lang]["global"]["langs"] %}
       {% assign locale = language[0] %}
@@ -12,7 +12,7 @@
          {% endif %}
       {% endcapture %}
 
-      <li><a href={{ page_translation_url }}>{{ name }}</a></li>
+      <li class="ml-8"><a href={{ page_translation_url }}>{{ name }}</a></li>
    {% endfor %}
 
 </ul>
