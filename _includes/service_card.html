@@ -5,7 +5,9 @@
 {% endif %}
 
 {% capture image %}
-  <img class="rounded mb-5 md:mb-0 md:max-w-md" src="{{ include.image | prepend:site.baseurl }}" />
+  <div>
+    <img class="rounded mb-5 md:mb-0 md:max-w-md" src="{{ include.image | prepend:site.baseurl }}" />
+  </div>
 {% endcapture %}
 
 {% capture text_entry %}
