@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="{{ page.lang | default: site.lang | default: "es" }}">
+  {% include head.new.html %}
+  <body>
+    <div class="container mx-auto m-10">
+      <div class="flex flex-row justify-between">
+        <a href="/">
+          <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
+        </a>
+
+        <nav class="flex">
+          <ul class="flex text-gray-300">
+            <li class="ml-8"><a href={{ site.baseurl }}>{% t menu.home %}</a></li>
+            <li class="ml-8"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
+          </ul>
+
+          {% include language_switcher.new.html %}
+        </div>
+
+        {% if page.with_brand %}
+          {% include navbar_brand.html %}
+        {% endif %}
+      </div>
+
+      <div class="mb-48 mt-64">
+        <div class="max-w-3xl mx-auto mb-16">
+          <h1 class="font-sans font-extrabold text-5xl text-gray-700 leading-tight max-w-lg mb-16">Software lliure per a l'economia social</h1>
+          <p class="font-sans text-2xl text-gray-300 leading-relaxed mb-16">Coopdevs és una associació de persones que té com a objectiu <strong class="text-gray-700">impulsar solucions tecnològiques per fomentar i promoure l’economia social.</strong> Tots els projectes en què participem són de codi obert i llicència lliure.</p>
+        </div>
+        <img class="max-w-64 mx-auto rounded-lg" src="{{ "/assets/img/hero.png" | prepend:site.baseurl }}" />
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-sans font-extrabold text-4xl text-gray-700 mb-32">Linies d’actuació</h2>
+
+        {%
+        include service_card.html
+        reversed=false
+        header='Dinamització de comunitats Open Source'
+        content='Som “open by default” Desenvolupar software lliure amb una comunitat activa al voltant és la nostra passió, tenim experiència en la creació i dinamitació de comunitats Open Source.'
+        image='/assets/img/fosdem.png'
+        link='Saber-ne més →'
+        %}
+
+        {%
+        include service_card.html
+        reversed=true
+        header='Desenvolupament de software per a l\'ESS'
+        content='Desenvolupem software lliure per a projectes de l\'Economia Social i Solidària. Necessites ajuda?'
+        image='/assets/img/development.png'
+        link='Contacta amb nosaltres →'
+        %}
+
+        {%
+        include service_card.html
+        reversed=false
+        header='Optimització de processos empresarials'
+        content='Analitzem i optimitzem processos empresarials per a cooperatives, fomentem la intercooperació en els processos que impliquen les TIC.'
+        image='/assets/img/processes.png'
+        link='Saber-ne més →'
+        %}
+      </div>
+
+      <div class="max-w-4xl mx-auto mb-32">
+        <h2 class="font-sans text-4xl text-gray-700 mb-32 font-extrabold">Col·laborem amb</h2>
+        <img src="{{ "/assets/img/collaborators.png" | prepend:site.baseurl }}" />
+      </div>
+    </div>
+
+    <div style="background-color: #F1F7F8;">
+      <div class="container mx-auto pt-32 pb-16 flex flex-row justify-between">
+        <div class="">
+          <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
+        </div>
+        <div class="flex flex-row">
+          <div class="w-56 ml-8 text-gray-700">
+            <h4 class="font-bold">Oficina</h4>
+            <p>Coworking Nogués</p>
+            <p>Passatge de Nogués 10</p>
+            <p>08025 Barcelona - Catalunya</p>
+          </div>
+          <div class="w-56 ml-8 text-gray-700">
+            <h4 class="font-bold">Contacta'ns</h4>
+            <p>community.coopdevs.org</p>
+            <p>info@coopdevs.org</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto pb-12 flex flex-row-reverse">
+        <a href="https://github.com/coopdevs">
+          <img class="ml-4" src='{{ "/assets/img/social/github-brands.png" | prepend:site.baseurl }}' />
+        </a>
+        <a href="https://gitlab.com/coopdevs">
+          <img class="ml-4" src='{{ "/assets/img/social/gitlab-brands.png" | prepend:site.baseurl }}' />
+        </a>
+        <a href="https://twitter.com/coopdevs">
+          <img class="ml-4" src='{{ "/assets/img/social/twitter-brands.png" | prepend:site.baseurl }}' />
+        </a>
+      </div>
+    </div>
+
+    {% include google_analytics.html %}
+  </body>
+</html>
