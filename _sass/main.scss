@@ -1,0 +1,15 @@
+$font-size: 18px;
+$font-family: Lato;
+$font-family-title: Work Sans;
+
+$text-color: #727879;
+$title-color: #333;
+$primary-color: #39BBD5;
+
+@import "base";
+@import "layout";
+@import "topbar";
+@import "hero";
+@import "projects";
+@import "social-links";
+@import "friends";

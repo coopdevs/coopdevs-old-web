@@ -1,0 +1,31 @@
+{% if include.reversed %}
+  {% assign margin = 'mr-12' %}
+{% else %}
+  {% assign margin = 'ml-12' %}
+{% endif %}
+
+{% capture image %}
+  <img class="rounded max-w-md" src="{{ include.image | prepend:site.baseurl }}" />
+{% endcapture %}
+
+{% capture text_entry %}
+  <div class="{{- margin -}}">
+    <h3 class="font-sans text-2xl text-gray-700 font-bold mb-5"> {{ include.header }} </h3>
+    <p class="text-gray-400 text-lg"> {{ include.content }} </p>
+    <div class="mt-2">
+      <a class="text-blue-500 text-lg" href="{{ include.href }}"> {{ include.link }} </a>
+    </div>
+  </div>
+{% endcapture %}
+
+<div class="mb-32 flex">
+
+  {% if include.reversed %}
+    {{- text_entry -}}
+    {{- image -}}
+  {% else %}
+    {{- image -}}
+    {{- text_entry -}}
+  {% endif %}
+
+</div>

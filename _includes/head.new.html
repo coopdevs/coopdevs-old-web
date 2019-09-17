@@ -1,0 +1,12 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ site.title }} - {% if page.title %}{{ page.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href='{{ "/css/site.css" | prepend:site.baseurl }}'>
+
+  {% if jekyll.environment == "development" %}
+    <script src="http://localhost:35729/livereload.js"></script>
+  {% endif %}
+</head>
