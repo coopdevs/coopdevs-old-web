@@ -3,19 +3,22 @@
 <html lang="{{ page.lang | default: site.lang | default: "es" }}">
   {% include head.new.html %}
   <body>
-    <div class="container mx-auto m-10">
-      <div class="flex flex-row justify-between">
-        <a href="/">
-          <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
-        </a>
+    <div class="mx-8">
+      <div class="my-8 max-w-3xl md:my-10 lg:max-w-4xl lg:mx-auto">
+        <div class="flex flex-row justify-between">
+          <div>
+            <a href="/">
+              <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
+            </a>
+          </div>
 
-        <nav class="flex">
-          <ul class="flex text-gray-300">
-            <li class="ml-8"><a href={{ site.baseurl }}>{% t menu.home %}</a></li>
-            <li class="ml-8"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
-          </ul>
+          <nav class="flex">
+            <ul class="flex text-gray-300">
+              <li class="ml-8"><a href={{ site.baseurl }}>{% t menu.home %}</a></li>
+              <li class="ml-8"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
+            </ul>
 
-          {% include language_switcher.new.html %}
+            {% include language_switcher.new.html %}
         </div>
 
         {% if page.with_brand %}
@@ -23,16 +26,16 @@
         {% endif %}
       </div>
 
-      <div class="mb-48 mt-64">
+      <div class="mb-24 mt-48 md:mb-48 md:mt-64">
         <div class="max-w-3xl mx-auto mb-16">
           <h1 class="font-sans font-extrabold text-5xl text-gray-700 leading-tight max-w-lg mb-16">Software lliure per a l'economia social</h1>
           <p class="font-sans text-2xl text-gray-300 leading-relaxed mb-16">Coopdevs és una associació de persones que té com a objectiu <strong class="text-gray-700">impulsar solucions tecnològiques per fomentar i promoure l’economia social.</strong> Tots els projectes en què participem són de codi obert i llicència lliure.</p>
         </div>
-        <img class="max-w-64 mx-auto rounded-lg" src="{{ "/assets/img/hero.png" | prepend:site.baseurl }}" />
+        <img class="md:max-w-64 mx-auto rounded-lg" src="{{ "/assets/img/hero.png" | prepend:site.baseurl }}" />
       </div>
 
-      <div class="max-w-4xl mx-auto">
-        <h2 class="font-sans font-extrabold text-4xl text-gray-700 mb-32">Linies d’actuació</h2>
+      <div class="pb-8 max-w-3xl md:pb-0 md:mx-auto lg:max-w-4xl">
+        <h2 class="font-sans font-extrabold text-4xl text-gray-700 mb-16 md:mb-32">Linies d’actuació</h2>
 
         {%
         include service_card.html
@@ -65,42 +68,45 @@
         %}
       </div>
 
-      <div class="max-w-4xl mx-auto mb-32">
-        <h2 class="font-sans text-4xl text-gray-700 mb-32 font-extrabold">Col·laborem amb</h2>
+      <div class="max-w-3xl mx-auto mb-32 lg:max-w-4xl">
+        <h2 class="font-sans text-4xl text-gray-700 mb-16 md:mb-32 font-extrabold">Col·laborem amb</h2>
         <img src="{{ "/assets/img/collaborators.png" | prepend:site.baseurl }}" />
       </div>
     </div>
 
     <div style="background-color: #F1F7F8;">
-      <div class="container mx-auto pt-32 pb-16 flex flex-row justify-between">
-        <div>
-          <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
-        </div>
-        <div class="flex flex-row">
-          <div class="w-56 ml-8 text-gray-700">
-            <h4 class="font-bold">Oficina</h4>
-            <p>Coworking Nogués</p>
-            <p>Passatge de Nogués 10</p>
-            <p>08025 Barcelona - Catalunya</p>
+      <div class="mx-8">
+        <div class="pt-10 pb-16 max-w-3xl mx-auto md:pt-32 md:flex md:flex-row md:justify-between lg:max-w-4xl">
+          <div class="pb-4 md:pb-0">
+            <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
           </div>
-          <div class="w-56 ml-8 text-gray-700">
-            <h4 class="font-bold">Contacta'ns</h4>
-            <p><a href="https://community.coopdevs.org" title="Coopdevs Community Forum">community.coopdevs.org</a></p>
-            <p><a href="mailto:info@coopdevs.org">info@coopdevs.org</a></p>
-          </div>
-        </div>
-      </div>
 
-      <div class="container mx-auto pb-12 flex flex-row-reverse">
-        <a href="https://github.com/coopdevs">
-          <img class="ml-4" src='{{ "/assets/img/social/github-brands.png" | prepend:site.baseurl }}' />
-        </a>
-        <a href="https://gitlab.com/coopdevs">
-          <img class="ml-4" src='{{ "/assets/img/social/gitlab-brands.png" | prepend:site.baseurl }}' />
-        </a>
-        <a href="https://twitter.com/coopdevs">
-          <img class="ml-4" src='{{ "/assets/img/social/twitter-brands.png" | prepend:site.baseurl }}' />
-        </a>
+          <div class="md:flex md:flex-row">
+            <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+              <h4 class="font-bold">Oficina</h4>
+              <p>Coworking Nogués</p>
+              <p>Passatge de Nogués 10</p>
+              <p>08025 Barcelona - Catalunya</p>
+            </div>
+            <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+              <h4 class="font-bold">Contacta'ns</h4>
+              <p><a href="https://community.coopdevs.org" title="Coopdevs Community Forum">community.coopdevs.org</a></p>
+              <p><a href="mailto:info@coopdevs.org">info@coopdevs.org</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-3xl lg:max-w-4xl md:mx-auto pb-8 md:pb-12 flex flex-row-reverse">
+          <a href="https://github.com/coopdevs">
+            <img class="ml-4" src='{{ "/assets/img/social/github-brands.png" | prepend:site.baseurl }}' />
+          </a>
+          <a href="https://gitlab.com/coopdevs">
+            <img class="ml-4" src='{{ "/assets/img/social/gitlab-brands.png" | prepend:site.baseurl }}' />
+          </a>
+          <a href="https://twitter.com/coopdevs">
+            <img class="ml-4" src='{{ "/assets/img/social/twitter-brands.png" | prepend:site.baseurl }}' />
+          </a>
+        </div>
       </div>
     </div>
 

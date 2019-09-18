@@ -1,11 +1,11 @@
 {% if include.reversed %}
-  {% assign margin = 'mr-12' %}
+  {% assign margin = 'md:mr-12' %}
 {% else %}
-  {% assign margin = 'ml-12' %}
+  {% assign margin = 'md:ml-12' %}
 {% endif %}
 
 {% capture image %}
-  <img class="rounded max-w-md" src="{{ include.image | prepend:site.baseurl }}" />
+  <img class="rounded mb-5 md:mb-0 md:max-w-md" src="{{ include.image | prepend:site.baseurl }}" />
 {% endcapture %}
 
 {% capture text_entry %}
@@ -18,7 +18,7 @@
   </div>
 {% endcapture %}
 
-<div class="mb-32 flex">
+<div class="mb-16 md:mb-32 md:flex">
 
   {% if include.reversed %}
     {{- text_entry -}}
