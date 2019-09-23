@@ -4,7 +4,7 @@ global:
     es: Español
     ca: Catalán
 menu:
-  home: Inicio
+  community: Comunidad
   blog: Blog
 pages:
   index:

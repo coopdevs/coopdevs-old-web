@@ -14,8 +14,8 @@
 
           <nav class="flex">
             <ul class="flex text-gray-300">
-              <li class="ml-8"><a href={{ site.baseurl }}>{% t menu.home %}</a></li>
               <li class="ml-8"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
+              <li class="ml-8"><a href={{ "https://community.coopdevs.org" }}>{% t menu.community %}</a></li>
             </ul>
 
             {% include language_switcher.new.html %}
