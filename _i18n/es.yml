@@ -14,5 +14,34 @@ pages:
     katuma_description: "<a href='http://www.katuma.org'>Katuma</a> es una plataforma cooperativa que facilita la creación y gestión de grupos de consumo. Se trata de una alternativa más justa y sostenible que la ofrecida por grandes distribuidoras e intermediarios comerciales."
     timeoverflow_description: "<a href='http://timeoverflow.org'>Time Overflow</a> es una plataforma de gestión de Bancos de Tiempo, un sistema de oferta de servicios a cambio de tiempo. La plataforma facilita las tareas de gestión e intercambio de servicios entre miembros de un banco."
     friends_title: "Colaboramos con"
+
+    header: Software libre para la economía social
+    subheader: Coopdevs es una associacion de personas que tiene como objectivo <strong class="text-gray-700">impulsar soluciones tecnológicas para fomentar y promover la economía social.</strong> Todos los proyectos en que participamos son de código abierto y licéncia libre.
+    services_header: Líneas de actuación
+    collaborators_header: Colaboramos con
+    services:
+      open_source:
+        header: 'Dinamización de comunidades Open Source'
+        content: Somos "open by default". Desarrollar software libre con una comunidad activa alrededor es nuestra pasión, tenemos experiencia en la creación y dinamitación de comunidades Open Source.
+        link_text: Aprende más →
+      development:
+        header: Desarrollo de software para la ESS
+        content: Desarrollamos software libre para proyectos de la Economía Social y Solidaria. Necesitas ayuda?
+        link_text: Contacta con nosotros →
+      processes:
+        header: Optimización de procesos empresariales
+        content: Analizamos y optimizamos procesos empresariales para cooperativas, fomentamos la intercooperación en los procesos que implican las TIC.
+        link_text: Aprende más →
   blog:
     more: "Seguir leyendo →"
+
+footer:
+  office:
+    header: Oficina
+    name: Coworking Nogués
+    street: Passatge de Nogués 10
+    city: 08025 Barcelona - Catalunya
+  contact_us:
+    header: Contáctanos
+    link: community.coopdevs.org
+    mailto: info@coopdevs.org
