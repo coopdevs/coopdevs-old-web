@@ -4,7 +4,7 @@
   {% include head.new.html %}
   <body>
     <div class="mx-8">
-      <div class="my-8 max-w-3xl md:my-10 lg:max-w-4xl lg:mx-auto">
+      <div class="my-8 max-w-4xl mx-auto md:my-10">
         <div class="flex flex-row justify-between">
           <div>
             <a href="/">
@@ -12,65 +12,86 @@
             </a>
           </div>
 
-          <nav class="flex">
+          <nav class="hidden md:flex">
             <ul class="flex text-gray-300">
               <li class="ml-8"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
               <li class="ml-8"><a href={{ "https://community.coopdevs.org" }}>{% t menu.community %}</a></li>
             </ul>
 
-            {% include language_switcher.new.html %}
+            <ul class="flex ml-8 text-gray-300">
+              {% include language_switcher.new.html item_class_list = "ml-8" %}
+            </ul>
+          </nav>
+
+          <button type="button" id="sidebar-open" class="cursor-pointer md:hidden text-gray-300 focus:outline-none">
+            <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+          </button>
+          <button type="button" id="sidebar-close" class="hidden cursor-pointer md:hidden text-gray-300">
+            <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path></svg>
+          </button>
+
+          {% if page.with_brand %}
+            {% include navbar_brand.html %}
+          {% endif %}
         </div>
 
-        {% if page.with_brand %}
-          {% include navbar_brand.html %}
-        {% endif %}
-      </div>
+        <div id="sidebar" class="hidden w-full pt-6">
+          <nav class="text-gray-300">
+            <a class="block py-2" href={{ site.baseurl }}>{% t menu.home %}</a>
+            <a class="block py-2" href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a>
 
-      <div class="mb-24 mt-48 md:mb-48 md:mt-64">
-        <div class="max-w-3xl mx-auto mb-16">
-          <h1 class="font-sans font-extrabold text-5xl text-gray-700 leading-tight max-w-lg mb-16">Software lliure per a l'economia social</h1>
-          <p class="font-sans text-2xl text-gray-300 leading-relaxed mb-16">Coopdevs és una associació de persones que té com a objectiu <strong class="text-gray-700">impulsar solucions tecnològiques per fomentar i promoure l’economia social.</strong> Tots els projectes en què participem són de codi obert i llicència lliure.</p>
+            <div class="py-3">
+              {% include language_switcher.new.html item_class_list = "block py-2" %}
+            </div>
+          </nav>
         </div>
-        <img class="md:max-w-64 mx-auto rounded-lg" src="{{ "/assets/img/hero.png" | prepend:site.baseurl }}" />
-      </div>
 
-      <div class="pb-8 max-w-3xl md:pb-0 md:mx-auto lg:max-w-4xl">
-        <h2 class="font-sans font-extrabold text-4xl text-gray-700 mb-16 md:mb-32">Linies d’actuació</h2>
+        <div class="mb-24 mt-48 md:mb-48 md:mt-64">
+          <div class="max-w-3xl mx-auto mb-16">
+            <h1 class="font-sans font-extrabold text-5xl text-gray-700 leading-tight max-w-lg mb-16">Software lliure per a l'economia social</h1>
+            <p class="font-sans text-2xl text-gray-300 leading-relaxed mb-16">Coopdevs és una associació de persones que té com a objectiu <strong class="text-gray-700">impulsar solucions tecnològiques per fomentar i promoure l’economia social.</strong> Tots els projectes en què participem són de codi obert i llicència lliure.</p>
+          </div>
+          <img class="md:max-w-64 mx-auto rounded-lg" src="{{ "/assets/img/hero.png" | prepend:site.baseurl }}" />
+        </div>
 
-        {%
-        include service_card.html
-        reversed=false
-        header='Dinamització de comunitats Open Source'
-        content='Som “open by default”. Desenvolupar software lliure amb una comunitat activa al voltant és la nostra passió, tenim experiència en la creació i dinamitació de comunitats Open Source.'
-        image='/assets/img/fosdem.png'
-        link='Saber-ne més →'
-        href='https://community.coopdevs.org/c/floss-communities'
-        %}
+        <div class="pb-8 max-w-3xl md:pb-0 md:mx-auto lg:max-w-4xl">
+          <h2 class="font-sans font-extrabold text-4xl text-gray-700 mb-16 md:mb-32">Linies d’actuació</h2>
 
-        {%
-        include service_card.html
-        reversed=true
-        header='Desenvolupament de software per a l\'ESS'
-        content='Desenvolupem software lliure per a projectes de l\'Economia Social i Solidària. Necessites ajuda?'
-        image='/assets/img/development.png'
-        link='Contacta amb nosaltres →'
-        href='mailto:info@coopdevs.org?subject=Hola%20Coopdevs%21&body=Estava%20mirant%20la%20vostra%20web%20i%E2%80%A6'
-        %}
+          {%
+          include service_card.html
+          reversed=false
+          header='Dinamització de comunitats Open Source'
+          content='Som “open by default”. Desenvolupar software lliure amb una comunitat activa al voltant és la nostra passió, tenim experiència en la creació i dinamitació de comunitats Open Source.'
+          image='/assets/img/fosdem.png'
+          link='Saber-ne més →'
+          href='https://community.coopdevs.org/c/floss-communities'
+          %}
 
-        {%
-        include service_card.html
-        reversed=false
-        header='Optimització de processos empresarials'
-        content='Analitzem i optimitzem processos empresarials per a cooperatives, fomentem la intercooperació en els processos que impliquen les TIC.'
-        image='/assets/img/processes.png'
-        link='Saber-ne més →'
-        href='https://community.coopdevs.org/c/it-processes-for-coops'
-        %}
-      </div>
+          {%
+          include service_card.html
+          reversed=true
+          header='Desenvolupament de software per a l\'ESS'
+          content='Desenvolupem software lliure per a projectes de l\'Economia Social i Solidària. Necessites ajuda?'
+          image='/assets/img/development.png'
+          link='Contacta amb nosaltres →'
+          href='mailto:info@coopdevs.org?subject=Hola%20Coopdevs%21&body=Estava%20mirant%20la%20vostra%20web%20i%E2%80%A6'
+          %}
 
-      <div class="max-w-3xl mx-auto mb-32 lg:max-w-4xl">
-        <h2 class="font-sans text-4xl text-gray-700 mb-16 md:mb-32 font-extrabold">Col·laborem amb</h2>
-        <img src="{{ "/assets/img/collaborators.png" | prepend:site.baseurl }}" />
+          {%
+          include service_card.html
+          reversed=false
+          header='Optimització de processos empresarials'
+          content='Analitzem i optimitzem processos empresarials per a cooperatives, fomentem la intercooperació en els processos que impliquen les TIC.'
+          image='/assets/img/processes.png'
+          link='Saber-ne més →'
+          href='https://community.coopdevs.org/c/it-processes-for-coops'
+          %}
+        </div>
+
+        <div class="max-w-3xl mx-auto mb-32 lg:max-w-4xl">
+          <h2 class="font-sans text-4xl text-gray-700 mb-16 md:mb-32 font-extrabold">Col·laborem amb</h2>
+          <img src="{{ "/assets/img/collaborators.png" | prepend:site.baseurl }}" />
+        </div>
       </div>
     </div>
 
@@ -109,6 +130,8 @@
         </div>
       </div>
     </div>
+
+    <script src='{{ "/assets/js/index.js" | prepend:site.baseurl }}'></script>
 
     {% include google_analytics.html %}
   </body>
