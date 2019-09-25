@@ -20,7 +20,13 @@ Then, simply add the offer as a Markdown in [_jobs](https://github.com/coopdevs/
 
 ## Development
 
-After checking out the repo and having the ruby version specified in `.ruby-version` installed, run `bundle install` to install dependencies.
+### Requirements
+
+* Ruby 2.6.3. We recommend you install it with [rbenv](https://github.com/rbenv/rbenv#installation)
+* Bundler 1.17.2. You can install it with `gem install bundler -v 1.17.2`.
+* Yarn 1.17.3. See installation [instructions](https://yarnpkg.com/en/docs/install#debian-stable)
+
+After checking out the repo and having the listed requirements installed, run `bundle install` and then `yarn install` to all install dependencies.
 
 We use two branches: `master` holds only static files and serves the site through Github pages, while `develop` is the default branch. This one should be the target of all pull requests.
 
