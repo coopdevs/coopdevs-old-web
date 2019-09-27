@@ -1,0 +1,35 @@
+<div style="background-color: #F1F7F8;">
+  <div class="mx-8">
+    <div class="pt-10 pb-16 max-w-3xl mx-auto md:pt-32 md:flex md:flex-row md:justify-between lg:max-w-4xl">
+      <div class="pb-4 md:pb-0">
+        <img src='{{ "/assets/img/logo.png" | prepend:site.baseurl }}' />
+      </div>
+
+      <div class="md:flex md:flex-row">
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">{% t footer.office.header %}</h4>
+          <p>{% t footer.office.name %}</p>
+          <p>{% t footer.office.street %}</p>
+          <p>{% t footer.office.city %}</p>
+        </div>
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">{% t footer.contact_us.header %}</h4>
+          <p><a href="https://community.coopdevs.org" title="Coopdevs Community Forum">{% t footer.contact_us.link %}</a></p>
+          <p><a href="mailto:info@coopdevs.org">{% t footer.contact_us.mailto %}</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl lg:max-w-4xl md:mx-auto pb-8 md:pb-12 flex flex-row-reverse">
+      <a href="https://github.com/coopdevs">
+        <img class="ml-4" src='{{ "/assets/img/social/github-brands.png" | prepend:site.baseurl }}' />
+      </a>
+      <a href="https://gitlab.com/coopdevs">
+        <img class="ml-4" src='{{ "/assets/img/social/gitlab-brands.png" | prepend:site.baseurl }}' />
+      </a>
+      <a href="https://twitter.com/coopdevs">
+        <img class="ml-4" src='{{ "/assets/img/social/twitter-brands.png" | prepend:site.baseurl }}' />
+      </a>
+    </div>
+  </div>
+</div>
