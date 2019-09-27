@@ -4,9 +4,13 @@
   {% include head.new.html %}
   <body>
     <div class="mx-8">
+      <div class="my-8 max-w-4xl mx-auto md:my-10">
+        {% include navbar.html %}
 
-      {{ content }}
+        {% include sidebar.html %}
 
+        {{ content }}
+      </div>
     </div>
 
     {% include footer.html %}

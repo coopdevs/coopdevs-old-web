@@ -1,55 +1,50 @@
 ---
 layout: default.new
 ---
-<div class="my-8 max-w-4xl mx-auto md:my-10">
-  {% include navbar.html %}
 
-  {% include sidebar.html %}
-
-  <div class="mb-24 mt-48 md:mb-48 md:mt-64">
-    <div class="max-w-3xl mx-auto mb-16">
-      <h1 class="font-sans font-extrabold text-5xl text-gray-700 leading-tight max-w-lg mb-16">{% t pages.index.header %}</h1>
-      <p class="font-sans text-2xl text-gray-300 leading-relaxed mb-16">{% t pages.index.subheader %}</p>
-    </div>
-    <img class="md:max-w-64 mx-auto rounded-lg" src="{{ "/assets/img/hero.png" | prepend:site.baseurl }}" />
+<div class="mb-24 mt-48 md:mb-48 md:mt-64">
+  <div class="max-w-3xl mx-auto mb-16">
+    <h1 class="font-sans font-extrabold text-5xl text-gray-700 leading-tight max-w-lg mb-16">{% t pages.index.header %}</h1>
+    <p class="font-sans text-2xl text-gray-300 leading-relaxed mb-16">{% t pages.index.subheader %}</p>
   </div>
+  <img class="md:max-w-64 mx-auto rounded-lg" src="{{ "/assets/img/hero.png" | prepend:site.baseurl }}" />
+</div>
 
-  <div class="pb-8 max-w-3xl md:pb-0 md:mx-auto lg:max-w-4xl">
-    <h2 class="font-sans font-extrabold text-4xl text-gray-700 mb-16 md:mb-32">{% t pages.index.services_header %}</h2>
+<div class="pb-8 max-w-3xl md:pb-0 md:mx-auto lg:max-w-4xl">
+  <h2 class="font-sans font-extrabold text-4xl text-gray-700 mb-16 md:mb-32">{% t pages.index.services_header %}</h2>
 
-    {%
-    include service_card.html
-    reversed=false
-    header='pages.index.services.open_source.header'
-    content='pages.index.services.open_source.content'
-    image='/assets/img/fosdem.png'
-    link_text='pages.index.services.open_source.link_text'
-    href='https://community.coopdevs.org/c/floss-communities'
-    %}
+  {%
+  include service_card.html
+  reversed=false
+  header='pages.index.services.open_source.header'
+  content='pages.index.services.open_source.content'
+  image='/assets/img/fosdem.png'
+  link_text='pages.index.services.open_source.link_text'
+  href='https://community.coopdevs.org/c/floss-communities'
+  %}
 
-    {%
-    include service_card.html
-    reversed=true
-    header='pages.index.services.development.header'
-    content='pages.index.services.development.content'
-    image='/assets/img/development.png'
-    link_text='pages.index.services.development.link_text'
-    href='mailto:info@coopdevs.org?subject=Hola%20Coopdevs%21&body=Estava%20mirant%20la%20vostra%20web%20i%E2%80%A6'
-    %}
+  {%
+  include service_card.html
+  reversed=true
+  header='pages.index.services.development.header'
+  content='pages.index.services.development.content'
+  image='/assets/img/development.png'
+  link_text='pages.index.services.development.link_text'
+  href='mailto:info@coopdevs.org?subject=Hola%20Coopdevs%21&body=Estava%20mirant%20la%20vostra%20web%20i%E2%80%A6'
+  %}
 
-    {%
-    include service_card.html
-    reversed=false
-    header='pages.index.services.processes.header'
-    content='pages.index.services.processes.content'
-    image='/assets/img/processes.png'
-    link_text='pages.index.services.processes.link_text'
-    href='https://community.coopdevs.org/c/it-processes-for-coops'
-    %}
-  </div>
+  {%
+  include service_card.html
+  reversed=false
+  header='pages.index.services.processes.header'
+  content='pages.index.services.processes.content'
+  image='/assets/img/processes.png'
+  link_text='pages.index.services.processes.link_text'
+  href='https://community.coopdevs.org/c/it-processes-for-coops'
+  %}
+</div>
 
-  <div class="max-w-3xl mx-auto mb-32 lg:max-w-4xl">
-    <h2 class="font-sans text-4xl text-gray-700 mb-16 md:mb-32 font-extrabold">{% t pages.index.collaborators_header %}</h2>
-    <img src="{{ "/assets/img/collaborators.png" | prepend:site.baseurl }}" />
-  </div>
+<div class="max-w-3xl mx-auto mb-32 lg:max-w-4xl">
+  <h2 class="font-sans text-4xl text-gray-700 mb-16 md:mb-32 font-extrabold">{% t pages.index.collaborators_header %}</h2>
+  <img src="{{ "/assets/img/collaborators.png" | prepend:site.baseurl }}" />
 </div>
