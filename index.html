@@ -4,11 +4,10 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Coopdevs - Software lliure per la economia social</title>
+  <title>Coopdevs - </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href='/assets/css/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href='/css/site.css'>
 
   
     <script src="http://localhost:35729/livereload.js"></script>
@@ -16,171 +15,228 @@
 </head>
 
   <body>
-    <nav class='nav navbar navbar-expand flex-row-reverse'>
-      <ul class="navbar-nav languages">
+    <div class="mx-8">
 
-   
+      <div class="my-8 max-w-4xl mx-auto md:my-10">
+  <div class="flex flex-row justify-between">
+    <div>
+      <a href="/">
+        <img src='/assets/img/logo_without_slogan.svg' />
+      </a>
+    </div>
+
+    <nav class="hidden md:flex">
+      <ul class="flex text-gray-300">
+        <li class="ml-8"><a href=/blog.html>Blog</a></li>
+        <li class="ml-8"><a href=https://community.coopdevs.org>Comunitat</a></li>
+      </ul>
+
+      <ul class="flex ml-8 text-gray-300">
+           
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /es/ }}
          
-       class='language nav-link'>Espanyol</a></li>
+      >Espanyol</a>
    
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             / }}
          
-       class='language nav-link'>Català</a></li>
+      >Català</a>
    
 
-</ul>
-
-
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href=/blog.html class='nav-link'>Blog</a></li>
       </ul>
-
-      
     </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class='mx-auto col-12 col-sm-10 col-md-8 content'>
+    <button type="button" id="sidebar-open" class="cursor-pointer md:hidden text-gray-300 focus:outline-none">
+      <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+    </button>
+    <button type="button" id="sidebar-close" class="hidden cursor-pointer md:hidden text-gray-300">
+      <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path></svg>
+    </button>
 
-          
-            <div class='hero'>
-   <div class='hero__logo'>
-      <a href="/"><img src='/assets/img/logo.svg')} /></a>
-   </div>
-</div>
+    
+  </div>
 
-          
+  <div id="sidebar" class="hidden w-full pt-6">
+    <nav class="text-gray-300">
+      <a class="block py-2" href=/blog.html>Blog</a>
+      <a class="block py-2" href=https://community.coopdevs.org>Comunitat</a>
 
-          
+      <div class="py-3">
+           
+      
+      
 
-          <p>Coopdevs és una associació de persones que té com a objectiu <strong>impulsar solucions tecnològiques per fomentar i promoure l’economia social</strong>. Tots els projectes en què participem són de codi obert i llicència lliure.</p>
-<p>Si voleu col·laborar amb nosaltres ens podeu trobar al fòrum <a href='http://community.coopdevs.org'>community.coopdevs.org</a> i a les plataformes <a href='https://github.com/coopdevs'>github.com</a> i <a href='https://gitlab.com/coopdevs'>gitlab.com</a>. També ens podeu escriure a <a href='mailto:info@coopdevs.org?subject=Hola%20Coopdevs%21&body=Estava%20mirant%20la%20vostra%20web%20i%E2%80%A6'>info@coopdevs.org</a> o visitar-nos al <a href='https://passatgenogues.wixsite.com/cwnogues'>Coworking Nogués</a> de Gràcia.</p>
+      
 
-<div class='projects'>
-  <h2>Projectes</h2>
+      <a class="block py-2" href=
+         
+            /es/ }}
+         
+      >Espanyol</a>
+   
+      
+      
 
-  <div class='project'>
-    <div class='logo'>
-      <img src='/assets/img/projects/katuma.png' width='140' height='140' />
-    </div>
-    <div class='description'>
-      <a href='http://www.katuma.org'>Katuma</a> és una plataforma cooperativa que facilita la creació i gestió de grups de consum. Es tracta d'una alternativa més justa i sostenible que l'oferida per les grans distribuïdores i els intermediaris comercials.
-      <div class='social_links'>
-        <div class='twitter'>
-          <img src='/assets/img/social/twitter.jpg' />
-          <a href='https://twitter.com/katuma_org'>@katuma_org</a>
-        </div>
-        <div class='github'>
-          <img src='/assets/img/social/github.png' />
-          <a href='https://github.com/coopdevs/openfoodnetwork'>coopdevs/openfoodnetwork</a>
-        </div>
+      
+
+      <a class="block py-2" href=
+         
+            / }}
+         
+      >Català</a>
+   
+
       </div>
+    </nav>
+  </div>
+
+  <div class="mb-24 mt-48 md:mb-48 md:mt-64">
+    <div class="max-w-3xl mx-auto mb-16">
+      <h1 class="font-sans font-extrabold text-5xl text-gray-700 leading-tight max-w-lg mb-16">Software lliure per la economia social</h1>
+      <p class="font-sans text-2xl text-gray-300 leading-relaxed mb-16">Coopdevs és una associació de persones que té com a objectiu <strong class="text-gray-700">impulsar solucions tecnològiques per fomentar i promoure l’economia social.</strong> Tots els projectes en què participem són de codi obert i llicència lliure.</p>
+    </div>
+    <img class="md:max-w-64 mx-auto rounded-lg" src="/assets/img/hero.png" />
+  </div>
+
+  <div class="pb-8 max-w-3xl md:pb-0 md:mx-auto lg:max-w-4xl">
+    <h2 class="font-sans font-extrabold text-4xl text-gray-700 mb-16 md:mb-32">Línies d’actuació</h2>
+
+    
+
+
+
+
+
+<div class="mb-16 md:mb-32 md:flex">
+
+  
+  <div>
+    <img class="rounded mb-5 md:mb-0 md:max-w-md" src="/assets/img/fosdem.png" />
+  </div>
+
+  <div class="md:ml-12">
+    <h3 class="font-sans text-2xl text-gray-700 font-bold mb-5">Dinamització de comunitats Open Source</h3>
+    <p class="text-gray-400 text-lg">Som “open by default”. Desenvolupar software lliure amb una comunitat activa al voltant és la nostra passió, tenim experiència en la creació i dinamitació de comunitats Open Source. </p>
+    <div class="mt-2">
+      <a class="text-blue-500 text-lg" href="https://community.coopdevs.org/c/floss-communities">Saber-ne més → </a>
     </div>
   </div>
 
-  <div class='project'>
-    <div class='logo'>
-      <img src='/assets/img/projects/timeoverflow.jpg' width='140' height='140' />
-    </div>
-    <div class='description'>
-      <a href='http://timeoverflow.org'>Time Overflow</a> és una plataforma de gestió de Bancs de Temps, un sistema d'oferta de serveis a canvi de temps. La plataforma facilita les tasques de gestió i intercanvi de serveis entre els membres d'un banc.
-      <div class='social_links'>
-        <div class='twitter'>
-          <img src='/assets/img/social/twitter.jpg' />
-          <a href='https://twitter.com/timeoverflow'>@timeoverflow</a>
-        </div>
-        <div class='github'>
-          <img src='/assets/img/social/github.png' />
-          <a href='https://github.com/coopdevs/timeoverflow'>coopdevs/timeoverflow</a>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </div>
 
-<div>
-  <h2>Col·laborem amb</h2>
-
-  <div class='friends'>
 
     
-      <div class="friend">
-        <a href=https://openfoodnetwork.org/ target='_blank'>
-          <img src=/assets/img/friends/ofn.png alt=Open Food Network title=Open Food Network width='220' />
-        </a>
-      </div>
-    
-      <div class="friend">
-        <a href=http://somconnexio.coop target='_blank'>
-          <img src=/assets/img/friends/som_connexio.png alt=Som Connexió title=Som Connexió width='220' />
-        </a>
-      </div>
-    
-      <div class="friend">
-        <a href=http://adbdt.org/ target='_blank'>
-          <img src=/assets/img/friends/adbdt.jpg alt=Asociación para el Desarrollo de los Bancos de Tiempo title=Asociación para el Desarrollo de los Bancos de Tiempo width='220' />
-        </a>
-      </div>
-    
-      <div class="friend">
-        <a href=http://xes.cat/ target='_blank'>
-          <img src=/assets/img/friends/XES.jpg alt=Xarxa Economia Solidària title=Xarxa Economia Solidària width='220' />
-        </a>
-      </div>
-    
-      <div class="friend">
-        <a href=https://ensenyaelcor.org target='_blank'>
-          <img src=/assets/img/friends/balancsocial.jpg alt=Balanç Social title=Balanç Social width='220' />
-        </a>
-      </div>
-    
-      <div class="friend">
-        <a href=https://pamapam.org target='_blank'>
-          <img src=/assets/img/friends/pamapam.png alt=Pam a Pam title=Pam a Pam width='220' />
-        </a>
-      </div>
-    
-      <div class="friend">
-        <a href=http://emprenedoria.barcelonactiva.cat/emprenedoria/cat/programes/la-comunificadora.jsp target='_blank'>
-          <img src=/assets/img/friends/la_comunificadora2.png alt=La Comunificadora title=La Comunificadora width='220' />
-        </a>
-      </div>
-    
-      <div class="friend">
-        <a href=http://www.espai30lasagrera.cat/ target='_blank'>
-          <img src=/assets/img/friends/FEE30.jpg alt=Federació Entitats Espai 30 title=Federació Entitats Espai 30 width='220' />
-        </a>
-      </div>
-    
-      <div class="friend">
-        <a href=http://aracoop.coop/ target='_blank'>
-          <img src=/assets/img/friends/aracoop.png alt=Aracoop title=Aracoop width='220' />
-        </a>
-      </div>
+
+
+
+
+
+<div class="mb-16 md:mb-32 md:flex">
+
+  
+  <div class="md:mr-12">
+    <h3 class="font-sans text-2xl text-gray-700 font-bold mb-5">Desenvolupament de software per a l'ESS</h3>
+    <p class="text-gray-400 text-lg">Desenvolupem software lliure per a projectes de l'Economia Social i Solidària. Necessites ajuda? </p>
+    <div class="mt-2">
+      <a class="text-blue-500 text-lg" href="mailto:info@coopdevs.org?subject=Hola%20Coopdevs%21&body=Estava%20mirant%20la%20vostra%20web%20i%E2%80%A6">Contacta amb nosaltres → </a>
+    </div>
+  </div>
+
+  <div>
+    <img class="rounded mb-5 md:mb-0 md:max-w-md" src="/assets/img/development.png" />
+  </div>
+
+
+</div>
+
+
     
 
+
+
+
+
+<div class="mb-16 md:mb-32 md:flex">
+
+  
+  <div>
+    <img class="rounded mb-5 md:mb-0 md:max-w-md" src="/assets/img/processes.png" />
+  </div>
+
+  <div class="md:ml-12">
+    <h3 class="font-sans text-2xl text-gray-700 font-bold mb-5">Optimització de processos empresarials</h3>
+    <p class="text-gray-400 text-lg">Analitzem i optimitzem processos empresarials per a cooperatives, fomentem la intercooperació en els processos que impliquen les TIC. </p>
+    <div class="mt-2">
+      <a class="text-blue-500 text-lg" href="https://community.coopdevs.org/c/it-processes-for-coops">Saber-ne més → </a>
+    </div>
+  </div>
+
+
+</div>
+
+  </div>
+
+  <div class="max-w-3xl mx-auto mb-32 lg:max-w-4xl">
+    <h2 class="font-sans text-4xl text-gray-700 mb-16 md:mb-32 font-extrabold">Col·laborem amb</h2>
+    <img src="/assets/img/collaborators.png" />
   </div>
 </div>
 
 
+    </div>
+
+    <div style="background-color: #F1F7F8;">
+  <div class="mx-8">
+    <div class="pt-10 pb-16 max-w-3xl mx-auto md:pt-32 md:flex md:flex-row md:justify-between lg:max-w-4xl">
+      <div class="pb-4 md:pb-0">
+        <img src='/assets/img/logo_with_slogan_underneath.svg' />
+      </div>
+
+      <div class="md:flex md:flex-row">
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Oficina</h4>
+          <p>Coworking Nogués</p>
+          <p>Passatge de Nogués 10</p>
+          <p>08025 Barcelona - Catalunya</p>
+        </div>
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Contacta'ns</h4>
+          <p><a href="https://community.coopdevs.org" title="Coopdevs Community Forum">community.coopdevs.org</a></p>
+          <p><a href="mailto:info@coopdevs.org">info@coopdevs.org</a></p>
         </div>
       </div>
     </div>
+
+    <div class="max-w-3xl lg:max-w-4xl md:mx-auto pb-8 md:pb-12 flex flex-row-reverse">
+      <a href="https://github.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/github-brands.svg' />
+      </a>
+      <a href="https://gitlab.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/gitlab-brands.svg' />
+      </a>
+      <a href="https://twitter.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/twitter-brands.svg' />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <script src='/assets/js/index.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48794646-3"></script>
