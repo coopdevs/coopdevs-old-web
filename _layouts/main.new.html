@@ -34,8 +34,8 @@ layout: default.new
 
   <div id="sidebar" class="hidden w-full pt-6">
     <nav class="text-gray-300">
-      <a class="block py-2" href={{ site.baseurl }}>{% t menu.home %}</a>
       <a class="block py-2" href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a>
+      <a class="block py-2" href={{ "https://community.coopdevs.org" }}>{% t menu.community %}</a>
 
       <div class="py-3">
         {% include language_switcher.new.html item_class_list = "block py-2" %}
