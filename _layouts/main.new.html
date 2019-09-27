@@ -2,31 +2,7 @@
 layout: default.new
 ---
 <div class="my-8 max-w-4xl mx-auto md:my-10">
-  <div class="flex flex-row justify-between">
-    <div>
-      <a href="/">
-        <img src='{{ "/assets/img/logo_without_slogan.svg" | prepend:site.baseurl }}' />
-      </a>
-    </div>
-
-    <nav class="hidden md:flex">
-      <ul class="flex text-gray-300">
-        <li class="ml-8"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
-        <li class="ml-8"><a href={{ "https://community.coopdevs.org" }}>{% t menu.community %}</a></li>
-      </ul>
-
-      <ul class="flex ml-8 text-gray-300">
-        {% include language_switcher.new.html item_class_list = "ml-8" %}
-      </ul>
-    </nav>
-
-    <button type="button" id="sidebar-open" class="cursor-pointer md:hidden text-gray-300 focus:outline-none">
-      <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
-    </button>
-    <button type="button" id="sidebar-close" class="hidden cursor-pointer md:hidden text-gray-300">
-      <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path></svg>
-    </button>
-  </div>
+  {% include navbar.html %}
 
   {% include sidebar.html %}
 
