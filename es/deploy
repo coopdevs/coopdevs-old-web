@@ -13,13 +13,16 @@ rm -rf _site
 # Clone the master branch into _site/, so this dir becomes another git
 # repo used only for deployments
 git clone -b master `git config remote.origin.url` _site
+echo "cloned repository in _site/"
 
 # Build the site, which compiles all source files into the final static files
 # Github will serve. Jekyll puts these into _site/ by default.
 bundle exec jekyll build
 cd _site
+echo "site built"
 
 # Push the build to Github to make it live
 git add .
 git commit -m "Pages built at $described_rev"
+echo "pushing build..."
 git push
