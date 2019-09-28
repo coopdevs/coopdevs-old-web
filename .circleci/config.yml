@@ -23,6 +23,8 @@ jobs:
   deploy:
     docker:
       - image: circleci/ruby:2.6.3-node-browsers
+    environment:
+      CIRCLE_BRANCH: develop
 
     working_directory: ~/repo
 
