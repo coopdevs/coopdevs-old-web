@@ -29,6 +29,10 @@ jobs:
 
     steps:
       - checkout
+      - run: bundle install
+      - run: yarn install
+      - run: git config user.email "saulopefa@gmail.com"
+      - run: git config user.name "Pau Perez"
       - run:
           name: deploy
           command: ./deploy
