@@ -35,6 +35,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "f6:8f:6b:93:bf:a3:a1:52:46:c6:2b:54:b6:5c:2e:23"
+      - run: git config -l
       - run: ./deploy
 
 workflows:
