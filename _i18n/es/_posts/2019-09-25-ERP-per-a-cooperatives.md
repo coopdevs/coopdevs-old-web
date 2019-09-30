@@ -4,7 +4,7 @@ author: Sergi Alonso
 layout: post
 ---
 
-Durant aquest any 2019 hem estat desenvolupant el projecte Singulars *“Estudi, desenvolupament i acompanyament per la implementació de sistemes ERP de programari lliure especialitzats en cooperatives i ESS”*. Hem pogut comprovar les necessitats de les entitats de l’Economía Social i Solidària i constatar que existeixen forces procesos susceptibles de ser millorats o implantats mitjançant eines TIC
+Durant aquest any 2019 hem estat desenvolupant el projecte Singulars *“Estudi, desenvolupament i acompanyament per la implementació de sistemes ERP de programari lliure especialitzats en cooperatives i ESS”*. Hem pogut comprovar les necessitats de les entitats de l’Economía Social i Solidària i constatar que existeixen forces procesos susceptibles de ser millorats o implantats mitjançant eines TIC.
 
 
 ## Necessitat de millorar processos de gestió dins de les cooperatives
@@ -59,6 +59,7 @@ L’intercooperació és cabdal pel desenvolupament del moviment cooperativista,
 * Repositori per provisionar un servidor amb Odoo [https://gitlab.com/coopdevs/odoo-provisioning](https://gitlab.com/coopdevs/odoo-provisioning) 
 * Videotutorials d’Odoo [https://www.youtube.com/playlist?list=PL1-aSABtP6AD-t0GEoxMXgCa_qLsHs5PR](https://www.youtube.com/playlist?list=PL1-aSABtP6AD-t0GEoxMXgCa_qLsHs5PR) 
 * Pàgina oficial d’Odoo Community [https://odoo-community.org/](https://odoo-community.org/) 
+* [Xerrada FESC 2019](http://fesc.xes.cat/programa/programa-activitats-i-xerrades/) *Som Connexió: abordant el repte tecnològic de créixer*
 
 
 [![logos-singulars](/assets/post_images/2019/logos-singulars.png){:width="100%"}](http://aracoop.coop/)
