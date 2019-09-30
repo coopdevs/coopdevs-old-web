@@ -15,6 +15,5 @@
 
   hamburger.openButton.addEventListener('click', function(e) { hamburger.toggle(e); });
   hamburger.closeButton.addEventListener('click', function(e) { hamburger.toggle(e); });
-  hamburger.sidebar.addEventListener('click', function(e) { hamburger.toggle(e); });
 
 }());
