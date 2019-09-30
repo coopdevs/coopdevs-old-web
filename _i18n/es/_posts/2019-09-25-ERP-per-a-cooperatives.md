@@ -24,7 +24,7 @@ Les cooperatives són entitats que conformen el nucli de l’Economia Social. So
 
 Millorar processos de gestió i tenir més informació sobre l’estat de la cooperativa és un objectiu comú dins de l’ESS que permetrà prendre millors decisions per garantir la sostenibilitat econòmica i humana dins de la cooperativa. Per aquest motiu són necessàries propostes transversals que sorgeixin del cooperativisme.
 
-En aquest projecte Singulars, la feina conjunta realitzada entre **[FACTO](https://facto.cat/), [Som Connexió](https://somconnexio.coop/) i Coopdevs**, s’ha centrat a desenvolupar l’ERP Odoo perquè pugui ser implantat en qualsevol cooperativa, facilitant la instal·lació del programari i la documentació disponible de manera oberta per a qualsevol organització que en vulgui fer ús.
+En aquest projecte Singulars, la feina conjunta realitzada entre **[FACTO](https://facto.cat/), [Som Connexió](https://somconnexio.coop/) i [Coopdevs](https://coopdevs.org/)**, s’ha centrat a desenvolupar l’ERP Odoo perquè pugui ser implantat en qualsevol cooperativa, facilitant la instal·lació del programari i la documentació disponible de manera oberta per a qualsevol organització que en vulgui fer ús.
 
 
 ## Proposta d’ERP: Odoo Community Edition
