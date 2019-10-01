@@ -50,6 +50,18 @@ bundle exec guard
 
 ## Deployment
 
+### Continous Deployment
+
+This project implements Continuous Deployment with Circle CI in [.circleci/config.yml](https://github.com/coopdevs/coopdevs.github.io/blob/develop/.circleci/config.yml) which means that all pull requests merged into `develop` will end up deployed to production when passing all checks.
+
+So far, for new pull requests we only check they build successfully using `bundle exec jekyll build` but this can be extended in the future to add extra checks like linting or automated tests.
+
+It's when the PR merged into `develop` that the Circle CI workflow builds and pushes the site to GitHub pages.
+
+### Manual Deployment
+
+Note that with the process described above we shouldn't need to run any manual deploys. However, in the event of a failure it's worth having an alternative process.
+
 Once your pull request is approved, merge it to `develop`. Then, from your local environment, change the branch to `develop`, pull the changes and run `./deploy`. This will build and deploy `develop`'s contents to `master` making them live straight away.
 
 ## Prueba
