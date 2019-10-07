@@ -15,7 +15,7 @@ pages:
     timeoverflow_description: "<a href='http://timeoverflow.org'>Time Overflow</a> és una plataforma de gestió de Bancs de Temps, un sistema d'oferta de serveis a canvi de temps. La plataforma facilita les tasques de gestió i intercanvi de serveis entre els membres d'un banc."
     friends_title: "Col·laborem amb"
 
-    header: Software lliure per l'economia social
+    header: Software lliure per a l'economia social
     subheader: Coopdevs és una associació de persones que té com a objectiu <strong class="text-gray-700">impulsar solucions tecnològiques per fomentar i promoure l’economia social.</strong> Tots els projectes en què participem són de codi obert i llicència lliure.
     services_header: Línies d’actuació
     collaborators_header: Col·laborem amb
