@@ -19,6 +19,7 @@ jobs:
       - checkout
       - run: bundle install
       - run: yarn install
+      - run: bundle exec jekyll doctor
 
   deploy:
     docker:
