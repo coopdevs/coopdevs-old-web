@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="{{ page.lang | default: site.lang | default: "es" }}">
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href='{{ "/assets/css/main.css" | prepend:site.baseurl }}'>
+  </head>
+
   <body>
     <nav class='nav navbar navbar-expand flex-row-reverse'>
       {% include language_switcher.html %}
