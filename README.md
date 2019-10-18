@@ -48,6 +48,16 @@ To speed up development you can make use of live reloading: watch your browser r
 bundle exec guard
 ```
 
+### Docker
+
+If you want to get rid of the pain of setting up the environment, install [Docker](https://docs.docker.com/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
+and then run
+
+```
+docker-compose up
+```
+
+
 ## Deployment
 
 ### Continous Deployment
