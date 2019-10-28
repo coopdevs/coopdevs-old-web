@@ -15,9 +15,9 @@ aliases:
   - &git_config_l
     run: git config -l
   - &add_ssh_keys
-    - add_ssh_keys:
-        fingerprints:
-          - "f6:8f:6b:93:bf:a3:a1:52:46:c6:2b:54:b6:5c:2e:23"
+    add_ssh_keys:
+      fingerprints:
+        - "f6:8f:6b:93:bf:a3:a1:52:46:c6:2b:54:b6:5c:2e:23"
   - &restore_bundler_cache
     restore_bundler_cache:
       key: gem-cache-v1-{{ checksum "Gemfile.lock" }}
