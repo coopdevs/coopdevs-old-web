@@ -89,7 +89,7 @@ jobs:
       - *save_bundler_cache
       - *restore_yarn_cache
       - *yarn_install
-      - *restore_yarn_cache
+      - *save_yarn_cache
       - *git_config
       - *add_ssh_keys
       - *git_config_l
