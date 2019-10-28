@@ -19,25 +19,25 @@ aliases:
         fingerprints:
           - "f6:8f:6b:93:bf:a3:a1:52:46:c6:2b:54:b6:5c:2e:23"
   - &restore_bundler_cache
-    - restore_bundler_cache:
-        key: gem-cache-v1-{{ checksum "Gemfile.lock" }}
+    restore_bundler_cache:
+      key: gem-cache-v1-{{ checksum "Gemfile.lock" }}
   - &bundle_install
     run: bundle install
   - &save_bundler_cache
-    - save_bundler_cache:
-        key: gem-cache-v1-{{ checksum "Gemfile.lock" }}
-        paths:
-          - vendor/bundle
+    save_bundler_cache:
+      key: gem-cache-v1-{{ checksum "Gemfile.lock" }}
+      paths:
+        - vendor/bundle
   - &restore_yarn_cache
-    - restore_yarn_cache:
-        key: yarn-cache-{{ checksum "yarn.lock" }}
+    restore_yarn_cache:
+      key: yarn-cache-{{ checksum "yarn.lock" }}
   - &yarn_install
     run: yarn install
   - &save_yarn_cache
-    - save_yarn_cache:
-        key: yarn-cache-{{ checksum "yarn.lock" }}
-        paths:
-          - node_modules
+    save_yarn_cache:
+      key: yarn-cache-{{ checksum "yarn.lock" }}
+      paths:
+        - node_modules
   - &jekyll_doctor
     run: bundle exec jekyll doctor
   - &master_branch_filter
