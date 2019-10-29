@@ -111,12 +111,3 @@ workflows:
           <<: *develop_branch_filter
           requires:
             - build
-  # Deploy master branch to production environment
-  production:
-    jobs:
-      - build:
-          <<: *master_branch_filter
-      - deploy:
-          <<: *master_branch_filter
-          requires:
-            - build
