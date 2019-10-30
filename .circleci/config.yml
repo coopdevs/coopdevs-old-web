@@ -3,6 +3,55 @@
 # Check https://circleci.com/docs/2.0/language-ruby/ for more details
 #
 version: 2
+aliases:
+  - &git_config
+    run:
+      name: git config settings
+      command: | 
+        git config --global user.email "ci-build@coopdevs.org"
+        git config --global user.name "CI"
+  - &deploy
+    run: ./deploy
+  - &git_config_l
+    run: git config -l
+  - &add_ssh_keys
+    add_ssh_keys:
+      fingerprints:
+        - "f6:8f:6b:93:bf:a3:a1:52:46:c6:2b:54:b6:5c:2e:23"
+  - &restore_bundler_cache
+    restore_cache:
+      key: gem-cache-v1-{{ checksum "Gemfile.lock" }}
+  - &bundle_install
+    run: bundle install
+  - &save_bundler_cache
+    save_cache:
+      key: gem-cache-v1-{{ checksum "Gemfile.lock" }}
+      paths:
+        - vendor/bundle
+  - &restore_yarn_cache
+    restore_cache:
+      key: yarn-cache-{{ checksum "yarn.lock" }}
+  - &yarn_install
+    run: yarn install
+  - &save_yarn_cache
+    save_cache:
+      key: yarn-cache-{{ checksum "yarn.lock" }}
+      paths:
+        - node_modules
+  - &jekyll_doctor
+    run: bundle exec jekyll doctor
+  - &master_branch_filter
+    filters:
+      branches:
+        only: /^master/
+  - &develop_branch_filter
+    filters:
+      branches:
+        only: /^develop/
+  - &feature_branch_filter
+    filters:
+      branches:
+        ignore: /^(master|develop)/
 jobs:
   build:
     docker:
@@ -17,9 +66,13 @@ jobs:
 
     steps:
       - checkout
-      - run: bundle install
-      - run: yarn install
-      - run: bundle exec jekyll doctor
+      - *restore_bundler_cache
+      - *bundle_install
+      - *save_bundler_cache
+      - *restore_yarn_cache
+      - *yarn_install
+      - *save_yarn_cache
+      - *jekyll_doctor
 
   deploy:
     docker:
@@ -31,24 +84,30 @@ jobs:
 
     steps:
       - checkout
-      - run: bundle install
-      - run: yarn install
-      - run: git config --global user.email "ci-build@coopdevs.org"
-      - run: git config --global user.name "CI"
-      - add_ssh_keys:
-          fingerprints:
-            - "f6:8f:6b:93:bf:a3:a1:52:46:c6:2b:54:b6:5c:2e:23"
-      - run: git config -l
-      - run: ./deploy
+      - *restore_bundler_cache
+      - *bundle_install
+      - *save_bundler_cache
+      - *restore_yarn_cache
+      - *yarn_install
+      - *save_yarn_cache
+      - *git_config
+      - *add_ssh_keys
+      - *git_config_l
+      - *deploy
+
 
 workflows:
   version: 2
-  build-and-deploy:
+
+  feature:
     jobs:
-      - build
+      - build:
+          <<: *feature_branch_filter
+  develop:
+    jobs:
+      - build:
+          <<: *develop_branch_filter
       - deploy:
+          <<: *develop_branch_filter
           requires:
             - build
-          filters:
-            branches:
-              only: develop
