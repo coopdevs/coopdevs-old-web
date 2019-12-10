@@ -1,5 +1,55 @@
 # SOM CONNEXIÓ: ABORDANT EL REPTE TECNOLÒGIC DE CRÉIXER - II
 
+## Context
+### Com funciona Som Connexió?
+
+* Complexitat de funcionament d'una teleoperadora.
+    * Procès d'aprovisionament
+    * Procès de facturació
+Referenciar el document del Singulars on parlem amb profunditat.
+
+### D'on partiem?
+
+Numerets:
+  * + de 10000 contractes
+  * + 1M de consums
+  * Amb el sistema actual (Tryton) triguem + 60h en facturar
+
+Singulars per a millorar aquesta situació
+
+Comunicació del que estem fent:
+* Fer referencia al primer post https://community.coopdevs.org/t/som-connexio-abordant-el-repte-tecnologic-de-creixer/927/8
+* Xerrada FESC + slides + twit
+
+## Implementació (Facturació)
+* Single point of truth
+
+* Problema que volem solucionar
+* Requisitis/Criteris per a buscar solució
+* Possibles solucions
+* Solucions triades i motius
+
+#### Recursos creats
+
+* Client OpenCell en Python
+* Módul per comunicar la nostra instancia de Tryton amb OpenCell
+
+* Provisioning per crear instancies d'OC (Fer referencia a document de SysAdmin)
+* Configuració OC amb Postman
+
+## Conclusions
+
+* Numerets després del Singulars:
+  * ~20h de facturació i reduint-les
+  * Procés de facturació més robust --> Menys incidencies a la facturació
+
+* Següents passes
+  * Integració amb proveidor de serveis
+  * Oficina virtual
+  * Migració a Odoo
+
+-------------------------------------------------
+
 ## Presentació
 Arribem al final del Singulars i cal girar la vista enrere per veure com estem en comparació a quan vam començar aquest any, així com on volíem estar en aquest moment.
 Recordant tot el que vam comentar al post que vam eSom Connexióriure ara fa mig any on abordàvem el repte de créixer de Som Connexió des d'una visió d'eines tecnològiques, veiem que hem avançat prou però encara ens queda distància per recórrer.
