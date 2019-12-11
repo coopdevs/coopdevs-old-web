@@ -1,17 +1,63 @@
 # SOM CONNEXIÓ: ABORDANT EL REPTE TECNOLÒGIC DE CRÉIXER - II
 
+Ja fa un any que vam començar el projecte [Singulars](http://aracoop.coop/projectes-singulars/) que ens ha permés fer aquesta empenta tant a Coopdevs com a les entitats que participaven agregades al projecte presentat per a la subvenció: Facto Assesors SCCL i Som Connexió SCCL.
+En aquest post ens centrarem en la feina feta amb Som Connexió especificament. Tal com vam comentar al fil del nostre forum [Som Connexió: Abordant el repte tecnològic de créixer](https://community.coopdevs.org/t/som-connexio-abordant-el-repte-tecnologic-de-creixer/927) que vam escriure al començament del Singulars.
+Aquell post comentaben quins reptes teniem al comen\ament del projecte. Ara podem fer una valoració del que hem aconseguit fer i com ho hem fet. Però començarem amb una petita contextualització del problema, quin era el punt de partida de Som Connexió, quins eren els punts que més calia millorar i com vam afrontar aquest repte fins obtenir una solucion que funciones i permetes augmentar el volum de contractes que gestiona la cooperativa.
+
 ## Context
+
+El principal repte que afrontem en aquest projecte és dotar a Som Connexió d'unes eines fortes que permetin escalar el numero de socies/contractes sense aumentar exponencialment el cost de gestio i sense perill de no poder abarcar tants serveis. Però per a poder valorar que ens cal per arribar a complir aquests objectius cal coneixer com funciona la cooperativa i quins son els punts més amb més capacitat de millora dels seus processos.
+
 ### Com funciona Som Connexió?
 
-* Complexitat de funcionament d'una teleoperadora.
-    * Procès d'aprovisionament
-    * Procès de facturació
+Som Connexió és una cooperativa de serveis que ofereix serveis de telecomunicacions. Al no tenir una xarxa propia, funciona com a operadora virtual, revenent els serveis que compra a proveidors de telecomunicacions. A la següent imatge es poden veure les funcions que pot fer fins ara Som Connexió i quines no. Lóbjectiu de la cooperativa és creixer en volum, ja que aixó permet tenir més capacitat de negociació per anar abançant fins a convertir-se en una operadora virtual complerta (OMV Complert). Aquest estatus permetria guanyar sobirania sobre els serveis oferits que es a la fi l'objectiu de Som Connexió.
+
+![Imatge de les slides n 6](TODO: Link a la imatge 6 de les slides)
+
+En aquest context, cal destacar els processos que es realitzen i que permeten que la cooperativa continue funcionant mes a mes:
+
+#### Processos principals
+
+* **Alta nova sòcia**
+
+L'alta d'una nova sòcia és el primer procés pel qual ha de passar qualsevol persona o entitat que vol començar a rebre servei de la cooperativa. Té un cost de 100€ vitalicis, retornables en sortir de la cooperativa i permet a la persona participar en les assemblees que es fan periòdicament.
+És un procés que es comença omplint uns formularis on es demanen dades personals necessàries per a l'alta i on s’accepta el cobrament de 100€ d’aportació al capital social.
+
+* **Procès d'aprovisionament (Alta nou servei)**
+
+El procès d'aprovisionament d'un nou servei es el procès que s'ha de dur a terme des de que una usuaria realitza una nova sol·licitud de servei fins que comença a fer servir el servei. Aquest procès el duen a terme les agenst de la cooperativa. És un procès delicat ja que, normalment és el primer contacte de les usuaries amb la cooperativa, juntament amb lálta com a socies, i cal donar un servei molt cuidat. El procès consisteix en fer seguiment de la sol·licitud i fer de pont entre la usuaria que ha demanat el servei i el proveidor que pugui cobrir aquest servei, depenent del tipus de servei i de la localització on es vol activar el servei.
+
+Per cobrir aquest procès es va incoorporar una eina de gestio de processos a meitats de 2018, [OTRS](https://otrs.com/). Aquesta eina permet crear processos definits amb tots els camins que es poden obrir en aquests processos i generar tiquets que recorrin aquests processos partint de mails que entren a una determinada bustia de correu o, com tenim integrat amb l'ERP, generar aquests tiquets partint de sol·licituts de servei existents a l'ERP. El fet d'incorporar aquesta eina va reduir el temps que dediquen les agents al seguiment d'incidencies i a l'aprovisionament notablement aumentant al mateix temps la qualitat del servei ofert.
+
+* **Procès de facturació**
+
+El procès de facturació és el procés més crucial per al dia a dia de la cooperativa, ja que és el procès que ajuda a mantenir mes a mes les treballadores que fan possible la cooperativa. És un procès complex que consisteix en varies fases:
+
+1. Mediació: Obtenir i processar els consums que ens proporciona el proveidor de serveis.
+
+Com ja hem comentat, Som Connexió no te una xarxa de telecomunicacions propia, pel que ha de comprar i revendre serveis d'altres proveidors. Al final del mes, aquests proveidors comparteixen els consums detallats de cada servei en un format propi. En aquest punt, Som Connexió ha d'agafar aquests consums i processar-los per obtenir informació que el sistema de facturació pugui lleguir.
+
+2. Rating: Assignar un cost a cada registre de consum
+
+Un cop tenim els consums en un format que puguem tractar, cal aplicar un cost a cada consum. Aquesta part ens permet identificar els consums que formen part d'un abonament o els que son independents.
+
+3. Agrupar els consums per servei i generar la factura
+
+4. Enviar la factura i realitzar el cobrament
+
+5. Conciliació dels cobraments amb les entitats comptables generades amb la factura
+
+
+Els tres primers punts de la facturació son els que més complexitat afegeixen, ja que els dos últims són comuns per a tot tipus d'empreses
+
+Si voleu coneixer més en prunditat aquests processos o informació sobre el funcionament de Som Connexió, podeu consultar el document [SOM CONNEXIÓ: ABORDANT EL REPTE TECNOLÒGIC DE CRÉIXER - II](TODO: Link al document) que es va realitzar per a la justificació del projecte Singulars.
 Referenciar el document del Singulars on parlem amb profunditat.
 
 ### D'on partiem?
 
-Numerets:
-  * + de 10000 contractes
+Aquests son els processos, però per veure per que tenim la necessitat de millorar-los, cal repasar algunes de les xifres que tenim actualment:
+
+  * Tenim més de 10000 contractes entre ADSL, fibra i mòbil.
   * + 1M de consums
   * Amb el sistema actual (Tryton) triguem + 60h en facturar
 
