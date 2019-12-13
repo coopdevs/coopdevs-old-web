@@ -55,17 +55,17 @@ Referenciar el document del Singulars on parlem amb profunditat.
 
 ### D'on partiem?
 
-Aquests son els processos, però per veure per que tenim la necessitat de millorar-los, cal repasar algunes de les xifres que tenim actualment:
+Aquests son els processos, però per veure per que tenim la necessitat de millorar-los, cal repasar algunes de les xifres que teniem quan els processos es duien a terme a l'ERP:
 
   * Tenim més de 10000 contractes entre ADSL, fibra i mòbil.
-  * + 1M de consums
-  * Amb el sistema actual (Tryton) triguem + 60h en facturar
+  * D'aquests contractes arroben més d'un milio de registres de consums per tractar.
 
-Singulars per a millorar aquesta situació
+Amb aquestes dades el temps que es trigava a fer tota la facturació i enviarla a les socies era de més o menys unes 60h. 60h d'un procès delicat per a la cooperativa, amb molta revisió i molta intervenció manual. Això era degut a l'eina que es feia servir no estava dissenyada per aquest procès, peró es va intentar customitzar per que pogues cobrir aquest procès. Aquesta solució va funcionar durant un temps, però arribat a aquest volum, erà més un coll d'ampolla per al creixement de la cooperativa.
 
-Comunicació del que estem fent:
-* Fer referencia al primer post https://community.coopdevs.org/t/som-connexio-abordant-el-repte-tecnologic-de-creixer/927/8
-* Xerrada FESC + slides + twit
+Pel cost que tenia aquest procès i per la imporatncia que te per a la cooperativa vam considerar que seria el primer punt a millorar. Si voleu coneixer més a fons el funcionament intern de Som Connexió i en concret dáquests processos que expossem al punt anterior, podeu consultar les slides que es van preparar per a la xerrada que vam oferir a la FESC 2019:
+
+* [Comunicació referent a la xerrada de la FESC](https://twitter.com/coopdevs/status/1188398551690297344?s=20)
+* [Slides xerrada](TODO: Penjar slides xerrada a algun lloc)
 
 ## Implementació (Facturació)
 * Single point of truth
