@@ -67,171 +67,114 @@ Pel cost que tenia aquest procès i per la imporatncia que te per a la cooperati
 * [Comunicació referent a la xerrada de la FESC](https://twitter.com/coopdevs/status/1188398551690297344?s=20)
 * [Slides xerrada](TODO: Penjar slides xerrada a algun lloc)
 
-## Implementació (Facturació)
-* Single point of truth
 
-* Problema que volem solucionar
-* Requisitis/Criteris per a buscar solució
-* Possibles solucions
-* Solucions triades i motius
+## Implementació (Facturació)
+
+Tenint el problema a solucionar i un objectiu clar: Reduir el cost de la facturació mensual que fa Som Connexió, vam anàlitzar la infraestructura que teniem en aquell moment:
+
+![TODO: Image de la infra abans de OC]()
+
+Com veiem el sistema esta dividit en peces. La idea de tenir serveis espoecifics per cobrir cadascun dels processos que s'han de dur a terme a la cooperativa permet fer servir eines més especifiques amb les que obtindrem un millor resultat, ja que faràn allò per al que han estat dissenyades i res més.
+
+Vam veure clar que una de les solucions pasava per incorporar una nova peça encarregada del procès de facturació, descarregant així de feina a l'ERP. Per a cercar una eina vam llistar els requisits o criteris que ens ajudarien tant a cercar una eina com per triar entre la nova eina o millorar els processos amb les eines que teniem.
+
+### OpenCoop
+Un dels requisits que teniem en tot aquest projecte era obtenir una solució que no només soluciones les problematiques actuals de Som Connexió, si no construir una solució que pugues ser reutilitzada per altres cooperatives amb un nivell de complexitat similar. Al ser un sistema modular amb peces que es poden habilitar o no segons les necesitats de cada cooperativa, permet que cooperatives més petites amb un volum menor, puguin adaptar aquesta infraestructura a les seves necessitats.
+
+Contruir eines amb aquesta mentalitat permet a tot el sector fer un salt d'escala que es finalment el que busquem, reduint l'inversió que fa cada entitat en la autogestio, automatitzant certs processos i permetent focalitzar els esforços de cada entitat al seu objectiu principal.
+Es una forma també de facilitar la intercooperació entre entitats, ja que compartim coneixements sobre una mateixa eina i ens podem ajudar unes a altres.
+
+### Requisitis/Criteris per a buscar solució
+* Gestió de gran volum de dades i operacions complexes - Escalabilitat
+Com ja hem comentat, el volum de dades que ha de gestionar aquest procés es va incrementant a mesura que es van creant nous contractes. Tenir una eina que pugui gestionar un gran volum de dades amb un cost reduït permet que la cooperativa créixer.
+Registres de consums que rep Som Connexió al mes:
+- Mòbil - Més d’1 milio de registres
+- Telefonia fixa – 5000 registres
+
+A aquest volum de dades s’ha de sumar la complexitat que es pot arribar a generar amb un cataleg molt divers.
+
+* Configurable
+Busquem eines configurables, que es puguin adaptar a les necessitats de la cooperativa i que siguin fàcilment modificables. A poder ser sense necessitat de personalitzar les funcionalitats mitjançant codi, només amb configuració.
+
+* API (parlar amb altres sistemes)
+La nova eina ha de poder parlar amb l’ERP i els altres sistemes com OTRS si és necessari, així que necessitem que tingui una API per poder gestionar o enviar les peticions. També valorem la documentació que hi ha darrere d’aquesta API.
+
+* Enfocat al sector – Solució vertical
+Com hem comentat, el sector de les telecomunicacions te unes implicacions especials a la facturació, així que ens centrarem en eines que estiguin dissenyades per al sector i amb casos d’exit d’altres teleoperadores.
+
+* Open Source
+Orientats al món del software lliure i open source i alineats amb la idea que amb diners públics s’ha de crear coneixement i eines comunes, fem una forta aposta per l’Open Source com a requeriment de la nova eina.
+
+* Comunitat
+El fet de ser Open Source permet que existeixi una comunitat al voltat del software que genera documentació, arregla errors que es puguin trobar al software i millora la vida de l’eina. Per aquest motiu va ser un dels requeriments proposats.
+
+* Reproduïble
+Tota la feina que fem en aquest projecte ha de ser fàcilment reproduïble, per aquest motiu triem eines Open Source i ho fem tot en obert, perquè altres cooperatives o altres entitats puguin aprofitar tot aquest esforç i replicar al seu negoci aquests processos.
+
+#### Single point of truth
+En qualsevol cas, quan treballem en un entorn amb un sistema compost per eines diferents, cal tenir molt clar quin es el punt unic de la veritat. El lloc on puc confiar que els que diuen les dades es la veritat, encara que tinguem discrepancia entre les dades dels sistema.
+Aquest punt es important tenir-ho ben definit i assegurar-nos que aquestes dades son solides i no contenen errors.
+
+En cas de incidencia i dessincronització de les dades, sabem que podem recorrer a aquesta font per recuperar la homogeneitat a les dades.
+
+### Solució triada i motius
+Sabent els requisitis que te el sistema actual i els que volem assolir en acabar aquest projecte, vam fer una recerca de eines utilitzades al sector de les telecomunicacions per realitzar la facturació partint de consums i contractes.
+
+Vam trobar una eina anomenada [OpenCell](https://opencellsoft.com/). Desenvolupada a França, es una de les eines que més actors del sector de les telecomunicacions fan servir. També altres empreses d'altres ambits integren aquesta eina en el seu sistema. Aquesta eina te una part anomenada community, que ve amb una llicencia open source i una enterprise amb parts no lliures.
+
+![OpenCell logo]()
+
+L'alternativa que teniem era millorar el procès actual a l'ERP per intentar cobrir les necessitats actuals, encara que sabiem que no escalaria molt i en breus tornariem a tenir els problemes als que ens enfrontem ara. També valorem possitivament que una eina cobreixi el procès pel que ha estat dissenyada. Podeu consultar els pros i contres que vam llistar per a cada opció al [document de justificació del Singulars](TODO justificaci' singulars).
 
 #### Recursos creats
+iUn cop triada l'eina, calia implantar el nou procès de facturació a OpenCell integrat amb l'ERP. Vam extreure les següents tasques per dur a terme:
 
-* Client OpenCell en Python
-* Módul per comunicar la nostra instancia de Tryton amb OpenCell
+* Migració de tots els contractes i usuaris (Recordant que el punt de la veritat es a l'ERP)
+* Permetre crear nous contractes i usuaris a través del procés de creació de nous contractes existent a l’ERP.
+* Permetre modificar dades de contracte i d’usuaris amb els processos definits a l’ERP.
+* Recuperar les factures del nou sistema a l’ERP per generar els apunts comptables necessaris.
 
-* Provisioning per crear instancies d'OC (Fer referencia a document de SysAdmin)
-* Configuració OC amb Postman
+Es va començar definint l’arquitectura que tindria el nou sistema. L’arquitectura que es va proposar és la que es pot veure a la Figura 2.
+
+![Figura 2](TODO)
+
+Seguint les metodologies que fem servir a Coopdevs, es va fer servir Ansible per automatitzar l’aprovisionament el servidor. Es va crear el repositori d’aprovisionament a Gitlab, en obert i es va documentar perquè altres ho puguin reaprofitar: https://gitlab.com/coopdevs/opencell-provisioning/.
+Per a més informació de com treballem la part de sistemes a Coopdevs, podeu consultar l'entrada al community del company Ferran amb l'explicació de com instalem les instancies d'Odoo, on es detalla més tota la part d'infraestructura: https://community.coopdevs.org/t/memoria-pel-singulars-sobre-la-feina-sysadmin-devops/1042/4
+
+OpenCell és una aplicació en JAVA que es pot executar en un servidor directament, però l’equip de desenvolupament recomana fer servir les imatges de Docker que proporcionen per assegurar que l’entorn està com OpenCell ho espera. Fent servir aquestes eines es va muntar la primera instància per començar a provar els processos amb dades de prova.
+
+Com que OpenCell compta amb una API REST que podem fer servir per crear totes les dades necessàries per configurar l’eina per als processos de Som Connexió, es va generar un projecte de Postman per mantenir tota la configuració controlada i que es pogués auditar qualsevol canvi en la configuració acordada: https://gitlab.com/coopdevs/somconnexio-opencell-configuration.
+
+Es va aprofitar també per generar un nou projecte amb la plantilla de la factura que es fa servir:https://gitlab.com/coopdevs/somconnexio_invoice_jasper_template. Al repositori està explicat com fem servir aquesta plantilla i les configuracions que s’han de fer a OpenCell per incloure la plantilla. El motor que s’utilitza per generar la factura en PDF partint de la plantilla és JasperReports.
+
+Un cop gestionada la instancia d'OpenCell i configurada, cal integrar-la al nostre sistema. Per aixó es van definir quines integracions s’havien de fer partint dels casos d'ús definits al començament d'aquest punt.
+Ala Figura 2 es veuen les entitats i accions que volem que es comuniquen d’un sistema a l’altre. Des del punt de vista de l'EPR les entitats a migrar són:
+* Tercer i totes les seves dades de contacte
+* Contracte
+* Linia de Contracte
+* Factures
+* Serveis
+
+Aquestes entitats existeixen a Tryton i han de traslladar-se al model de dades d’OpenCell. Per a fer aquesta feina, es va investigar a fons l’[API](https://api.opencellsoft.com/) que proporcionava OpenCell per tal de trobar les entitats que millor casen amb aquestes. Aquesta investigació sumada al coneixement funcional adquirit a les formacions que vam realitzar sobre el producte a Desembre de 2018 i Gener de 2019, va permetre portar aquestes entitats a entitats del sistema d’OpenCell.
+
+Un cop definida la correspondència d’aquestes entitats, es va començar a desenvolupar una llibreria, basant-se en la que vam fer servir per integrar l’ERP amb l’OTRS, [PyOTRS](https://gitlab.com/rhab/PyOTRS), per a comunicar l’ERP amb OpenCell.
+Aquestes llibreries que coneixen l’API de l’altra aplicació i es fan servir per comunicar-se amb elles es diuen clients. Vam dissenyar el client en Python per a OpenCell, ja que no hi havia cap obert per poder reaprofitar i contribuir a millorar-ho.Aquest client es va fer open source i es pot consultar el projecte a https://gitlab.com/coopdevs/pyopencell.
+
+Tryton és una eina modular. Per aquesta raó es va començar a definir un nou mòdul de Tryton que faria de pont entre els actuals processos que tenim a l’ERP amb el nou sistema, fent servir el client que acabem de comentar.
+Aquest mòdul té tota la lògica de negoci de Som Connexió relacionada amb OpenCell, i es va fer de tal forma que fos el més agnostic possible de l’ERP que té al darrere. Juntament amb el codi, es va documentar totes les funcionalitats i casos d’ús que es volien cobrir, i es poden consultar a la wiki del repositori: https://gitlab.com/coopdevs/opencell_somconnexio_tryton.
 
 ## Conclusions
 
-* Numerets després del Singulars:
-  * ~20h de facturació i reduint-les
-  * Procés de facturació més robust --> Menys incidencies a la facturació
-
-* Següents passes
-  * Integració amb proveidor de serveis
-  * Oficina virtual
-  * Migració a Odoo
-
--------------------------------------------------
-
-## Presentació
-Arribem al final del Singulars i cal girar la vista enrere per veure com estem en comparació a quan vam començar aquest any, així com on volíem estar en aquest moment.
-Recordant tot el que vam comentar al post que vam eSom Connexióriure ara fa mig any on abordàvem el repte de créixer de Som Connexió des d'una visió d'eines tecnològiques, veiem que hem avançat prou però encara ens queda distància per recórrer.
-
-Si donem una ullada al que proposàvem fa sis mesos, veiem que hem assolit les metes que ens vam proposar i que ara s'obren noves portes que no havíem vist i que allarguen la cursa uns metres més.
-
-Ara podem dir que ja tenim la facturació coberta amb una eina robusta, que ens permet facturar mes a mes (fa dos mesos que estem facturant íntegrament amb la nova eina, OpenCell) amb seguretat i invertint un terç o menys del temps que invertíem fa uns mesos.
-També estem integrats i tenim ja uns processos sòlids en la part de suport a les usuàries dels serveis de Som Connexió gràcies a l'eina de gestió d'incidències OTRS.
-
-Aquesta feina d'aïllar una part del nostre negoci, portar-la a una eina específicament dissenyada per aquesta finalitat i fer l'esforç per integrar aquestes eines per tal que funcionen conjuntament sense massa interacció de l'agent, ha facilitat notablement la feina que fan dia a dia els treballadors de la cooperativa, permetent que puguin dedicar més temps a tractament amb les sòcies, pilar fonamental de la iniciativa.
-
-## Singulars
-Tot aquest esforç ha estat possible gràcies al Singulars que vam demanar ara fa justament un any, conjuntament amb Som Connexió i de FACTO Assessors.
-
-Aquest impuls ens ha permès: per un costat començar una nova línia comercial per a Coopdevs i FACTO, com fer el salt a Som Connexió a un nou sistema de facturació, més específic i que permet a Som Connexió créixer sense por. També ens ha ajudat a definir processos tant dins de Coopdevs com a les cooperatives a les quals els hi donem servei, com és el cas de Som Connexió.
-
-En el marc de la relació amb Som Connexió, el Singulars ens hi ha permès tant consolidar la integració amb el sistema de suport OTRS, com començar a fer servir i integrar amb l'ERP el sistema de facturació OpenCell.
-
-Tot el treball que s'ha fet, a les dues línies d'actuació, s'ha fet amb un caràcter obert per tal que pugui ser reutilitzat (tant el codi com el coneixement que hem aconseguit reunir) per altres empreses del sector, enfortint així tota la part tecnològica i de gestió del sector de l'ESS, objectiu també que volíem cobrir amb aquesta subvenció.
-
-## Opencoop
-Estem construint de manera oberta perquè, com comentem anteriorment, totes les cooperatives i entitats del sector puguin aprofitar aquest esforç per aplicar els processos que anem definint i polint entre tots amb un cost molt més reduït del que suposa aquesta primera empenta que fem al projecte.
-
-Així fem aquest esforç, amb una mirada més aplica, tenint en compte que tot el que anem fent ha de ser replicable. Aquest és un dels valors que volem aportar amb tota aquesta feina. No només solucionar el problema que tenim nosaltres entre mans, sinó aixecar el cap, donar una ullada al voltant per veure quins actors tenim al nostre costat i si tota la feina que anem fent pot cobrir també les seves necessitats (dins d'un mateix sector).
-
-## Reptes de Som Connexió a inicis de 2018
-El principal repte que vam assolir amb Som Connexió va ser el de facilitar la feina als agents que treballen donant suport als socis que estan fent servir el servei, per tal de millorar pels dos costats, tant la feina que han de cobrir els agents, com la part de les sòcies consumidores del servei.
-
-A inici de 2018, pel fet que Som Connexió va començar a donar servei abans de tenir una forta infraestructura per cobrir aquest servei, queden moltes feines manuals. Un dels principals objectius d'aquesta feina és automatitzar els processos més repetitius per alliberar aquestes hores i poder ferles servir per cobrir les necessitats dels socis. Així focalitzarem la feina dels agents en el principal objectiu de la cooperativa, donar un servei de qualitat i un suport el més proper possible.
-
-Els processos eSom Connexióollits per començar a automatitzar són els dos processos més delicats per a la cooperativa i que més temps ens porten: Facturació i aprovisionament d'una nova línia.
-
-## Processos
-### Procés de facturació
-Un dels processos més costosos que es portaven a terme en Som Connexió i al mateix cop el procés crucial sense el qual no pot subsistir la cooperativa, és el procés de facturació.
-
-Aquest procés és el que s'encarrega de, partint d'un conjunt de consums que ens faciliten els proveïdors de telecomunicacions que treballen amb Som Connexió, arribar a construir i enviar les factures que reben les sòcies.
-
-Aquest procés, que com ja hem comentat és crucial en l'existència de Som Connexió, era un procés molt costos, on els companys de Som Connexió invertien molts esforços i havien de tenir molta cura al realitzar-lo, ja que un petit error humà podia desencadenar en errors en la facturació i acabar afectant la tresoreria de la cooperativa o directament a la butxaca de les sòcies.
-
-Aquest era un punt on tots els actors estàvem d'acord, ja que era el cor per mantenir en peus la cooperativa i fins aleshores és feia amb un procés poc robust i amb molta interacció humana (que sabem que sempre pot aportar errors).
-
-El procés en si consisteix en, com hem comentat, agrupar els consums que ens fan arribar els proveïdors de telecomunicacions de Som Connexió, aplicar cada consum al servei del contracte al qual pertoca, sobre aquests consums és per on passarà el nostre procés de facturació que agruparà els consums que entren dins dels abonaments que ofereix la cooperativa i quins queden fora i san de tractar per separat. Després s'ha de generar la factura partint dels contractes que tenim definits, basant-nos en els consums realitzats aquest mes.
-Així obtenim el document que finalment arribarà a les sòcies de Som Connexió per notificar quin ha sigut el consum d'aquest mes.
-Passos del procés de facturació:
-
-1. Arriben els consums dels proveïdors.
-2. Introduïm els consums al sistema per poder tractar-los després.
-3. Associem els consums als contractes i als serveis contractats (si pertany a un servei).
-4. Per a cada contracte, generem una factura amb els consums que entren dins de la ventana de temps que cobrirà la factura.
-5. Enviem les factures a les sòcies.
-6. Seguiment dels pagaments i tancament econòmic amb els pagaments.
-
-Aquest procés és un procés molt vinculat a serveis recurrents, com ara telecomunicacions, aigua, llum, gas, però no molt freqüent en altres contextos. Un ERP és una eina que casa molt bé amb moltes empreses de diferents sectors, però que en alguns casos pot quedar curta per a un tipus de facturació amb un procés complex com aquest.
-
-### Procés d’aprovisionament
-L'aprovisionament és el procés que seguim quan una nova sol·licitud, tant de soci com d'apadrinat, arriba als agents de Som Connexió.
-
-Un cop per setmana, un agent de Som Connexió, agafa totes les sol·licituds que s'han generat per tractar-les una a una. Aquest és un dels valors que ens agrada de Som Connexió, no tracten als usuaris com a numerets als quals els pots cobrar. Són persones i per això aquest procés és, juntament amb la facturació, un punt molt important per a la cooperativa, ja que és on demostren que són persones treballant per a persones.
-El procés de provisió el podem descompondre en diferents processos depenent del servei seleccionat.
-
-Hi ha un procés per al servei de mòbil, un per al d'ADSL i un per al de Fibra a causa de les diferents necessitats de cada servei.
-
-## Sistema de Som Connexió fins a l’inici del Singulars
-Fins al començament d'aquest projecte, el sistema que Som Connexió feia servir estava tot construït al voltant de l'ERP.
-
-Com hem comentat anteriorment, Som Connexió al contrari que altres teleoperadores va començar a donar servei abans de tenir una infraestructura tecnològica per a suportar aquest servi, ja que el principal objectiu era donar servei als socis.
-
-Aquest primer sistema monolític servia per a donar servei i poder donar un bon suport a unes porques línies, però quan la cooperativa va començar a fer més contractes, els sistemes no escalaven.
-
-## ERP com a single source of truth
-D'aquest sistema inicial estem ben contents, ja que ens va permetre començar a donar servei a les sòcies, però com hem comentat no podia escalar amb les necessitats de la cooperativa.
-Per aquesta raó vam començar a explorar noves eines que cobrien una part de les necessitats que tenia la cooperativa.
-
-Aquestes eines són especifiques per cobrir un procés en concret (facturació, suport a les usuàries, etc.). En centrar-se en un procés més concret son molt més eficients cobrint aquell procés i donen un marge de configuració i culturització major que ens permet adaptar aquestes eines als nostres processos.
-
-Així vam començar a imaginar el sistema que feia servir Som Connexió com un conjunt d'eines connectades entre si però que cada eina tindria la seva feina especifica. Aquest nou model ens permet escalar molt més, així com ens dóna facilitat per poder canviar alguna de les peces del conjunt per una altra eina que cobreixi un procés similar sense afectar a la resta de peces del sistema.
-
-Aquesta nova configuració suposa moltes millores, però també genera nous problemes. Un dels més importants és la duplicitat d'informació. En tenir diferents sistemes, amb dades emmagatzemades en cadascun d'ells, cal tenir molt clar quina és la font de veritat.
-Per a Som Connexió vam acordar que la font de veritat era l'ERP, ja que és l'epicentre de tota la feina que fem amb dades i que és l'eina amb la qual es comuniquen tota la resta d'eines, així que si en qualsevol cas hi ha una discrepància de dades, qui mana sempre serà l'ERP.
-
-## Solucions verticals
-Vam començar a explorar les solucions verticals que feien servir altres operadores del sector de les telecomunicacions per cobrir les seves necessitats especifiques.
-L'ERP és una eina necessària per a la gestió de qualsevol empresa, però una teleoperadora té unes necessitats diferents de la de qualsevol empresa, ja que, com ja hem explicat, el procés de facturació té una complexitat afegida a causa de la gran quantitat de dades que san de processar.
-Així vam començar a investigar quines eines es feien servir dins del món de les telecomunicacions per a cobrir el procés de facturació, així com el procés de suport a l'usuari. Aquests dos processos són els més crítics per a la cooperativa, ja que és el punt d'entrada d'un nou soci i la facturació que és el punt d'entrada de diners que permet que continuï l'activitat de la cooperativa.
-
-## Triar les eines
-Vam triar les eines basant-nos en diferents criteris:
-
-* Sector al qual va dirigit
-Ens vam centrar, com comentem al punt anterior, en verticals del sector, així que vam anar a buscar quines eines feien servir altres teleoperadores.
-
-Tant per a la part del 'customer support' (suport a les usuàries) com per a la part de facturació.
-Ens vam adonar que hi ha una sèrie de softwares, dissenyat per a cobrir les necessitats del sector i amb un altíssim grau de configuració. Punt que també ens feia decantar per triar una eina.
-
-* Configurabilitat
-Volíem sistemes que fossin el més configurable possible. Així l'equip de treball de Som Connexió podria configurar els seus processos dins de l'eina.
-
-Un punt a recalcar en aquest apartat és que si fem processos configurables, sense personalitzar massa l'aplicació, aplicar les actualitzacions quan van sorgint és una feina senzilla, mentre que si personalitzem molt el software, una actualització es pot fer enrevessada. Fins al punt de no prioritzar aquesta actualització perquè té un cost altíssim. Començant així a deixar software obsolet cobrint processos importants per a la nostra feina.
-En aquest repositori podeu trobar la configuració de l’Open Cell que fa servir Som Connexió: https://gitlab.com/coopdevs/somconnexio-opencell-configuration.
-
-* Open Source / Replicabilitat
-Buscàvem software open source, ja que com hem comentat abans, volíem que aquest projecte sigui replicable per a altres cooperatives que tenen uns processos similars.
-
-* Comunitat
-Un altre punt molt important és l'existència o no d'una comunitat d'usuàries que tenen una expertesa sobre l'aplicació i que mantenen i documenten les funcionalitats perquè qualsevol pugui aprofitar els coneixements que van obtenint.
-
-Amb aquests punts com a criteris fonamentals i revisant altres punts del projecte com tecnologia, escalabilitat, manteniment del projecte, etc. vam prendre la decisió de seleccionar OTRS com a gestor de suport a les usuàries i Open Cell com a eina de facturació massiva.
-
-## Integracions
-Aquests sistemes que volíem implantar havien de ser capaços de parlar entre ells.
-Per a fer això possible, havíem d'integrar els sistemes. Com que el punt de veritat i «l'epicentre» de tot el sistema era l'ERP, vam començar les integracions fent que l'ERP pugues parlar amb les dues eines (Open Cell i OTRS) i que sàpigues com interpretar les respostes d'aquests.
-
-Així vam treballar primer en la integració amb OTRS, per cobrir les altes de nous socis i qualsevol incidència que arribes per mail o telèfon. Aquesta part va donar una gran empenta al procés d'aprovisionament, que com hem explicat anteriorment a poc a poc ha esdevingut un procés amb moltes accions i passes. Ara, tenim definits a OTRS una sèrie de passes necessàries a l'aprovisionament, i quan rebem a l'ERP una sol·licitud de sòcia o servei nou, això crea un tiquet de procés a l'OTRS des d'on es fa tot el seguiment del procés fins a completar-lo. Arribat aquest moment, es marca el tiquet com a complet i això crearà un contracte a l'ERP que ens permet generar les factures per al cobrament. Així tenim integrats el sistema de tiquets i suport a les usuàries (OTRS) amb l'ERP.
-
-Aquesta integració la vam fer fent servir un client Open Source que vam trobar per a l'API OTRS a Gitlab: https://gitlab.com/rhab/PyOTRS on vam contribuir amb alguns canvis que necessitàvem per a la nostra integració.
-
-Per l'altre costat tenim el procés de facturació i l'eina de facturació, Open Cell. Aquí la integració comença quan confirmem el contracte que s'ha creat al final del procés d'aprovisionament.
-
-En aquest punt, en confirmar un contracte a l'ERP, es llença una crida per crear aquest contracte a Open Cell amb el servei seleccionat actiu i tot l'arbre d'entitats necessari per mapejar el contracte de l'ERP a Open Cell.
-Un cop tenim el contracte i totes les dades a Open Cell, es pot començar el procés de facturació, explicat als punts anteriors. Quan obtenim la factura, l'enviem directament a les usuàries des de Open Cell amb unes plantilles de correu: https://gitlab.com/coopdevs/somconnexio_invoice_jasper_template.
-
-Així termina el procés de facturació, però a la part de l'ERP necessitem els assentaments comptables que generen aquestes factures per poder portar la comptabilitat de la cooperativa des de l'ERP. Per això vam dissenyar un procés de tornada de les factures d'Open Cell cap a l'ERP.
-
-Aquest procés consisteix en, un cop tenim les factures emeses a Open Cell, es llença un procés a l'ERP que demana a Open Cell les factures i les processa per crear els assentaments i apunts comptables que necessitem. D'aquesta manera tenim els dos sistemes sincronitzats amb les dades necessàries a cada sistema.
-
-Aquest procés és la primera iteració que fem, i a poc a poc anirem afegint millores.
-Per a desenvolupar aquesta integració, vam construir nosaltres un client en Python per a l'API d'Open Cell, ja que no vam trobar cap: https://gitlab.com/coopdevs/pyopencell
-També hem publicat el mòdul de Tryton (l'ERP que fa servir actualment Som Connexió) amb la integració, però aquest depèn de mòduls privatius que encara necessitem. Això genera una inconsistència en la que estem treballant, ja que tenim mòduls Open Source que fan referència a mòduls privatius. Com hem dit, estem treballant per canviar aquesta situació: https://gitlab.com/coopdevs/opencell_somconnexio_tryton.
-Tetes aquestes integracions s'han pensat per poder ser independents de l'ERP que hi ha per baix, ja que un dels plans a futur és migrar l'ERP.
-
 ## Següents passes
-Fins aquí tot el que hem pogut avançar amb el Singulars a la part de Som Connexió, no oblidem que també hem aprofitat aquesta empenta per treballar amb altres cooperatives i millorar conjuntament els seus processos interns.
+Tot aquest sistema es va acabar d'implantar a finals d'Agost principis de Setembre. Primer es va portar la facturació en paral·lel un parell de mesos fins que es va veure que el sistema era fiable i que les facturacions obtingudes amb el nou sistema eres similars a les que havíem fet amb l'ERP.
 
-Però encara ens queden reptes que ja teníem en ment o que han anat sorgint a l'horitzó de Som Connexió.
+Així es van poder extreure algunes dades per comprovar que tota aquesta feina havia permès millorar el sistema de facturació. D'aquestes dades, la més rellevant és la diferència al temps de facturació. De les 60h inicials que requerien per facturar un mes, a unes 19h que es triga amb el nou sistema.
+S’està treballant per automatitzar els processos que encara queden manuals, cosa que reduirà encara més el temps de facturació. Cal destacar també que en tot aquest període el nombre de contractes a facturar ha augmentat.
 
-Entre aquests reptes de futur destaquem una integració amb el proveïdor de serveis de telecomunicacions MasMovil, la creació d'una oficina virtual on les usuàries puguin revisar els seus serveis i modificar aquests i una migració d'ERP de Tryton a Odoo, un sistema amb el qual estem treballant des de Coopdevs des de fa un temps i que fan servir altres cooperatives del territori com Som Mobilitat entre altres.
+Fins aquí tot el que hem pogut avançar amb el Singulars a la part de Som Connexió, no oblidem que també hem aprofitat aquesta empenta per [treballar amb altres cooperatives i millorar conjuntament els seus processos interns.](https://community.coopdevs.org/t/formacions-gestio-de-cooperatives-a-traves-de-la-millora-de-processos-amb-tecnologia/970)
+
+Cal seguir treballant per millorar aquests processos, però també es van obrint noves oportunitats per millorar els processos. Un clar exemple és la integració amb l'API del proveïdorde telecomunicacions MasMovil. Es preveu que per a finals d'aquest 2019 puguem treballar per integrar al sistema de Som Connexió les interaccions automàtiques amb el sistema de MasMovil, ja que és un dels punts que més temps ocupa als agents i és una feina que ja es fa a OTRS i per duplicat a la plataforma del proveïdor.
+
+També cal marcar com a reptes de futur la creació d'una oficina virtual on les usuàries puguin revisar els seus serveis i modificar aquests i una migració d'ERP de Tryton a Odoo, un sistema amb el qual estem treballant des de Coopdevs des de fa un temps i que fan servir altres cooperatives del territori com Som Mobilitat entre altres.
 
 Tant el tema de l'oficina virtual com el de la migració a Odoo són dues ocasions fantàstiques per a fer intercooperació amb entitats com Som Mobilitat que no deixarem d'aprofitar!
