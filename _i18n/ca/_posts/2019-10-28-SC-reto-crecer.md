@@ -1,4 +1,8 @@
-# SOM CONNEXIÓ: ABORDANT EL REPTE TECNOLÒGIC DE CRÉIXER - II
+---
+title: SOM CONNEXIÓ: ABORDANT EL REPTE TECNOLÒGIC DE CRÉIXER - II
+author: Daniel Palomar
+layout: post
+---
 
 Ja fa un any que vam començar el projecte [Singulars](http://aracoop.coop/projectes-singulars/) que ens ha permés fer aquesta empenta tant a Coopdevs com a les entitats que participaven agregades al projecte presentat per a la subvenció: Facto Assesors SCCL i Som Connexió SCCL.
 En aquest post ens centrarem en la feina feta amb Som Connexió especificament. Tal com vam comentar al fil del nostre forum [Som Connexió: Abordant el repte tecnològic de créixer](https://community.coopdevs.org/t/som-connexio-abordant-el-repte-tecnologic-de-creixer/927) que vam escriure al començament del Singulars.
