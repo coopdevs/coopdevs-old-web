@@ -4,7 +4,7 @@ author: Daniel Palomar
 layout: post
 ---
 
-Ja fa un any que vam començar el projecte [Singulars](http://aracoop.coop/projectes-singulars/) que ens ha permés fer aquesta empenta tant a Coopdevs com a les entitats que participaven agregades al projecte presentat per a la subvenció: Facto Assesors SCCL i Som Connexió SCCL.
+Ja fa un any que vam començar el projecte [Singulars](http://aracoop.coop/projectes-singulars/) que ens ha permés fer aquesta empenta tant a Coopdevs com a les entitats que participaven agregades al projecte presentat per a la subvenció: [FACTO Assesors SCCL](https://facto.cat/) i [Som Connexió SCCL](https://somconnexio.coop/).
 En aquest post ens centrarem en la feina feta amb Som Connexió especificament. Tal com vam comentar al fil del nostre forum [Som Connexió: Abordant el repte tecnològic de créixer](https://community.coopdevs.org/t/som-connexio-abordant-el-repte-tecnologic-de-creixer/927) que vam escriure al començament del Singulars.
 Aquell post comentaben quins reptes teniem al comen\ament del projecte. Ara podem fer una valoració del que hem aconseguit fer i com ho hem fet. Però començarem amb una petita contextualització del problema, quin era el punt de partida de Som Connexió, quins eren els punts que més calia millorar i com vam afrontar aquest repte fins obtenir una solucion que funciones i permetes augmentar el volum de contractes que gestiona la cooperativa.
 
@@ -16,7 +16,7 @@ El principal repte que afrontem en aquest projecte és dotar a Som Connexió d'u
 
 Som Connexió és una cooperativa de serveis que ofereix serveis de telecomunicacions. Al no tenir una xarxa propia, funciona com a operadora virtual, revenent els serveis que compra a proveidors de telecomunicacions. A la següent imatge es poden veure les funcions que pot fer fins ara Som Connexió i quines no. Lóbjectiu de la cooperativa és creixer en volum, ja que aixó permet tenir més capacitat de negociació per anar abançant fins a convertir-se en una operadora virtual complerta (OMV Complert). Aquest estatus permetria guanyar sobirania sobre els serveis oferits que es a la fi l'objectiu de Som Connexió.
 
-![Imatge de les slides n 6](TODO: Link a la imatge 6 de les slides)
+![Imatge de les slides n 6](/assets/post_images/2019/funcions-sc-actuals.png)
 
 En aquest context, cal destacar els processos que es realitzen i que permeten que la cooperativa continue funcionant mes a mes:
 
@@ -76,7 +76,7 @@ Pel cost que tenia aquest procès i per la imporatncia que te per a la cooperati
 
 Tenint el problema a solucionar i un objectiu clar: Reduir el cost de la facturació mensual que fa Som Connexió, vam anàlitzar la infraestructura que teniem en aquell moment:
 
-![TODO: Image de la infra abans de OC]()
+![Infraestructura prèvia a OpenCell](/assets/post_images/2019/sc-landscape-system-prev-oc.png)
 
 Com veiem el sistema esta dividit en peces. La idea de tenir serveis espoecifics per cobrir cadascun dels processos que s'han de dur a terme a la cooperativa permet fer servir eines més especifiques amb les que obtindrem un millor resultat, ja que faràn allò per al que han estat dissenyades i res més.
 
@@ -126,7 +126,7 @@ Sabent els requisitis que te el sistema actual i els que volem assolir en acabar
 
 Vam trobar una eina anomenada [OpenCell](https://opencellsoft.com/). Desenvolupada a França, es una de les eines que més actors del sector de les telecomunicacions fan servir. També altres empreses d'altres ambits integren aquesta eina en el seu sistema. Aquesta eina te una part anomenada community, que ve amb una llicencia open source i una enterprise amb parts no lliures.
 
-![OpenCell logo]()
+![OpenCell logo](/assets/post_images/2019/logo-opencell.png)
 
 L'alternativa que teniem era millorar el procès actual a l'ERP per intentar cobrir les necessitats actuals, encara que sabiem que no escalaria molt i en breus tornariem a tenir els problemes als que ens enfrontem ara. També valorem possitivament que una eina cobreixi el procès pel que ha estat dissenyada. Podeu consultar els pros i contres que vam llistar per a cada opció al [document de justificació del Singulars](TODO justificaci' singulars).
 
@@ -140,7 +140,7 @@ iUn cop triada l'eina, calia implantar el nou procès de facturació a OpenCell 
 
 Es va començar definint l’arquitectura que tindria el nou sistema. L’arquitectura que es va proposar és la que es pot veure a la Figura 2.
 
-![Figura 2](TODO)
+![Figura 2](/assets/post_images/2019/sc-landscape-system-post-oc.png)
 
 Seguint les metodologies que fem servir a Coopdevs, es va fer servir Ansible per automatitzar l’aprovisionament el servidor. Es va crear el repositori d’aprovisionament a Gitlab, en obert i es va documentar perquè altres ho puguin reaprofitar: https://gitlab.com/coopdevs/opencell-provisioning/.
 Per a més informació de com treballem la part de sistemes a Coopdevs, podeu consultar l'entrada al community del company Ferran amb l'explicació de com instalem les instancies d'Odoo, on es detalla més tota la part d'infraestructura: https://community.coopdevs.org/t/memoria-pel-singulars-sobre-la-feina-sysadmin-devops/1042/4
@@ -182,3 +182,14 @@ Cal seguir treballant per millorar aquests processos, però també es van obrint
 També cal marcar com a reptes de futur la creació d'una oficina virtual on les usuàries puguin revisar els seus serveis i modificar aquests i una migració d'ERP de Tryton a Odoo, un sistema amb el qual estem treballant des de Coopdevs des de fa un temps i que fan servir altres cooperatives del territori com Som Mobilitat entre altres.
 
 Tant el tema de l'oficina virtual com el de la migració a Odoo són dues ocasions fantàstiques per a fer intercooperació amb entitats com Som Mobilitat que no deixarem d'aprofitar!
+
+
+## Enllaços
+* [OpenCell](https://opencellsoft.com/)
+* [Projecte de provisió d'una instancia d'OpenCell](https://gitlab.com/coopdevs/opencell-provisioning/)
+* [Client Python d'OpenCell](https://gitlab.com/coopdevs/pyopencell)
+* [Mòdul amb la lógica de negoci que Som Connexió fa servir amb OpenCell](https://gitlab.com/coopdevs/opencell_somconnexio_tryton)
+* [Template factura Jasper](https://gitlab.com/coopdevs/somconnexio_invoice_jasper_template)
+* [Configuració d'OpenCell de Som Connexió](https://gitlab.com/coopdevs/somconnexio-opencell-configuration)
+
+[![logos-singulars](/assets/post_images/2019/logos-singulars.png){:width="100%"}](http://aracoop.coop/)
