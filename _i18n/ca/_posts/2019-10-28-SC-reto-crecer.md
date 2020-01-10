@@ -4,17 +4,17 @@ author: Daniel Palomar
 layout: post
 ---
 
-Ja fa un any que vam començar el projecte [Singulars](http://aracoop.coop/projectes-singulars/) que ens ha permés fer aquesta empenta tant a Coopdevs com a les entitats que participaven agregades al projecte presentat per a la subvenció: [FACTO Assesors SCCL](https://facto.cat/) i [Som Connexió SCCL](https://somconnexio.coop/).
-En aquest post ens centrarem en la feina feta amb Som Connexió especificament. Tal com vam comentar al fil del nostre forum [Som Connexió: Abordant el repte tecnològic de créixer](https://community.coopdevs.org/t/som-connexio-abordant-el-repte-tecnologic-de-creixer/927) que vam escriure al començament del Singulars.
-Aquell post comentaben quins reptes teniem al comen\ament del projecte. Ara podem fer una valoració del que hem aconseguit fer i com ho hem fet. Però començarem amb una petita contextualització del problema, quin era el punt de partida de Som Connexió, quins eren els punts que més calia millorar i com vam afrontar aquest repte fins obtenir una solucion que funciones i permetes augmentar el volum de contractes que gestiona la cooperativa.
+Ja fa un any que vam començar el projecte [Singulars](http://aracoop.coop/projectes-singulars/) que ens ha permès fer aquesta empenta tant a Coopdevs com a les entitats que participaven agregades al projecte presentat per a la subvenció: [FACTO Assesors SCCL](https://facto.cat/) i [Som Connexió SCCL](https://somconnexio.coop/).
+En aquest post ens centrarem en la feina feta amb Som Connexió específicament. Tal com vam comentar al fil del nostre fòrum [Som Connexió: Abordant el repte tecnològic de créixer](https://community.coopdevs.org/t/som-connexio-abordant-el-repte-tecnologic-de-creixer/927) que vam escriure al començament del Singulars.
+A aquell post comentàvem quins reptes teníem al començament del projecte. Ara podem fer una valoració del que hem aconseguit fer i com ho hem fet. Però començarem amb una petita contextualització del problema, quin era el punt de partida de Som Connexió, quins eren els punts que més calia millorar i com vam afrontar aquest repte fins a obtenir una solució que funciones i permetés augmentar el volum de contractes que gestiona la cooperativa.
 
 ## Context
 
-El principal repte que afrontem en aquest projecte és dotar a Som Connexió d'unes eines fortes que permetin escalar el numero de socies/contractes sense aumentar exponencialment el cost de gestio i sense perill de no poder abarcar tants serveis. Però per a poder valorar que ens cal per arribar a complir aquests objectius cal coneixer com funciona la cooperativa i quins son els punts més amb més capacitat de millora dels seus processos.
+El principal repte que afrontem en aquest projecte és dotar a Som Connexió d'unes eines fortes que permetin escalar el número de sòcies/contractes sense comentar exponencialment el cost de gestió i sense perill de no poder abastar tants serveis. Però per a poder valorar que ens cal per arribar a complir aquests objectius cal conèixer com funciona la cooperativa i quins són els punts amb més capacitat de millora dels seus processos.
 
 ### Com funciona Som Connexió?
 
-Som Connexió és una cooperativa de serveis que ofereix serveis de telecomunicacions. Al no tenir una xarxa propia, funciona com a operadora virtual, revenent els serveis que compra a proveidors de telecomunicacions. A la següent imatge es poden veure les funcions que pot fer fins ara Som Connexió i quines no. Lóbjectiu de la cooperativa és creixer en volum, ja que aixó permet tenir més capacitat de negociació per anar abançant fins a convertir-se en una operadora virtual complerta (OMV Complert). Aquest estatus permetria guanyar sobirania sobre els serveis oferits que es a la fi l'objectiu de Som Connexió.
+Som Connexió és una cooperativa de serveis que ofereix serveis de telecomunicacions. Al no tenir una xarxa pròpia, funciona com a operadora virtual, revenent els serveis que compra a proveïdors de telecomunicacions. A la següent imatge es poden veure les funcions que pot fer fins ara Som Connexió i quines no. L'objectiu de la cooperativa és créixer en volum, ja que això permet tenir més capacitat de negociació per anar avançant fins a convertir-se en una operadora virtual completa (OMV Complet). Aquest estatus permetria guanyar sobirania sobre els serveis oferits que és a la fi l'objectiu de Som Connexió.
 
 ![Imatge de les slides n 6](/assets/post_images/2019/funcions-sc-actuals.png)
 
