@@ -169,7 +169,6 @@ Aquest mòdul té tota la lògica de negoci de Som Connexió relacionada amb Ope
 
 ## Conclusions
 
-## Següents passes
 Tot aquest sistema es va acabar d'implantar a finals d'Agost principis de Setembre. Primer es va portar la facturació en paral·lel un parell de mesos fins que es va veure que el sistema era fiable i que les facturacions obtingudes amb el nou sistema eres similars a les que havíem fet amb l'ERP.
 
 Així es van poder extreure algunes dades per comprovar que tota aquesta feina havia permès millorar el sistema de facturació. D'aquestes dades, la més rellevant és la diferència al temps de facturació. De les 60h inicials que requerien per facturar un mes, a unes 19h que es triga amb el nou sistema.
@@ -177,12 +176,13 @@ S’està treballant per automatitzar els processos que encara queden manuals, c
 
 Fins aquí tot el que hem pogut avançar amb el Singulars a la part de Som Connexió, no oblidem que també hem aprofitat aquesta empenta per [treballar amb altres cooperatives i millorar conjuntament els seus processos interns.](https://community.coopdevs.org/t/formacions-gestio-de-cooperatives-a-traves-de-la-millora-de-processos-amb-tecnologia/970)
 
-Cal seguir treballant per millorar aquests processos, però també es van obrint noves oportunitats per millorar els processos. Un clar exemple és la integració amb l'API del proveïdorde telecomunicacions MasMovil. Es preveu que per a finals d'aquest 2019 puguem treballar per integrar al sistema de Som Connexió les interaccions automàtiques amb el sistema de MasMovil, ja que és un dels punts que més temps ocupa als agents i és una feina que ja es fa a OTRS i per duplicat a la plataforma del proveïdor.
+## Següents passes
+
+Cal seguir treballant per millorar aquests processos, però també es van obrint noves oportunitats per millorar els processos. Un clar exemple és la integració amb l'API del proveïdorde telecomunicacions MasMovil. Es preveu que per a començaments de 2020 puguem treballar per integrar al sistema de Som Connexió les interaccions automàtiques amb el sistema de MasMovil, ja que és un dels punts que més temps ocupa als agents i és una feina que ja es fa a OTRS i per duplicat a la plataforma del proveïdor.
 
 També cal marcar com a reptes de futur la creació d'una oficina virtual on les usuàries puguin revisar els seus serveis i modificar aquests i una migració d'ERP de Tryton a Odoo, un sistema amb el qual estem treballant des de Coopdevs des de fa un temps i que fan servir altres cooperatives del territori com Som Mobilitat entre altres.
 
 Tant el tema de l'oficina virtual com el de la migració a Odoo són dues ocasions fantàstiques per a fer intercooperació amb entitats com Som Mobilitat que no deixarem d'aprofitar!
-
 
 ## Enllaços
 * [OpenCell](https://opencellsoft.com/)
