@@ -10,7 +10,7 @@ A aquell post comentàvem quins reptes teníem al començament del projecte. Ara
 
 ## Context
 
-El principal repte que afrontem en aquest projecte és dotar a Som Connexió d'unes eines fortes que permetin escalar el número de sòcies/contractes sense comentar exponencialment el cost de gestió i sense perill de no poder abastar tants serveis. Però per a poder valorar que ens cal per arribar a complir aquests objectius cal conèixer com funciona la cooperativa i quins són els punts amb més capacitat de millora dels seus processos.
+El principal repte que afrontem en aquest projecte és dotar a Som Connexió d'unes eines fortes que permetin escalar el número de sòcies/contractes sense augmentar exponencialment el cost de gestió i sense perill de no poder abastar tants serveis. Però per a poder valorar que ens cal per arribar a complir aquests objectius cal conèixer com funciona la cooperativa i quins són els punts amb més capacitat de millora dels seus processos.
 
 ### Com funciona Som Connexió?
 
