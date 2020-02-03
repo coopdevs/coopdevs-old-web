@@ -29,8 +29,8 @@ pages:
         content: Desarrollamos software libre para proyectos de la Economía Social y Solidaria. ¿Necesitas ayuda?
         link_text: Contacta con nosotros →
       processes:
-        header: Optimización de procesos empresariales
-        content: Analizamos y optimizamos procesos empresariales para cooperativas, fomentamos la intercooperación en los procesos que implican las TIC.
+        header: Mejora de procesos empresariales
+        content: A partir de los datos que genera vuestra actividad empresarial, analizamos la situación actual y proponemos mejoras de procesos y herramientas tecnológicas para alcanzar vuestros objetivos.
         link_text: Saber más →
   blog:
     more: "Seguir leyendo →"

@@ -29,8 +29,8 @@ pages:
         content: Desenvolupem software lliure per a projectes de l'Economia Social i Solidària. Necessites ajuda?
         link_text: Contacta amb nosaltres →
       processes:
-        header: Optimització de processos empresarials
-        content: Analitzem i optimitzem processos empresarials per a cooperatives, fomentem la intercooperació en els processos que impliquen les TIC.
+        header: Millora de processos empresarials
+        content: A partir de les dades que genera la vostra activitat empresarial, analitzem la situació actual i us proposem millores de processos i eines tecnològiques per tal d'assolir els vostres objectius.
         link_text: Saber-ne més →
   blog:
     more: "Seguir llegint →"
