@@ -25,20 +25,20 @@
   {%- assign _heading = "" -%}
 {%- else -%}
   {%- capture _heading -%}
-    <header>
-      <h2>
+    <header class="mb-5">
+      <h3 class="font-sans text-3xl text-gray-700 font-extrabold mb-2">
         {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
           {{- _title -}}
         {%- else -%}
           {{- include.auto-header -}}
         {%- endif -%}
-      </h2>
-      {%- if include.subtitle -%}<p class="small">{{- include.subtitle -}}</p>{%- endif -%}
+      </h3>
+      {%- if include.subtitle -%}<p class="font-sans text-gray-400 text-base">{{- include.subtitle -}}</p>{%- endif -%}
     </header>
   {%- endcapture -%}
 {%- endif -%}
 
-<section id="{{- _slug -}}" class="{{- _class -}}">
+<section id="{{- _slug -}}" class="mb-16">
   {{- _photo -}}
   {{- _heading -}}
   {{- include.content -}}
