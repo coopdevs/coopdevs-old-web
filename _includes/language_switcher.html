@@ -1,5 +1,3 @@
-<ul class="navbar-nav languages">
-
    {% for language in site.translations[site.lang]["global"]["langs"] %}
       {% assign locale = language[0] %}
       {% assign name = language[1] %}
@@ -12,7 +10,5 @@
          {% endif %}
       {% endcapture %}
 
-      <li class="nav-item"><a href={{ page_translation_url }} class='language nav-link'>{{ name }}</a></li>
+      <a class="{{ include.item_class_list }}" href={{ page_translation_url }}>{{ name }}</a>
    {% endfor %}
-
-</ul>
