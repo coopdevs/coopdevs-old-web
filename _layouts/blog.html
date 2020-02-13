@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: default.new
 ---
 
 {%- assign _posts = site.posts | sort: 'date' | reverse -%}
 
 <!-- Main -->
-<div id="main-blog">
+<div id="main-blog" class="my-24 sm:my-48 max-w-2xl mx-auto">
   {%- if page.content != "" -%}
     {%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
   {%- endif -%}
@@ -22,11 +22,15 @@ layout: default
     {%- endcapture -%}
 
     {%- capture _excerpt -%}
-      <p>{{- _post.excerpt | strip_html | truncatewords: 100 -}}</p>
+      <p class="font-sans text-gray-400 text-lg">
+        {{- _post.excerpt | strip_html | truncatewords: 100 -}}
+      </p>
     {%- endcapture -%}
 
     {%- capture _link -%}
-      <a class="small" href="{{- _post.url | absolute_url -}}">{% t pages.blog.more %}</a>
+      <div class="mt-5">
+        <a class="font-sans text-blue-500 text-lg" href="{{- _post.url | absolute_url -}}">{% t pages.blog.more %}</a>
+      </div>
     {%- endcapture -%}
 
     {%- assign _content = _excerpt | append: _link -%}
