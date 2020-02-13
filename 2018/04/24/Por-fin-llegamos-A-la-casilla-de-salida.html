@@ -12,75 +12,112 @@
 
 
 
-    
-<meta property="og:title" content="Por fin llegamos! A la casilla de salida" />
- 
-
- 
-
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href='/assets/css/main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href='/css/site.css'>
   </head>
 
-  <body>
-    <nav class='nav navbar navbar-expand flex-row-reverse'>
-      <ul class="navbar-nav languages">
+  <body class="flex flex-col min-h-screen">
+    <div class="flex-1 mx-8">
+      <div class="my-8 max-w-4xl mx-auto md:my-10">
+        <div class="flex flex-row justify-between">
+  <div>
+    <a href="/">
+      <img src='/assets/img/logo_without_slogan.svg' />
+    </a>
+  </div>
 
-   
+  <nav class="hidden md:flex">
+    <ul class="flex text-gray-300">
+      <li class="ml-8"><a href=/blog.html>Blog</a></li>
+      <li class="ml-8"><a href=https://community.coopdevs.org>Comunitat</a></li>
+    </ul>
+
+    <ul class="flex ml-8 text-gray-300">
+         
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /es/2018/04/24/Por-fin-llegamos-A-la-casilla-de-salida.html }}
          
-       class='language nav-link'>Espanyol</a></li>
+      >Espanyol</a>
    
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /2018/04/24/Por-fin-llegamos-A-la-casilla-de-salida.html }}
          
-       class='language nav-link'>Català</a></li>
+      >Català</a>
    
 
-</ul>
+    </ul>
+  </nav>
 
-
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href=/blog.html class='nav-link'>Blog</a></li>
-      </ul>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class='mx-auto col-12 col-sm-10 col-md-8 content'>
-
-          <div class='hero'>
-   <div class='hero__logo'>
-      <a href="/"><img src='/assets/img/logo.svg')} /></a>
-   </div>
+  <button type="button" id="sidebar-open" class="cursor-pointer md:hidden text-gray-300 focus:outline-none">
+    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+  </button>
+  <button type="button" id="sidebar-close" class="hidden cursor-pointer md:hidden text-gray-300">
+    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path></svg>
+  </button>
 </div>
 
 
-          <!-- Main -->
-<div id="main-blog">
-  <!-- Post -->
-  <article class="shade-two post">
-    <header>
-      <h1>Por fin llegamos! A la casilla de salida</h1>
-      <p class="small">Sergi Alonso – 24 April 2018</p>
-    </header><p>Parece que haya pasado una eternidad desde que en 2016 fundamos la asociación Coopdevs. Ocurrió como resultado del encuentro entre <a href="https://www.timeoverflow.org/">TimeOverflow</a> y <a href="http://katuma.org/">Katuma</a>, ambos proyectos empezaron su andadura por separado en 2012, resolvían la clara necesidad técnica de los bancos de tiempo y grupos de consumo, proyectos locales habitualmente autogestionados. Cuando los dos equipos nos encontramos nos dimos cuenta de que compartíamos un reto común: encontrar la sostenibilidad para estos proyectos de alto impacto social. Decidimos asumir este desafío conjuntamente.</p>
+        <div id="sidebar" class="hidden w-full pt-6">
+  <nav class="text-gray-300">
+    <a class="block py-2" href=/blog.html>Blog</a>
+    <a class="block py-2" href=https://community.coopdevs.org>Comunitat</a>
+
+    <div class="py-3">
+         
+      
+      
+
+      
+
+      <a class="block py-2" href=
+         
+            /es/2018/04/24/Por-fin-llegamos-A-la-casilla-de-salida.html }}
+         
+      >Espanyol</a>
+   
+      
+      
+
+      
+
+      <a class="block py-2" href=
+         
+            /2018/04/24/Por-fin-llegamos-A-la-casilla-de-salida.html }}
+         
+      >Català</a>
+   
+
+    </div>
+  </nav>
+</div>
+
+
+
+        <link rel="stylesheet" href='/assets/css/post.css'>
+
+<div id="main-blog" class="my-24 sm:my-48 max-w-2xl mx-auto">
+  <article class="shade-two">
+
+    <header class="mb-20">
+      <h1 class="font-sans text-4xl text-gray-700 font-extrabold mb-4 leading-tight">Por fin llegamos! A la casilla de salida</h1>
+      <p class="font-sans text-gray-300 text-base">Sergi Alonso – 24 April 2018</p>
+    </header>
+
+    
+
+    <div class="post-content"><p>Parece que haya pasado una eternidad desde que en 2016 fundamos la asociación Coopdevs. Ocurrió como resultado del encuentro entre <a href="https://www.timeoverflow.org/">TimeOverflow</a> y <a href="http://katuma.org/">Katuma</a>, ambos proyectos empezaron su andadura por separado en 2012, resolvían la clara necesidad técnica de los bancos de tiempo y grupos de consumo, proyectos locales habitualmente autogestionados. Cuando los dos equipos nos encontramos nos dimos cuenta de que compartíamos un reto común: encontrar la sostenibilidad para estos proyectos de alto impacto social. Decidimos asumir este desafío conjuntamente.</p>
 
 <p><img src="/assets/post_images/2018/rocaguinarda_2016.jpg" alt="Fundación de la asociación Coopdevs en Rocaguinarda" width="100%" />
 <em>Fundación de la asociación Coopdevs en <a href="http://www.rocaguinarda.org/">Rocaguinarda</a></em></p>
@@ -111,13 +148,52 @@
 <p>A principios de 2018 creamos la cooperativa Coopdevs treball SCCL, el brazo profesionalizado de Coopdevs. Esto nos dota de otra herramienta más. La asociación Coopdevs es el núcleo de nuestras actividades, todos nuestros proyectos se impulsan desde su asamblea. Queremos que se acerquen personas de diferentes perfiles e intereses y que entre todos podamos crear un ecosistema que nos enriquezca personal y profesionalmente bajo un interés común: potenciar la ESS con tecnología. Para ello vemos claro que necesitamos profesionales dedicados a tiempo completo y por ello no vemos mejor opción que hacerlo en forma de cooperativa de trabajadores.</p>
 
 <p>Así pues hemos llegado, tenemos todas las herramientas para hacer realidad nuestro particular Silicon Valley de la economía social, y al mismo tiempo estamos solo en la casilla de salida, aún queda mucho recorrido por delante para poder afirmar que es posible. Estamos preparados.</p>
-</article>
 </div>
 
+  </article>
+</div>
 
+      </div>
+    </div>
+
+    <div class="bg-gray-100">
+  <div class="mx-8">
+    <div class="pt-10 pb-16 max-w-3xl mx-auto md:pt-32 md:flex md:flex-row md:justify-between lg:max-w-4xl">
+      <div class="pb-4 md:pb-0">
+        <img src='/assets/img/logo_with_slogan_underneath.svg' />
+      </div>
+
+      <div class="md:flex md:flex-row">
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Oficina</h4>
+          <p>Coworking Nogués</p>
+          <p>Passatge de Nogués 10</p>
+          <p>08025 Barcelona - Catalunya</p>
+        </div>
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Contacta'ns</h4>
+          <p><a href="https://community.coopdevs.org" title="Coopdevs Community Forum">community.coopdevs.org</a></p>
+          <p><a href="mailto:info@coopdevs.org">info@coopdevs.org</a></p>
         </div>
       </div>
     </div>
+
+    <div class="max-w-3xl lg:max-w-4xl md:mx-auto pb-8 md:pb-12 flex flex-row-reverse">
+      <a href="https://github.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/github-brands.svg' />
+      </a>
+      <a href="https://gitlab.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/gitlab-brands.svg' />
+      </a>
+      <a href="https://twitter.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/twitter-brands.svg' />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <script src='/assets/js/index.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48794646-3"></script>

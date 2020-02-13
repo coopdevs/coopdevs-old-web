@@ -12,75 +12,112 @@
 
 
 
-    
-<meta property="og:title" content="Construyendo comunidades Open Source en la ESS" />
- 
-
- 
-
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href='/assets/css/main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href='/css/site.css'>
   </head>
 
-  <body>
-    <nav class='nav navbar navbar-expand flex-row-reverse'>
-      <ul class="navbar-nav languages">
+  <body class="flex flex-col min-h-screen">
+    <div class="flex-1 mx-8">
+      <div class="my-8 max-w-4xl mx-auto md:my-10">
+        <div class="flex flex-row justify-between">
+  <div>
+    <a href="/">
+      <img src='/assets/img/logo_without_slogan.svg' />
+    </a>
+  </div>
 
-   
+  <nav class="hidden md:flex">
+    <ul class="flex text-gray-300">
+      <li class="ml-8"><a href=/blog.html>Blog</a></li>
+      <li class="ml-8"><a href=https://community.coopdevs.org>Comunitat</a></li>
+    </ul>
+
+    <ul class="flex ml-8 text-gray-300">
+         
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /es/2019/05/22/contruyendo-comunidades-open-source.html }}
          
-       class='language nav-link'>Espanyol</a></li>
+      >Espanyol</a>
    
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /2019/05/22/contruyendo-comunidades-open-source.html }}
          
-       class='language nav-link'>Català</a></li>
+      >Català</a>
    
 
-</ul>
+    </ul>
+  </nav>
 
-
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href=/blog.html class='nav-link'>Blog</a></li>
-      </ul>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class='mx-auto col-12 col-sm-10 col-md-8 content'>
-
-          <div class='hero'>
-   <div class='hero__logo'>
-      <a href="/"><img src='/assets/img/logo.svg')} /></a>
-   </div>
+  <button type="button" id="sidebar-open" class="cursor-pointer md:hidden text-gray-300 focus:outline-none">
+    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+  </button>
+  <button type="button" id="sidebar-close" class="hidden cursor-pointer md:hidden text-gray-300">
+    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path></svg>
+  </button>
 </div>
 
 
-          <!-- Main -->
-<div id="main-blog">
-  <!-- Post -->
-  <article class="shade-two post">
-    <header>
-      <h1>Construyendo comunidades Open Source en la ESS</h1>
-      <p class="small">Sergi Alonso – 22 May 2019</p>
-    </header><p>En el ámbito de la Economía Social y Solidaria (ESS) frecuentemente hay proyectos y entidades que se interesan por el software de código abierto. Les gustaría quizás reutilizar código de otros o publicar su software para que otros lo puedan aprovechar, incluso a veces por obligación de una subvención pública se debe publicar el código fuente que ha sido subvencionado. A menudo vemos que la percepción del código abierto no va mucho más allá de reutilizar código ya hecho por otros o bien que otros puedan reutilizar nuestro código.</p>
+        <div id="sidebar" class="hidden w-full pt-6">
+  <nav class="text-gray-300">
+    <a class="block py-2" href=/blog.html>Blog</a>
+    <a class="block py-2" href=https://community.coopdevs.org>Comunitat</a>
+
+    <div class="py-3">
+         
+      
+      
+
+      
+
+      <a class="block py-2" href=
+         
+            /es/2019/05/22/contruyendo-comunidades-open-source.html }}
+         
+      >Espanyol</a>
+   
+      
+      
+
+      
+
+      <a class="block py-2" href=
+         
+            /2019/05/22/contruyendo-comunidades-open-source.html }}
+         
+      >Català</a>
+   
+
+    </div>
+  </nav>
+</div>
+
+
+
+        <link rel="stylesheet" href='/assets/css/post.css'>
+
+<div id="main-blog" class="my-24 sm:my-48 max-w-2xl mx-auto">
+  <article class="shade-two">
+
+    <header class="mb-20">
+      <h1 class="font-sans text-4xl text-gray-700 font-extrabold mb-4 leading-tight">Construyendo comunidades Open Source en la ESS</h1>
+      <p class="font-sans text-gray-300 text-base">Sergi Alonso – 22 May 2019</p>
+    </header>
+
+    
+
+    <div class="post-content"><p>En el ámbito de la Economía Social y Solidaria (ESS) frecuentemente hay proyectos y entidades que se interesan por el software de código abierto. Les gustaría quizás reutilizar código de otros o publicar su software para que otros lo puedan aprovechar, incluso a veces por obligación de una subvención pública se debe publicar el código fuente que ha sido subvencionado. A menudo vemos que la percepción del código abierto no va mucho más allá de reutilizar código ya hecho por otros o bien que otros puedan reutilizar nuestro código.</p>
 
 <p>No se acaba de comprender el valor intrínseco de producir o participar en la producción de software de código abierto a través de una comunidad que contribuye porqué valora y comparte los fines que ese proyecto persigue. Una comunidad Open Source sana ofrece una grandes ventajas como estrategia: reduce costes de producción, mantenimiento y seguridad del software. Dejamos de ser meros clientes de un proveedor tecnológico para participar activamente en una comunidad con objetivos comunes.</p>
 
@@ -121,13 +158,52 @@
 <p>En Coopdevs participamos en varias comunidades Open Source, entre ellas destacan <a href="https://openfoodnetwork.net/">Open Food Network (Katuma.org)</a> y <a href="https://www.timeoverflow.org/">TimeOverflow</a>. Acompañamos y potenciamos <a href="https://community.coopdevs.org/c/floss-communities">comunidades FLOSS</a> (Free Libre Open Source Software) e intercooperamos para mejorar <a href="https://community.coopdevs.org/c/it-processes-for-coops">procesos comunes</a> con soluciones Open Source en el movimiento cooperativista.</p>
 
 <p>Si quieres conocer más sobre comunidades Open Source te recomendamos leer <a href="https://opensource.guide/es/">https://opensource.guide/es/</a></p>
-</article>
 </div>
 
+  </article>
+</div>
 
+      </div>
+    </div>
+
+    <div class="bg-gray-100">
+  <div class="mx-8">
+    <div class="pt-10 pb-16 max-w-3xl mx-auto md:pt-32 md:flex md:flex-row md:justify-between lg:max-w-4xl">
+      <div class="pb-4 md:pb-0">
+        <img src='/assets/img/logo_with_slogan_underneath.svg' />
+      </div>
+
+      <div class="md:flex md:flex-row">
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Oficina</h4>
+          <p>Coworking Nogués</p>
+          <p>Passatge de Nogués 10</p>
+          <p>08025 Barcelona - Catalunya</p>
+        </div>
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Contacta'ns</h4>
+          <p><a href="https://community.coopdevs.org" title="Coopdevs Community Forum">community.coopdevs.org</a></p>
+          <p><a href="mailto:info@coopdevs.org">info@coopdevs.org</a></p>
         </div>
       </div>
     </div>
+
+    <div class="max-w-3xl lg:max-w-4xl md:mx-auto pb-8 md:pb-12 flex flex-row-reverse">
+      <a href="https://github.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/github-brands.svg' />
+      </a>
+      <a href="https://gitlab.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/gitlab-brands.svg' />
+      </a>
+      <a href="https://twitter.com/coopdevs">
+        <img class="ml-4" src='/assets/img/social/twitter-brands.svg' />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <script src='/assets/js/index.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48794646-3"></script>

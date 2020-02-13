@@ -12,98 +12,179 @@
 
 
 
-    
-<meta property="og:title" content="Blog" />
- 
-
- 
-
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href='/es/assets/css/main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href='/es/css/site.css'>
   </head>
 
-  <body>
-    <nav class='nav navbar navbar-expand flex-row-reverse'>
-      <ul class="navbar-nav languages">
+  <body class="flex flex-col min-h-screen">
+    <div class="flex-1 mx-8">
+      <div class="my-8 max-w-4xl mx-auto md:my-10">
+        <div class="flex flex-row justify-between">
+  <div>
+    <a href="/">
+      <img src='/es/assets/img/logo_without_slogan.svg' />
+    </a>
+  </div>
 
-   
+  <nav class="hidden md:flex">
+    <ul class="flex text-gray-300">
+      <li class="ml-8"><a href=/es/blog.html>Blog</a></li>
+      <li class="ml-8"><a href=https://community.coopdevs.org>Comunidad</a></li>
+    </ul>
+
+    <ul class="flex ml-8 text-gray-300">
+         
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /es/blog.html }}
          
-       class='language nav-link'>Español</a></li>
+      >Español</a>
    
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /blog.html }}
          
-       class='language nav-link'>Catalán</a></li>
+      >Catalán</a>
    
 
-</ul>
+    </ul>
+  </nav>
 
-
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href=/es/blog.html class='nav-link'>Blog</a></li>
-      </ul>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class='mx-auto col-12 col-sm-10 col-md-8 content'>
-
-          <div class='hero'>
-   <div class='hero__logo'>
-      <a href="/"><img src='/es/assets/img/logo.svg')} /></a>
-   </div>
+  <button type="button" id="sidebar-open" class="cursor-pointer md:hidden text-gray-300 focus:outline-none">
+    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+  </button>
+  <button type="button" id="sidebar-close" class="hidden cursor-pointer md:hidden text-gray-300">
+    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path></svg>
+  </button>
 </div>
 
 
-          <!-- Main -->
-<div id="main-blog"><!-- Posts List --><section id="erp-per-a-cooperatives-facilitant-processos-de-gestió-amb-programari-lliure" class="shade-two"><header>
-      <h2><a href="http://coopdevs.org/es/2019/09/25/ERP-per-a-cooperatives.html">ERP per a cooperatives: facilitant processos de gestió amb programari lliure</a></h2><p class="small">Sergi Alonso – 25 September 2019</p></header><p>Durant aquest any 2019 hem estat desenvolupant el projecte Singulars “Estudi, desenvolupament i acompanyament per la implementació de sistemes ERP de programari lliure especialitzats en cooperatives i ESS”. Hem pogut comprovar les necessitats de les entitats de l’Economía Social i Solidària i constatar que existeixen forces procesos susceptibles de ser millorats o implantats mitjançant eines TIC.
+        <div id="sidebar" class="hidden w-full pt-6">
+  <nav class="text-gray-300">
+    <a class="block py-2" href=/es/blog.html>Blog</a>
+    <a class="block py-2" href=https://community.coopdevs.org>Comunidad</a>
 
-</p><a class="small" href="http://coopdevs.org/es/2019/09/25/ERP-per-a-cooperatives.html">Seguir leyendo →</a></section>
-<section id="el-primer-hackathon-d-ofn" class="shade-three"><header>
-      <h2><a href="http://coopdevs.org/es/2019/06/14/el-primer-hackathon-d'OFN.html">El primer hackathon d'OFN</a></h2><p class="small">Pau Pérez – 14 June 2019</p></header><p>El passat 4 de maig vam tenir l’honor de participar al UK DevHack, el primer hackathon que ha organitzat Open Food Network fins al moment. Va ser una experiència enriquidora que ens ha servit com a tastet de cara a futurs esdeveniments però que ha fet créixer una mica més la comunitat al voltant del projecte, el seu gran valor, molt més que qualsevol software.
+    <div class="py-3">
+         
+      
+      
 
-</p><a class="small" href="http://coopdevs.org/es/2019/06/14/el-primer-hackathon-d'OFN.html">Seguir leyendo →</a></section>
-<section id="construyendo-comunidades-open-source-en-la-ess" class="shade-four"><header>
-      <h2><a href="http://coopdevs.org/es/2019/05/22/contruyendo-comunidades-open-source.html">Construyendo comunidades Open Source en la ESS</a></h2><p class="small">Sergi Alonso – 22 May 2019</p></header><p>En el ámbito de la Economía Social y Solidaria (ESS) frecuentemente hay proyectos y entidades que se interesan por el software de código abierto. Les gustaría quizás reutilizar código de otros o publicar su software para que otros lo puedan aprovechar, incluso a veces por obligación de una subvención pública se debe publicar el código fuente que ha sido subvencionado. A menudo vemos que la percepción del código abierto no va mucho más allá de reutilizar código ya hecho por otros o bien que otros puedan reutilizar nuestro código.
+      
 
-</p><a class="small" href="http://coopdevs.org/es/2019/05/22/contruyendo-comunidades-open-source.html">Seguir leyendo →</a></section>
-<section id="qui-controla-la-plataforma-la-proposta-del-cooperativisme-de-plataforma" class="shade-three"><header>
-      <h2><a href="http://coopdevs.org/es/2018/07/23/cooperativisme-de-plataforma.html">Qui controla la plataforma? La proposta del cooperativisme de plataforma</a></h2><p class="small">Sergi Alonso – 23 July 2018</p></header><p>La propera Fira d’Economia Solidària tractarà sobre les “sobiranies”, en plural. La sobirania d’un territori o d’una societat és, en realitat, un conjunt de sobiranies que hem de construir entre totes. Sobirania alimentària, tecnològica, energètica, financera, etc.
+      <a class="block py-2" href=
+         
+            /es/blog.html }}
+         
+      >Español</a>
+   
+      
+      
 
-</p><a class="small" href="http://coopdevs.org/es/2018/07/23/cooperativisme-de-plataforma.html">Seguir leyendo →</a></section>
-<section id="katuma-en-xifres" class="shade-two"><header>
-      <h2><a href="http://coopdevs.org/es/2018/05/25/katuma-en-xifres.html">Katuma en xifres</a></h2><p class="small">Pau Pérez – 25 May 2018</p></header><p>Des de la passada assemblea de Katuma el 15 de gener han passat un munt de coses al projecte. El que ben segur recordareu la majoria és el recentment acabat matchfunding realitzat a Goteo amb el que s’ha recaptat una xifra total de 9.711 €!
+      
 
-</p><a class="small" href="http://coopdevs.org/es/2018/05/25/katuma-en-xifres.html">Seguir leyendo →</a></section>
-<section id="por-fin-llegamos-a-la-casilla-de-salida" class="shade-three"><header>
-      <h2><a href="http://coopdevs.org/es/2018/04/24/Por-fin-llegamos-A-la-casilla-de-salida.html">Por fin llegamos! A la casilla de salida</a></h2><p class="small">Sergi Alonso – 24 April 2018</p></header><p>Parece que haya pasado una eternidad desde que en 2016 fundamos la asociación Coopdevs. Ocurrió como resultado del encuentro entre TimeOverflow y Katuma, ambos proyectos empezaron su andadura por separado en 2012, resolvían la clara necesidad técnica de los bancos de tiempo y grupos de consumo, proyectos locales habitualmente autogestionados. Cuando los dos equipos nos encontramos nos dimos cuenta de que compartíamos un reto común: encontrar la sostenibilidad para estos proyectos de alto impacto social. Decidimos asumir este desafío conjuntamente.
+      <a class="block py-2" href=
+         
+            /blog.html }}
+         
+      >Catalán</a>
+   
 
-</p><a class="small" href="http://coopdevs.org/es/2018/04/24/Por-fin-llegamos-A-la-casilla-de-salida.html">Seguir leyendo →</a></section>
+    </div>
+  </nav>
 </div>
 
 
+
+        <!-- Main -->
+<div id="main-blog" class="my-24 sm:my-48 max-w-2xl mx-auto"><!-- Posts List --><section id="erp-per-a-cooperatives-facilitant-processos-de-gestió-amb-programari-lliure" class="mb-16"><header class="mb-5">
+      <h3 class="font-sans text-3xl text-gray-700 font-extrabold leading-tight"><a href="http://coopdevs.org/es/2019/09/25/ERP-per-a-cooperatives.html">ERP per a cooperatives: facilitant processos de gestió amb programari lliure</a></h3><p class="font-sans text-gray-300 text-base mt-3">Sergi Alonso – 25 September 2019</p></header><p class="font-sans text-gray-400 text-lg">Durant aquest any 2019 hem estat desenvolupant el projecte Singulars “Estudi, desenvolupament i acompanyament per la implementació de sistemes ERP de programari lliure especialitzats en cooperatives i ESS”. Hem pogut comprovar les necessitats de les entitats de l’Economía Social i Solidària i constatar que existeixen forces procesos susceptibles de ser millorats o implantats mitjançant eines TIC.
+
+</p><div class="mt-5">
+        <a class="font-sans text-blue-500 text-lg" href="http://coopdevs.org/es/2019/09/25/ERP-per-a-cooperatives.html">Seguir leyendo →</a>
+      </div></section>
+<section id="el-primer-hackathon-d-ofn" class="mb-16"><header class="mb-5">
+      <h3 class="font-sans text-3xl text-gray-700 font-extrabold leading-tight"><a href="http://coopdevs.org/es/2019/06/14/el-primer-hackathon-d'OFN.html">El primer hackathon d'OFN</a></h3><p class="font-sans text-gray-300 text-base mt-3">Pau Pérez – 14 June 2019</p></header><p class="font-sans text-gray-400 text-lg">El passat 4 de maig vam tenir l’honor de participar al UK DevHack, el primer hackathon que ha organitzat Open Food Network fins al moment. Va ser una experiència enriquidora que ens ha servit com a tastet de cara a futurs esdeveniments però que ha fet créixer una mica més la comunitat al voltant del projecte, el seu gran valor, molt més que qualsevol software.
+
+</p><div class="mt-5">
+        <a class="font-sans text-blue-500 text-lg" href="http://coopdevs.org/es/2019/06/14/el-primer-hackathon-d'OFN.html">Seguir leyendo →</a>
+      </div></section>
+<section id="construyendo-comunidades-open-source-en-la-ess" class="mb-16"><header class="mb-5">
+      <h3 class="font-sans text-3xl text-gray-700 font-extrabold leading-tight"><a href="http://coopdevs.org/es/2019/05/22/contruyendo-comunidades-open-source.html">Construyendo comunidades Open Source en la ESS</a></h3><p class="font-sans text-gray-300 text-base mt-3">Sergi Alonso – 22 May 2019</p></header><p class="font-sans text-gray-400 text-lg">En el ámbito de la Economía Social y Solidaria (ESS) frecuentemente hay proyectos y entidades que se interesan por el software de código abierto. Les gustaría quizás reutilizar código de otros o publicar su software para que otros lo puedan aprovechar, incluso a veces por obligación de una subvención pública se debe publicar el código fuente que ha sido subvencionado. A menudo vemos que la percepción del código abierto no va mucho más allá de reutilizar código ya hecho por otros o bien que otros puedan reutilizar nuestro código.
+
+</p><div class="mt-5">
+        <a class="font-sans text-blue-500 text-lg" href="http://coopdevs.org/es/2019/05/22/contruyendo-comunidades-open-source.html">Seguir leyendo →</a>
+      </div></section>
+<section id="qui-controla-la-plataforma-la-proposta-del-cooperativisme-de-plataforma" class="mb-16"><header class="mb-5">
+      <h3 class="font-sans text-3xl text-gray-700 font-extrabold leading-tight"><a href="http://coopdevs.org/es/2018/07/23/cooperativisme-de-plataforma.html">Qui controla la plataforma? La proposta del cooperativisme de plataforma</a></h3><p class="font-sans text-gray-300 text-base mt-3">Sergi Alonso – 23 July 2018</p></header><p class="font-sans text-gray-400 text-lg">La propera Fira d’Economia Solidària tractarà sobre les “sobiranies”, en plural. La sobirania d’un territori o d’una societat és, en realitat, un conjunt de sobiranies que hem de construir entre totes. Sobirania alimentària, tecnològica, energètica, financera, etc.
+
+</p><div class="mt-5">
+        <a class="font-sans text-blue-500 text-lg" href="http://coopdevs.org/es/2018/07/23/cooperativisme-de-plataforma.html">Seguir leyendo →</a>
+      </div></section>
+<section id="katuma-en-xifres" class="mb-16"><header class="mb-5">
+      <h3 class="font-sans text-3xl text-gray-700 font-extrabold leading-tight"><a href="http://coopdevs.org/es/2018/05/25/katuma-en-xifres.html">Katuma en xifres</a></h3><p class="font-sans text-gray-300 text-base mt-3">Pau Pérez – 25 May 2018</p></header><p class="font-sans text-gray-400 text-lg">Des de la passada assemblea de Katuma el 15 de gener han passat un munt de coses al projecte. El que ben segur recordareu la majoria és el recentment acabat matchfunding realitzat a Goteo amb el que s’ha recaptat una xifra total de 9.711 €!
+
+</p><div class="mt-5">
+        <a class="font-sans text-blue-500 text-lg" href="http://coopdevs.org/es/2018/05/25/katuma-en-xifres.html">Seguir leyendo →</a>
+      </div></section>
+<section id="por-fin-llegamos-a-la-casilla-de-salida" class="mb-16"><header class="mb-5">
+      <h3 class="font-sans text-3xl text-gray-700 font-extrabold leading-tight"><a href="http://coopdevs.org/es/2018/04/24/Por-fin-llegamos-A-la-casilla-de-salida.html">Por fin llegamos! A la casilla de salida</a></h3><p class="font-sans text-gray-300 text-base mt-3">Sergi Alonso – 24 April 2018</p></header><p class="font-sans text-gray-400 text-lg">Parece que haya pasado una eternidad desde que en 2016 fundamos la asociación Coopdevs. Ocurrió como resultado del encuentro entre TimeOverflow y Katuma, ambos proyectos empezaron su andadura por separado en 2012, resolvían la clara necesidad técnica de los bancos de tiempo y grupos de consumo, proyectos locales habitualmente autogestionados. Cuando los dos equipos nos encontramos nos dimos cuenta de que compartíamos un reto común: encontrar la sostenibilidad para estos proyectos de alto impacto social. Decidimos asumir este desafío conjuntamente.
+
+</p><div class="mt-5">
+        <a class="font-sans text-blue-500 text-lg" href="http://coopdevs.org/es/2018/04/24/Por-fin-llegamos-A-la-casilla-de-salida.html">Seguir leyendo →</a>
+      </div></section>
+</div>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-100">
+  <div class="mx-8">
+    <div class="pt-10 pb-16 max-w-3xl mx-auto md:pt-32 md:flex md:flex-row md:justify-between lg:max-w-4xl">
+      <div class="pb-4 md:pb-0">
+        <img src='/es/assets/img/logo_with_slogan_underneath.svg' />
+      </div>
+
+      <div class="md:flex md:flex-row">
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Oficina</h4>
+          <p>Coworking Nogués</p>
+          <p>Passatge de Nogués 10</p>
+          <p>08025 Barcelona - Catalunya</p>
+        </div>
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Contáctanos</h4>
+          <p><a href="https://community.coopdevs.org" title="Coopdevs Community Forum">community.coopdevs.org</a></p>
+          <p><a href="mailto:info@coopdevs.org">info@coopdevs.org</a></p>
         </div>
       </div>
     </div>
+
+    <div class="max-w-3xl lg:max-w-4xl md:mx-auto pb-8 md:pb-12 flex flex-row-reverse">
+      <a href="https://github.com/coopdevs">
+        <img class="ml-4" src='/es/assets/img/social/github-brands.svg' />
+      </a>
+      <a href="https://gitlab.com/coopdevs">
+        <img class="ml-4" src='/es/assets/img/social/gitlab-brands.svg' />
+      </a>
+      <a href="https://twitter.com/coopdevs">
+        <img class="ml-4" src='/es/assets/img/social/twitter-brands.svg' />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <script src='/es/assets/js/index.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48794646-3"></script>

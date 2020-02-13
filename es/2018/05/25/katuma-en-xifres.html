@@ -12,75 +12,112 @@
 
 
 
-    
-<meta property="og:title" content="Katuma en xifres" />
- 
-
- 
-
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href='/es/assets/css/main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href='/es/css/site.css'>
   </head>
 
-  <body>
-    <nav class='nav navbar navbar-expand flex-row-reverse'>
-      <ul class="navbar-nav languages">
+  <body class="flex flex-col min-h-screen">
+    <div class="flex-1 mx-8">
+      <div class="my-8 max-w-4xl mx-auto md:my-10">
+        <div class="flex flex-row justify-between">
+  <div>
+    <a href="/">
+      <img src='/es/assets/img/logo_without_slogan.svg' />
+    </a>
+  </div>
 
-   
+  <nav class="hidden md:flex">
+    <ul class="flex text-gray-300">
+      <li class="ml-8"><a href=/es/blog.html>Blog</a></li>
+      <li class="ml-8"><a href=https://community.coopdevs.org>Comunidad</a></li>
+    </ul>
+
+    <ul class="flex ml-8 text-gray-300">
+         
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /es/2018/05/25/katuma-en-xifres.html }}
          
-       class='language nav-link'>Español</a></li>
+      >Español</a>
    
       
       
 
       
 
-      <li class="nav-item"><a href=
+      <a class="ml-8" href=
          
             /2018/05/25/katuma-en-xifres.html }}
          
-       class='language nav-link'>Catalán</a></li>
+      >Catalán</a>
    
 
-</ul>
+    </ul>
+  </nav>
 
-
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href=/es/blog.html class='nav-link'>Blog</a></li>
-      </ul>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class='mx-auto col-12 col-sm-10 col-md-8 content'>
-
-          <div class='hero'>
-   <div class='hero__logo'>
-      <a href="/"><img src='/es/assets/img/logo.svg')} /></a>
-   </div>
+  <button type="button" id="sidebar-open" class="cursor-pointer md:hidden text-gray-300 focus:outline-none">
+    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+  </button>
+  <button type="button" id="sidebar-close" class="hidden cursor-pointer md:hidden text-gray-300">
+    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path></svg>
+  </button>
 </div>
 
 
-          <!-- Main -->
-<div id="main-blog">
-  <!-- Post -->
-  <article class="shade-two post">
-    <header>
-      <h1>Katuma en xifres</h1>
-      <p class="small">Pau Pérez – 25 May 2018</p>
-    </header><p>Des de la passada assemblea de Katuma el 15 de gener han passat un munt de coses al projecte. El que ben segur recordareu la majoria és el recentment acabat <a href="https://www.goteo.org/project/katuma">matchfunding</a> realitzat a Goteo amb el que s’ha recaptat una xifra total de 9.711 €!</p>
+        <div id="sidebar" class="hidden w-full pt-6">
+  <nav class="text-gray-300">
+    <a class="block py-2" href=/es/blog.html>Blog</a>
+    <a class="block py-2" href=https://community.coopdevs.org>Comunidad</a>
+
+    <div class="py-3">
+         
+      
+      
+
+      
+
+      <a class="block py-2" href=
+         
+            /es/2018/05/25/katuma-en-xifres.html }}
+         
+      >Español</a>
+   
+      
+      
+
+      
+
+      <a class="block py-2" href=
+         
+            /2018/05/25/katuma-en-xifres.html }}
+         
+      >Catalán</a>
+   
+
+    </div>
+  </nav>
+</div>
+
+
+
+        <link rel="stylesheet" href='/es/assets/css/post.css'>
+
+<div id="main-blog" class="my-24 sm:my-48 max-w-2xl mx-auto">
+  <article class="shade-two">
+
+    <header class="mb-20">
+      <h1 class="font-sans text-4xl text-gray-700 font-extrabold mb-4 leading-tight">Katuma en xifres</h1>
+      <p class="font-sans text-gray-300 text-base">Pau Pérez – 25 May 2018</p>
+    </header>
+
+    
+
+    <div class="post-content"><p>Des de la passada assemblea de Katuma el 15 de gener han passat un munt de coses al projecte. El que ben segur recordareu la majoria és el recentment acabat <a href="https://www.goteo.org/project/katuma">matchfunding</a> realitzat a Goteo amb el que s’ha recaptat una xifra total de 9.711 €!</p>
 
 <p>Algunes dades rellevants que s’han vist aquests darrers quatre mesos i escaig són un increment general en nombre de grups i productors que s’ha vist reflectit en les següents mètriques.</p>
 
@@ -113,13 +150,52 @@
 
 <p>Ens veiem el 30 de maig a les 17:30h a l’<a href="https://www.google.es/maps/place/Espai+30,+Carrer+d'Hondures,+30,+08027+Barcelona/@41.4200579,2.1899804,16z/data=!4m2!3m1!1s0x12a4a32cb1a51195:0x5f4c5b8f05892eb7">Espai 30</a>.<br />
 C/ Hondures 30, La Sagrera, Barcelona</p>
-</article>
 </div>
 
+  </article>
+</div>
 
+      </div>
+    </div>
+
+    <div class="bg-gray-100">
+  <div class="mx-8">
+    <div class="pt-10 pb-16 max-w-3xl mx-auto md:pt-32 md:flex md:flex-row md:justify-between lg:max-w-4xl">
+      <div class="pb-4 md:pb-0">
+        <img src='/es/assets/img/logo_with_slogan_underneath.svg' />
+      </div>
+
+      <div class="md:flex md:flex-row">
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Oficina</h4>
+          <p>Coworking Nogués</p>
+          <p>Passatge de Nogués 10</p>
+          <p>08025 Barcelona - Catalunya</p>
+        </div>
+        <div class="mt-6 md:mt-0 md:w-56 md:ml-8 text-gray-700">
+          <h4 class="font-bold">Contáctanos</h4>
+          <p><a href="https://community.coopdevs.org" title="Coopdevs Community Forum">community.coopdevs.org</a></p>
+          <p><a href="mailto:info@coopdevs.org">info@coopdevs.org</a></p>
         </div>
       </div>
     </div>
+
+    <div class="max-w-3xl lg:max-w-4xl md:mx-auto pb-8 md:pb-12 flex flex-row-reverse">
+      <a href="https://github.com/coopdevs">
+        <img class="ml-4" src='/es/assets/img/social/github-brands.svg' />
+      </a>
+      <a href="https://gitlab.com/coopdevs">
+        <img class="ml-4" src='/es/assets/img/social/gitlab-brands.svg' />
+      </a>
+      <a href="https://twitter.com/coopdevs">
+        <img class="ml-4" src='/es/assets/img/social/twitter-brands.svg' />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <script src='/es/assets/js/index.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48794646-3"></script>
