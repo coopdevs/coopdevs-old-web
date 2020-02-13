@@ -5,7 +5,7 @@ layout: default
 {%- assign _posts = site.posts | sort: 'date' | reverse -%}
 
 <!-- Main -->
-<div id="main-blog" class="my-24 sm:my-48 max-w-2xl mx-auto">
+<div class="my-24 sm:my-48 max-w-2xl mx-auto">
   {%- if page.content != "" -%}
     {%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
   {%- endif -%}
