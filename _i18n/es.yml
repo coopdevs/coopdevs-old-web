@@ -6,6 +6,7 @@ global:
 menu:
   community: Comunidad
   blog: Blog
+  jobs: Trabajo
 pages:
   index:
     description_1: "Coopdevs es una asociación de personas que tiene como objectivo <strong>impulsar soluciones tecnológicas para fomentar y promover la economía social</strong>. Todos los proyectos en los que participamos son de código abierto y licencia libre."
@@ -34,6 +35,8 @@ pages:
         link_text: Saber más →
   blog:
     more: "Seguir leyendo →"
+  jobs:
+    title: "Ofertas de trabajo"
 
 footer:
   office:
