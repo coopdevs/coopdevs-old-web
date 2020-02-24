@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="my-24 sm:my-48 max-w-2xl mx-auto">
+  <article class="shade-two">
+
+    <header class="mb-20">
+      <h1 class="font-sans text-4xl text-gray-700 font-extrabold mb-4 leading-tight">{{- page.title -}}</h1>
+    </header>
+
+    {% comment %}
+      The job's content is styled using plain old scss as we can't control the
+      class attribute of the generated HTML. It is only limited to styling
+      paragraphs, headers, lists and other typographic stuff.
+    {% endcomment %}
+
+    <div class="post-content">
+      {{- content -}}
+    </div>
+
+  </article>
+</div>
