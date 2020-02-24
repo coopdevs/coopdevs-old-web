@@ -38,9 +38,9 @@ pages:
 footer:
   office:
     header: Oficina
-    name: Coworking Nogués
-    street: Passatge de Nogués 10
-    city: 08025 Barcelona - Catalunya
+    name: Coòpolis (Oficina B1)
+    street: C/Constitució 19-25 Bloc 8
+    city: 08014 Barcelona - Catalunya
   contact_us:
     header: Contacta'ns
     link: community.coopdevs.org
