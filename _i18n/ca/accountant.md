@@ -27,11 +27,11 @@ T'interessa potenciar una economia centrada en el benestar de les persones? Si t
 
 ## Condicions laborals
 
-* Mitja jornada laboral: 20h setmanals en horari flexible
+* Mitja jornada laboral: 20h setmanals amb horari flexible
 * Flexibilitat presencial, és possible fer dies/hores en remot
-* Remuneracio: 8.000 - 8.600 € Bruts anuals
+* Remuneració: 8.000 - 8.600 € Bruts anuals
 * Llocs de treball:
-  * COÒPOLIS C/ Constitució 19-25. BLOC 8, Barcelona
-  * Can Fugarolas, C/ Tolo, Mataro
+  * Coòpilis, C/ Constitució 19-25. Bloc 8, Barcelona
+  * Can Fugarolas, C/ Tolo, Mataró
 
 Enviar CV a [info@coopdevs.org](https://mailto:info@coopdevs.org) fins al 15/03/2020
