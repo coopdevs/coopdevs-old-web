@@ -31,7 +31,7 @@ T'interessa potenciar una economia centrada en el benestar de les persones? Si t
 * Flexibilitat presencial, és possible fer dies/hores en remot
 * Remuneració: 8.000 - 8.600 € Bruts anuals
 * Llocs de treball:
-  * Coòpilis, C/ Constitució 19-25. Bloc 8, Barcelona
+  * Coòpolis, C/ Constitució 19-25. Bloc 8, Barcelona
   * Can Fugarolas, C/ Tolo, Mataró
 
 Enviar CV a [info@coopdevs.org](https://mailto:info@coopdevs.org) fins al 15/03/2020
