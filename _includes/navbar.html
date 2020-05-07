@@ -6,14 +6,13 @@
   </div>
 
   <nav class="hidden md:flex">
-    <ul class="flex text-gray-300">
+    <ul class="flex text-gray-300 text-base absolute">
       <li class="ml-8"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
       <li class="ml-8"><a href={{ "https://community.coopdevs.org" }}>{% t menu.community %}</a></li>
       <li class="ml-8"><a href={{ "/jobs" | prepend: site.baseurl }}>{% t menu.jobs %}</a></li>
-    </ul>
-
-    <ul class="flex-col ml-8 text-gray-300">
-      {% include language_switcher.html item_class_list = "ml-8" %}
+      <ul class="flex-col ml-8 text-gray-300">
+        {% include language_switcher.html %}
+      </ul>
     </ul>
   </nav>
 
