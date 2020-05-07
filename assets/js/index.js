@@ -17,3 +17,10 @@
   hamburger.closeButton.addEventListener('click', function(e) { hamburger.toggle(e); });
 
 }());
+
+function show() { 
+  var element = document.getElementById("dropdown");
+    element.classList.toggle('hidden'); 
+}
+
+
