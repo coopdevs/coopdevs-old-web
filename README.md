@@ -73,7 +73,3 @@ It's when the PR merged into `develop` that the Circle CI workflow builds and pu
 Note that with the process described above we shouldn't need to run any manual deploys. However, in the event of a failure it's worth having an alternative process.
 
 Once your pull request is approved, merge it to `develop`. Then, from your local environment, change the branch to `develop`, pull the changes and run `./deploy`. This will build and deploy `develop`'s contents to `master` making them live straight away.
-
-## Prueba
-
-Probando github
