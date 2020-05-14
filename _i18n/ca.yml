@@ -23,7 +23,7 @@ pages:
     services:
       open_source:
         header: 'Dinamització de comunitats Open Source'
-        content: Som “open by default”. Desenvolupar software lliure amb una comunitat activa al voltant és la nostra passió, tenim experiència en la creació i dinamitació de comunitats Open Source.
+        content: Som “open by default”. Desenvolupar software lliure amb una comunitat activa al voltant és la nostra passió, tenim experiència en la creació i dinamització de comunitats Open Source.
         link_text: Saber-ne més →
       development:
         header: Desenvolupament de software per a l'ESS
