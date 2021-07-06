@@ -1,19 +1,18 @@
-<div class="flex flex-row justify-between">
-  <div>
+<div class="flex flex-row relative">
+  <div class="mr-64">
     <a href="/">
       <img src='{{ "/assets/img/logo_without_slogan.svg" | prepend:site.baseurl }}' />
     </a>
   </div>
 
-  <nav class="hidden md:flex">
-    <ul class="flex text-gray-300">
+  <nav class="hidden md:flex ml-64">
+    <ul class="flex text-gray-300 absolute">
       <li class="ml-8"><a href={{ "/blog.html" | prepend: site.baseurl }}>{% t menu.blog %}</a></li>
       <li class="ml-8"><a href={{ "https://community.coopdevs.org" }}>{% t menu.community %}</a></li>
       <li class="ml-8"><a href={{ "/jobs" | prepend: site.baseurl }}>{% t menu.jobs %}</a></li>
-    </ul>
-
-    <ul class="flex ml-8 text-gray-300">
-      {% include language_switcher.html item_class_list = "ml-8" %}
+      <ul class="flex-col ml-8 text-gray-300">
+        {% include language_switcher.html %}
+      </ul>
     </ul>
   </nav>
 
